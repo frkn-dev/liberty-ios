@@ -14,6 +14,7 @@
 		6F05DBC82894130100632934 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC52894130100632934 /* ConnectView.swift */; };
 		6F05DBC92894130100632934 /* DonateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC62894130100632934 /* DonateScreen.swift */; };
 		6F05DBCA2894130100632934 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC72894130100632934 /* AboutScreen.swift */; };
+		6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6F05DBC52894130100632934 /* ConnectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
 		6F05DBC62894130100632934 /* DonateScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateScreen.swift; sourceTree = "<group>"; };
 		6F05DBC72894130100632934 /* AboutScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		6F45B97D289430CD001076C8 /* Exo2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Exo2.ttf; sourceTree = "<group>"; };
+		6F45B97F289433E5001076C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +61,9 @@
 		6F05DBB52894128700632934 /* Liberty */ = {
 			isa = PBXGroup;
 			children = (
-				6F05DBB82894128700632934 /* ContentView.swift */,
-				6F05DBC72894130100632934 /* AboutScreen.swift */,
-				6F05DBC52894130100632934 /* ConnectView.swift */,
-				6F05DBC62894130100632934 /* DonateScreen.swift */,
+				6F45B97F289433E5001076C8 /* Info.plist */,
 				6F05DBB62894128700632934 /* LibertyApp.swift */,
+				6F45B97628942FCC001076C8 /* UI */,
 				6F05DBBA2894128A00632934 /* Assets.xcassets */,
 				6F05DBBC2894128A00632934 /* Liberty.entitlements */,
 				6F05DBBD2894128A00632934 /* Preview Content */,
@@ -76,6 +77,26 @@
 				6F05DBBE2894128A00632934 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6F45B97628942FCC001076C8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6F45B97728942FE0001076C8 /* Fonts */,
+				6F05DBB82894128700632934 /* ContentView.swift */,
+				6F05DBC52894130100632934 /* ConnectView.swift */,
+				6F05DBC72894130100632934 /* AboutScreen.swift */,
+				6F05DBC62894130100632934 /* DonateScreen.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6F45B97728942FE0001076C8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6F45B97D289430CD001076C8 /* Exo2.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +159,7 @@
 			files = (
 				6F05DBBF2894128A00632934 /* Preview Assets.xcassets in Resources */,
 				6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */,
+				6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,9 +299,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 94U9UR9TXD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Liberty/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -290,7 +313,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -314,9 +337,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 94U9UR9TXD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Liberty/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -327,7 +351,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;

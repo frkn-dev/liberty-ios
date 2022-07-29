@@ -62,7 +62,6 @@ struct ConnectView: View {
                         .renderingMode(.template)
                         .foregroundColor(.gray)
                         .rotationEffect(.degrees(15.19))
-                    //                    .ignoresSafeArea()
                         .scaledToFit()
                 }
             }
@@ -86,7 +85,7 @@ struct ConnectView: View {
                     }
                     .buttonStyle(.plain)
                 }
-                .fontWeight(.bold)
+                .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
                 .padding()
                 .foregroundColor(.primary)
                 
@@ -103,46 +102,49 @@ struct ConnectView: View {
                         Image("Kremlin")
                             .resizable()
                             .scaledToFit()
+                            .ignoresSafeArea()
                     }
+                    .ignoresSafeArea()
                 }
-                //                else {
-                //                    HStack {
-                //                        VStack(alignment: .leading) {
-                //                            Text("9.20")
-                //                                .font(.title) +
-                //                            Text(" Mb/s")
-                //                                .foregroundColor(.secondary)
-                //                            Text("\(Image(systemName: "arrow.down.circle.fill")) Download")
-                //                        }
-                //                        Spacer()
-                //
-                //                        VStack(alignment: .leading) {
-                //                            Text("6.45")
-                //                                .font(.title) +
-                //                            Text(" Mb/s")
-                //                                .foregroundColor(.secondary)
-                //                            Text("\(Image(systemName: "arrow.up.circle.fill")) Upload")
-                //                        }
-                //                    }
-                //                    .padding()
-                //                }
+//                else {
+//                    HStack {
+//                        VStack(alignment: .leading) {
+//                            Text("9.20")
+//                                .font(.title) +
+//                            Text(" Mb/s")
+//                                .foregroundColor(.secondary)
+//                            Text("\(Image(systemName: "arrow.down.circle.fill")) Download")
+//                        }
+//                        Spacer()
+//
+//                        VStack(alignment: .leading) {
+//                            Text("6.45")
+//                                .font(.title) +
+//                            Text(" Mb/s")
+//                                .foregroundColor(.secondary)
+//                            Text("\(Image(systemName: "arrow.up.circle.fill")) Upload")
+//                        }
+//                    }
+//                    .padding()
+//                }
             }
             
             VStack(spacing: 0) {
                 ZStack {
                     
-                    //                    if connectionState == .connecting {
-                    //                        Image("Fire")
-                    //                            .resizable()
-                    //                            .scaledToFit()
-                    //                            .ignoresSafeArea()
-                    //                    }
+//                    if connectionState == .connecting {
+//                        Image("Fire")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .ignoresSafeArea()
+//                    }
                     
                     Image("Pterodactyl")
                         .resizable()
                         .scaledToFit()
+                        .frame(maxWidth: 260)
                 }
-                .offset(y: 45)
+                .offset(y: 35)
                 .zIndex(2)
                 Button {
 //                    withAnimation {
@@ -154,6 +156,7 @@ struct ConnectView: View {
                     case .connected:
                         connectionState = .disconnected
                     }
+//                    }
                 } label: {
                     Image(connectionState == .connected ? "ConnectButtonConnected" : "ConnectButtonDisconnected")
                         .resizable()
@@ -162,10 +165,11 @@ struct ConnectView: View {
                 .foregroundColor(.primary)
                 .frame(width: 110, height: 110)
                 Text(connectionStateString())
-                    .font(.title)
+                    .font(.custom("Exo 2", size: 18, relativeTo: .body).bold())
             }
         }
         .background(Color.white)
+        .ignoresSafeArea(edges: .bottom)
         
         .sheet(item: $shownSupplementaryScreen) { screen in
             Group {

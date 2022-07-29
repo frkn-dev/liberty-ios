@@ -28,15 +28,19 @@ struct DonateScreen: View {
                     Text("\(Image(systemName: "arrow.left")) Back")
                 }
                 .buttonStyle(.plain)
+                .font(.custom("Exo 2", size: 14, relativeTo: .title).bold())
                 
                 Text("We are OpenSource.\nYou can support us.")
-                    .font(.title)
+                    .font(.custom("Exo 2", size: 22, relativeTo: .title).bold())
+                
                 Text("You can support us with donations or any other contribution to improve the service. Pulling requests and creating issues also helps us a lot.")
+                    .font(.custom("Exo 2", size: 14, relativeTo: .body))
                 ForEach(supportItems, id: \.0) { item in
                     VStack(alignment: .leading) {
                         Text(item.0)
-                            .fontWeight(.bold)
+                            .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
                         Text(item.1)
+                            .font(.custom("Exo 2", size: 14, relativeTo: .body))
                     }
                 }
                 
@@ -54,7 +58,7 @@ struct DonateScreen: View {
                     .buttonStyle(.plain)
                     Spacer()
                 }
-                .fontWeight(.bold)
+                .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
             }
             .padding()
         }
@@ -67,13 +71,3 @@ struct DonateScreen_Previews: PreviewProvider {
         DonateScreen()
     }
 }
-
-/*
-FuckRKN1
-←Back
-
-You can support us with donations or any other contribution to improve the service. Pulling requests and creating issues also helps us a lot.
-
-Patreon
-Boosty
-*/
