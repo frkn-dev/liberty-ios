@@ -132,7 +132,7 @@ struct ConnectView: View {
             VStack(spacing: 0) {
                 ZStack {
                     
-//                    if connectionState == .connecting {
+//                    if connectionState == .connecting || connectionState == .connected {
 //                        Image("Fire")
 //                            .resizable()
 //                            .scaledToFit()
