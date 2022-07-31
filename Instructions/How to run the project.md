@@ -1,8 +1,16 @@
+
+* [Download the project](#download-the-project)
 * [Install Xcode](#install-xcode)
   + [Using AppStore](#using-appstore)
   + [Using Xcodes](#using-xcodes)
-* [Download the project](#download-the-project)
 * [Build the app](#build-the-app)
+
+## Download the project
+First of all you should download our project on your computer. You can do it with many options on the main page of our project on GitHub.
+<details>
+  <summary> Screenshot </summary>
+<img src="/Instructions/Media/Screenshots/git-download.png">
+</details>
 
 ## Install Xcode
 Every app needs IDE for compilation. For iOS apps it is Xcode. Xcode is free but has two limitations:
@@ -30,11 +38,14 @@ Alternetively method is use [open source app](https://github.com/RobotsAndPencil
 <img src="/Instructions/Media/Screenshots/Xcodes-list-example.png" height="600">
 </details>
 
-## Download the project
-First of all you should download our project on your computer. You can do it with many options on the main page of our project on GitHub.
-<details>
-  <summary> Screenshot </summary>
-<img src="/Instructions/Media/Screenshots/git-download.png">
-</details>
-
 ## Build the app
+Cheers! You almost made it! Only a few more steps to go
+- Open folder with project and double-click on `Liberty.xcodeproj` file
+- Select which device you want to use (or select simulator)
+- Click on `Run` button (or press `⌘ + R`)
+
+<details>
+  <summary> Screenshots </summary>
+<img src="/Instructions/Media/Screenshots/file-select.png" height="600">
+<img src="/Instructions/Media/Screenshots/Xcode-steps.png" height="600">
+</details>
