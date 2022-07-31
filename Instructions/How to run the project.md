@@ -25,8 +25,8 @@ The default method of Xcode installation involves downloading from the AppStore.
 - Find Xcode into search results and click on `Get` button
 <details>
   <summary> Screenshots </summary>
-<img src="/Instructions/Media/Screenshots/AppStore-search-1.png" height="600">
-<img src="/Instructions/Media/Screenshots/AppStore-search-2.png" height="600">
+<img src="/Instructions/Media/Screenshots/AppStore-search-1.png" width="900">
+<img src="/Instructions/Media/Screenshots/AppStore-search-2.png" width="900">
 </details>
 
 ### Using Xcodes
@@ -35,7 +35,7 @@ Alternetively method is use [open source app](https://github.com/RobotsAndPencil
 - Choose one and click on 'Install' button.
 <details>
   <summary> Screenshots </summary>
-<img src="/Instructions/Media/Screenshots/Xcodes-list-example.png" height="600">
+<img src="/Instructions/Media/Screenshots/Xcodes-list-example.png" width="900">
 </details>
 
 ## Build the app
@@ -46,6 +46,6 @@ Cheers! You almost made it! Only a few more steps to go
 
 <details>
   <summary> Screenshots </summary>
-<img src="/Instructions/Media/Screenshots/file-select.png" height="600">
-<img src="/Instructions/Media/Screenshots/Xcode-steps.png" height="600">
+<img src="/Instructions/Media/Screenshots/file-select.png" width="900">
+<img src="/Instructions/Media/Screenshots/Xcode-steps.png" width="900">
 </details>
