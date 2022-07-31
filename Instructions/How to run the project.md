@@ -6,7 +6,7 @@
 * [Build the app](#build-the-app)
 
 ## Download the project
-First of all you should download our project on your computer. You can do it with many options on the main page of our project on GitHub.
+First of all, you should download our project on your computer. You can do it with many options on the main page of our project on GitHub.
 <details>
   <summary> Screenshot </summary>
 <img src="/Instructions/Media/Screenshots/git-download.png">
@@ -21,7 +21,7 @@ If this limitation is not a problem, you can two ways to install Xcode.
 
 ### Using AppStore
 The default method of Xcode installation involves downloading from the AppStore. Just like any other app.
-- Open AppStore and write `Xcode` into search field
+- Open AppStore and write `Xcode` into the search field
 - Find Xcode into search results and click on `Get` button
 <details>
   <summary> Screenshots </summary>
@@ -40,7 +40,7 @@ Alternetively method is use [open source app](https://github.com/RobotsAndPencil
 
 ## Build the app
 Cheers! You almost made it! Only a few more steps to go
-- Open folder with project and double-click on `Liberty.xcodeproj` file
+- Open a folder with the project and double-click on `Liberty.xcodeproj` file
 - Select which device you want to use (or select simulator)
 - Click on `Run` button (or press `⌘ + R`)
 
