@@ -12,6 +12,10 @@ struct LibertyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                #if os(macOS)
+                .frame(width: UIConstants.windowWidth, height: UIConstants.windowHeight)
+                #endif
+                .preferredColorScheme(.light)
         }
     }
 }
