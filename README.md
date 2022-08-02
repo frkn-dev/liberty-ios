@@ -3,7 +3,7 @@
 </p>
 
 # FuckRKN1 VPN (iOS)
-VPN client for iOS from [**FuckRKN1 Team**](https://github.com/nezavisimost).
+VPN client for iOS from [**nezavisimost' Team**](https://github.com/nezavisimost).
 
 <!--
 # Features
