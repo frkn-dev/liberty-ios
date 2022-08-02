@@ -15,6 +15,6 @@ VPN client for iOS from [**nezavisimost' Team**](https://github.com/nezavisimost
 ![image](https://user-images.githubusercontent.com/6414316/181246606-6b245c4a-99ec-4b1d-8f40-fdd82bdc1ae3.png)
 
 ## CONTRIBUTION
-[**Follow these instructions**](https://github.com/HotFixDeveloper/liberty-ios/blob/patch-1/CONTRIBUTION.md)
+[**Follow these instructions**](./CONTRIBUTION.md)
 
 <!-- # Screencast -->
