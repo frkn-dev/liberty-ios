@@ -2,7 +2,7 @@
 //  CountrySelectionScreen.swift
 //  Liberty
 //
-//  Created by Алексей Агеев on 02.08.2022.
+//  Created by Alexey Ageev on 02.08.2022.
 //
 
 import SwiftUI
