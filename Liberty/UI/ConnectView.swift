@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ConnectView: View {
     
+    let service = VPNService.shared
+
     enum ConnectionState {
         case disconnected
         case connecting
@@ -210,4 +212,11 @@ struct ConnectView_Previews: PreviewProvider {
         
 #endif
     }
+}
+
+
+// MARK: - Functions
+
+func startTunneling() {
+    
 }
