@@ -9,12 +9,9 @@
 /* Begin PBXBuildFile section */
 		03AD5172289AC04C0097101D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AD5171289AC04C0097101D /* NetworkExtension.framework */; };
 		03AD5178289AC51F0097101D /* VPNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5177289AC51F0097101D /* VPNService.swift */; };
-		03C0F82428A8C0D40038FCEC /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C0F82328A8C0D40038FCEC /* TunnelKit */; };
-		03C0F82628A8C0D40038FCEC /* TunnelKitLZO in Frameworks */ = {isa = PBXBuildFile; productRef = 03C0F82528A8C0D40038FCEC /* TunnelKitLZO */; };
-		03C0F82828A8C0D40038FCEC /* TunnelKitOpenVPN in Frameworks */ = {isa = PBXBuildFile; productRef = 03C0F82728A8C0D40038FCEC /* TunnelKitOpenVPN */; };
-		03C0F82A28A8C0D40038FCEC /* TunnelKitOpenVPNAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03C0F82928A8C0D40038FCEC /* TunnelKitOpenVPNAppExtension */; };
-		03C0F82C28A8C0D40038FCEC /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03C0F82B28A8C0D40038FCEC /* TunnelKitWireGuard */; };
-		03C0F82E28A8C0D40038FCEC /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03C0F82D28A8C0D40038FCEC /* TunnelKitWireGuardAppExtension */; };
+		03D333E328A942F00083B0D0 /* VPNSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333E228A942F00083B0D0 /* VPNSettings.swift */; };
+		03D333E528A94A030083B0D0 /* TunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333E428A94A030083B0D0 /* TunnelProvider.swift */; };
+		03D333E828A950A90083B0D0 /* vpnclient.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 03D333E728A950A90083B0D0 /* vpnclient.p12 */; };
 		6F05DBB72894128700632934 /* LibertyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB62894128700632934 /* LibertyApp.swift */; };
 		6F05DBB92894128700632934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB82894128700632934 /* ContentView.swift */; };
 		6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
@@ -25,19 +22,12 @@
 		6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		03C0F83328A8C4900038FCEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6F05DBAB2894128700632934 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 03C0F82F28A8C22E0038FCEC;
-			remoteInfo = "Liberty-Scripts";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		03AD5171289AC04C0097101D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
 		03AD5177289AC51F0097101D /* VPNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNService.swift; sourceTree = "<group>"; };
+		03D333E228A942F00083B0D0 /* VPNSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNSettings.swift; sourceTree = "<group>"; };
+		03D333E428A94A030083B0D0 /* TunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelProvider.swift; sourceTree = "<group>"; };
+		03D333E728A950A90083B0D0 /* vpnclient.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vpnclient.p12; sourceTree = "<group>"; };
 		6F05DBB32894128700632934 /* Liberty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
 		6F05DBB82894128700632934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,13 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C0F82E28A8C0D40038FCEC /* TunnelKitWireGuardAppExtension in Frameworks */,
-				03C0F82C28A8C0D40038FCEC /* TunnelKitWireGuard in Frameworks */,
-				03C0F82A28A8C0D40038FCEC /* TunnelKitOpenVPNAppExtension in Frameworks */,
-				03C0F82828A8C0D40038FCEC /* TunnelKitOpenVPN in Frameworks */,
 				03AD5172289AC04C0097101D /* NetworkExtension.framework in Frameworks */,
-				03C0F82628A8C0D40038FCEC /* TunnelKitLZO in Frameworks */,
-				03C0F82428A8C0D40038FCEC /* TunnelKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				03AD5177289AC51F0097101D /* VPNService.swift */,
+				03D333E228A942F00083B0D0 /* VPNSettings.swift */,
+				03D333E428A94A030083B0D0 /* TunnelProvider.swift */,
 			);
 			path = VPN;
 			sourceTree = "<group>";
@@ -98,6 +84,23 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		03D333DC28A916010083B0D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03D333E628A950920083B0D0 /* Keys */,
+				6F45B97728942FE0001076C8 /* Fonts */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03D333E628A950920083B0D0 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				03D333E728A950A90083B0D0 /* vpnclient.p12 */,
+			);
+			path = Keys;
 			sourceTree = "<group>";
 		};
 		6F05DBAA2894128700632934 = {
@@ -125,6 +128,7 @@
 				6F45B97628942FCC001076C8 /* UI */,
 				03AD5179289AC6E30097101D /* Models */,
 				03AD5174289AC2120097101D /* Modules */,
+				03D333DC28A916010083B0D0 /* Supporting Files */,
 				6F05DBBA2894128A00632934 /* Assets.xcassets */,
 				6F05DBBC2894128A00632934 /* Liberty.entitlements */,
 				6F05DBBD2894128A00632934 /* Preview Content */,
@@ -143,7 +147,6 @@
 		6F45B97628942FCC001076C8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				6F45B97728942FE0001076C8 /* Fonts */,
 				6F05DBB82894128700632934 /* ContentView.swift */,
 				6F05DBC52894130100632934 /* ConnectView.swift */,
 				6F05DBC72894130100632934 /* AboutScreen.swift */,
@@ -162,23 +165,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXLegacyTarget section */
-		03C0F82F28A8C22E0038FCEC /* Liberty-Scripts */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 03C0F83028A8C22E0038FCEC /* Build configuration list for PBXLegacyTarget "Liberty-Scripts" */;
-			buildPhases = (
-			);
-			buildToolPath = "$(PROJECT_DIR)/Scripts/build_wireguard_go_bridge.sh";
-			buildWorkingDirectory = "";
-			dependencies = (
-			);
-			name = "Liberty-Scripts";
-			passBuildSettingsInEnvironment = 1;
-			productName = "Liberty-Scripts";
-		};
-/* End PBXLegacyTarget section */
-
 /* Begin PBXNativeTarget section */
 		6F05DBB22894128700632934 /* Liberty */ = {
 			isa = PBXNativeTarget;
@@ -191,16 +177,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				03C0F83428A8C4900038FCEC /* PBXTargetDependency */,
 			);
 			name = Liberty;
 			packageProductDependencies = (
-				03C0F82328A8C0D40038FCEC /* TunnelKit */,
-				03C0F82528A8C0D40038FCEC /* TunnelKitLZO */,
-				03C0F82728A8C0D40038FCEC /* TunnelKitOpenVPN */,
-				03C0F82928A8C0D40038FCEC /* TunnelKitOpenVPNAppExtension */,
-				03C0F82B28A8C0D40038FCEC /* TunnelKitWireGuard */,
-				03C0F82D28A8C0D40038FCEC /* TunnelKitWireGuardAppExtension */,
 			);
 			productName = Liberty;
 			productReference = 6F05DBB32894128700632934 /* Liberty.app */;
@@ -216,9 +195,6 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					03C0F82F28A8C22E0038FCEC = {
-						CreatedOnToolsVersion = 13.4.1;
-					};
 					6F05DBB22894128700632934 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -234,14 +210,12 @@
 			);
 			mainGroup = 6F05DBAA2894128700632934;
 			packageReferences = (
-				03C0F82228A8C0D40038FCEC /* XCRemoteSwiftPackageReference "tunnelkit" */,
 			);
 			productRefGroup = 6F05DBB42894128700632934 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6F05DBB22894128700632934 /* Liberty */,
-				03C0F82F28A8C22E0038FCEC /* Liberty-Scripts */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F05DBBF2894128A00632934 /* Preview Assets.xcassets in Resources */,
+				03D333E828A950A90083B0D0 /* vpnclient.p12 in Resources */,
 				6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */,
 				6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */,
 			);
@@ -264,7 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D333E528A94A030083B0D0 /* TunnelProvider.swift in Sources */,
 				6F05DBC92894130100632934 /* DonateScreen.swift in Sources */,
+				03D333E328A942F00083B0D0 /* VPNSettings.swift in Sources */,
 				6F05DBC82894130100632934 /* ConnectView.swift in Sources */,
 				6F05DBB92894128700632934 /* ContentView.swift in Sources */,
 				03AD5178289AC51F0097101D /* VPNService.swift in Sources */,
@@ -275,46 +252,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		03C0F83428A8C4900038FCEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 03C0F82F28A8C22E0038FCEC /* Liberty-Scripts */;
-			targetProxy = 03C0F83328A8C4900038FCEC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		03C0F83128A8C22E0038FCEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				DEBUGGING_SYMBOLS = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = CHF63SS3MM;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PATH = "${PATH}:/opt/homebrew/opt/go@1.19/bin";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		03C0F83228A8C22E0038FCEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = CHF63SS3MM;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PATH = "${PATH}:/opt/homebrew/opt/go@1.19/bin";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		6F05DBC02894128A00632934 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -513,15 +451,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03C0F83028A8C22E0038FCEC /* Build configuration list for PBXLegacyTarget "Liberty-Scripts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				03C0F83128A8C22E0038FCEC /* Debug */,
-				03C0F83228A8C22E0038FCEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6F05DBAE2894128700632934 /* Build configuration list for PBXProject "Liberty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -541,50 +470,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		03C0F82228A8C0D40038FCEC /* XCRemoteSwiftPackageReference "tunnelkit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/passepartoutvpn/tunnelkit";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		03C0F82328A8C0D40038FCEC /* TunnelKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03C0F82228A8C0D40038FCEC /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKit;
-		};
-		03C0F82528A8C0D40038FCEC /* TunnelKitLZO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03C0F82228A8C0D40038FCEC /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKitLZO;
-		};
-		03C0F82728A8C0D40038FCEC /* TunnelKitOpenVPN */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03C0F82228A8C0D40038FCEC /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKitOpenVPN;
-		};
-		03C0F82928A8C0D40038FCEC /* TunnelKitOpenVPNAppExtension */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03C0F82228A8C0D40038FCEC /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKitOpenVPNAppExtension;
-		};
-		03C0F82B28A8C0D40038FCEC /* TunnelKitWireGuard */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03C0F82228A8C0D40038FCEC /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKitWireGuard;
-		};
-		03C0F82D28A8C0D40038FCEC /* TunnelKitWireGuardAppExtension */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03C0F82228A8C0D40038FCEC /* XCRemoteSwiftPackageReference "tunnelkit" */;
-			productName = TunnelKitWireGuardAppExtension;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F05DBAB2894128700632934 /* Project object */;
 }

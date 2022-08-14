@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ConnectView: View {
     
-    let service = VPNService.shared
+    let vpnService = VPNService.shared
 
     enum ConnectionState {
         case disconnected
@@ -25,6 +25,8 @@ struct ConnectView: View {
         case about
         case supportUs
     }
+    
+    // MARK: - View
     
     @State var connectionState = ConnectionState.disconnected
     @State var shownSupplementaryScreen: SupplementaryScreen? = nil
@@ -149,16 +151,15 @@ struct ConnectView: View {
                 .offset(y: 35)
                 .zIndex(2)
                 Button {
-//                    withAnimation {
                     switch connectionState {
                     case .disconnected:
                         connectionState = .connecting
+                        startTunneling()
                     case .connecting:
                         connectionState = .connected
                     case .connected:
                         connectionState = .disconnected
                     }
-//                    }
                 } label: {
                     Image(connectionState == .connected ? "ConnectButtonConnected" : "ConnectButtonDisconnected")
                         .resizable()
@@ -201,6 +202,12 @@ struct ConnectView: View {
             return "Connected"
         }
     }
+    
+    // MARK: - Functions
+
+    func startTunneling() {
+        vpnService.connectVPN()
+    }
 }
 
 struct ConnectView_Previews: PreviewProvider {
@@ -212,11 +219,4 @@ struct ConnectView_Previews: PreviewProvider {
         
 #endif
     }
-}
-
-
-// MARK: - Functions
-
-func startTunneling() {
-    
 }
