@@ -7,6 +7,7 @@
 
 import Combine
 import SwiftUI
+import NetworkExtension
 
 struct ConnectView: View {
     
@@ -170,8 +171,16 @@ extension ConnectView {
     
     private func setupValues() {
         
-        vpnService.stateHandler = { state in
-            connectionState = state
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NEVPNStatusDidChange,
+                                               object: nil,
+                                               queue: nil) { notification in
+
+            let nevpnconn = notification.object as! NEVPNConnection
+            if let state = ConnectionState(nevpnconn.status) {
+                connectionState = state
+                
+                print("VPN connection status is \(state)")
+            }
         }
     }
 }

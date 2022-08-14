@@ -5,11 +5,9 @@
 //  Created by Yury Soloshenko on 03.08.2022.
 //
 
-import Combine
-import SwiftUI
 import NetworkExtension
 
-class VPNService: ObservableObject {
+class VPNService {
     
     // MARK: - Properties
     
@@ -17,19 +15,13 @@ class VPNService: ObservableObject {
     
     private let vpnManager = NEVPNManager.shared()
     
-    var stateHandler: UpdateStateHandler?
-    
     // MARK: - VPN
     
     public func connectVPN() {
-        
-        stateHandler?(.connecting)
         initVPNTunnelProviderManager()
     }
     
     public func disconnectVPN() {
-        
-        stateHandler?(.disconnected)
         vpnManager.connection.stopVPNTunnel()
     }
     
@@ -39,23 +31,6 @@ class VPNService: ObservableObject {
             try vpnManager.connection.startVPNTunnel()
         } catch let error {
             print(error)
-        }
-    }
-    
-    public func checkStatus() {
-        
-        let status = vpnManager.connection.status
-        print("VPN connection status = \(status.rawValue)")
-        
-        switch status {
-        case NEVPNStatus.connected:
-            stateHandler?(.connected)
-        case NEVPNStatus.invalid, NEVPNStatus.disconnecting, NEVPNStatus.disconnected :
-            stateHandler?(.disconnected)
-        case NEVPNStatus.connecting , NEVPNStatus.reasserting:
-            stateHandler?(.connecting)
-        default:
-            print("Unknown VPN connection status")
         }
     }
     
@@ -70,9 +45,9 @@ class VPNService: ObservableObject {
                 return
             }
             
+            self.vpnManager.isEnabled = true
             self.vpnManager.protocolConfiguration = self.makeProtocolConfig()
             self.vpnManager.localizedDescription = "IKEv2 VPN lt.fuckrkn1.xyz"
-            self.vpnManager.isEnabled = true
             
             print("SAVE TO PREFERENCES...")
             
@@ -109,11 +84,9 @@ class VPNService: ObservableObject {
                     }
                     
                     print("Starting VPN...")
-                    self.checkStatus()
                 })
             })
         }
-        
     }
     
     // MARK: - .P12
@@ -143,12 +116,13 @@ class VPNService: ObservableObject {
         
         vpnProtocol.childSecurityAssociationParameters.encryptionAlgorithm = .algorithmAES128GCM
         vpnProtocol.childSecurityAssociationParameters.diffieHellmanGroup = .group14
+        vpnProtocol.childSecurityAssociationParameters.integrityAlgorithm = .SHA96
         vpnProtocol.childSecurityAssociationParameters.lifetimeMinutes = 1410
         
         vpnProtocol.disableRedirect = true
         
         vpnProtocol.serverCertificateIssuerCommonName = VPNServerSettings.shared.vpnServerCertificateIssuerCommonName
-        vpnProtocol.certificateType = .ECDSA384
+        vpnProtocol.certificateType = .RSA
         vpnProtocol.identityDataPassword = VPNServerSettings.shared.p12Password
         vpnProtocol.identityData = self.dataFromFile()
         
