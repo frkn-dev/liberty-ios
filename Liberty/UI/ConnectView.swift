@@ -5,17 +5,12 @@
 //  Created by Alexey Ageev on 29.07.2022.
 //
 
+import Combine
 import SwiftUI
 
 struct ConnectView: View {
     
     let vpnService = VPNService.shared
-
-    enum ConnectionState {
-        case disconnected
-        case connecting
-        case connected
-    }
     
     enum SupplementaryScreen: Int, Identifiable {
         var id: Int {
@@ -28,7 +23,7 @@ struct ConnectView: View {
     
     // MARK: - View
     
-    @State var connectionState = ConnectionState.disconnected
+    @State var connectionState: ConnectionState = .disconnected
     @State var shownSupplementaryScreen: SupplementaryScreen? = nil
     
     var body: some View {
@@ -37,7 +32,7 @@ struct ConnectView: View {
                 .resizable()
                 .ignoresSafeArea()
             
-            if connectionState == .disconnected || connectionState == .connecting {
+            if connectionState != .connected {
                 VStack {
                     Image("Wire")
                         .resizable()
@@ -95,7 +90,7 @@ struct ConnectView: View {
                 
                 Spacer()
                 
-                if connectionState == .disconnected || connectionState == .connecting {
+                if connectionState != .connected {
                     ZStack(alignment: .bottom) {
                         if connectionState == .connecting {
                             Image("Kremlin Fire")
@@ -110,39 +105,10 @@ struct ConnectView: View {
                     }
                     .ignoresSafeArea()
                 }
-//                else {
-//                    HStack {
-//                        VStack(alignment: .leading) {
-//                            Text("9.20")
-//                                .font(.title) +
-//                            Text(" Mb/s")
-//                                .foregroundColor(.secondary)
-//                            Text("\(Image(systemName: "arrow.down.circle.fill")) Download")
-//                        }
-//                        Spacer()
-//
-//                        VStack(alignment: .leading) {
-//                            Text("6.45")
-//                                .font(.title) +
-//                            Text(" Mb/s")
-//                                .foregroundColor(.secondary)
-//                            Text("\(Image(systemName: "arrow.up.circle.fill")) Upload")
-//                        }
-//                    }
-//                    .padding()
-//                }
             }
             
             VStack(spacing: 0) {
                 ZStack {
-                    
-//                    if connectionState == .connecting {
-//                        Image("Fire")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .ignoresSafeArea()
-//                    }
-                    
                     Image("Pterodactyl")
                         .resizable()
                         .scaledToFit()
@@ -152,13 +118,9 @@ struct ConnectView: View {
                 .zIndex(2)
                 Button {
                     switch connectionState {
-                    case .disconnected:
-                        connectionState = .connecting
-                        startTunneling()
-                    case .connecting:
-                        connectionState = .connected
-                    case .connected:
-                        connectionState = .disconnected
+                    case .disconnected: vpnService.connectVPN()
+                    case .connected: vpnService.disconnectVPN()
+                    default: break
                     }
                 } label: {
                     Image(connectionState == .connected ? "ConnectButtonConnected" : "ConnectButtonDisconnected")
@@ -167,7 +129,7 @@ struct ConnectView: View {
                 .buttonStyle(.plain)
                 .foregroundColor(.primary)
                 .frame(width: 110, height: 110)
-                Text(connectionStateString())
+                Text(connectionState.rawValue)
                     .font(.custom("Exo 2", size: 18, relativeTo: .body).bold())
             }
         }
@@ -189,24 +151,7 @@ struct ConnectView: View {
             .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
             
 #endif
-        }
-    }
-    
-    func connectionStateString() -> String {
-        switch connectionState {
-        case .disconnected:
-            return "Disconnected"
-        case .connecting:
-            return "Connecting"
-        case .connected:
-            return "Connected"
-        }
-    }
-    
-    // MARK: - Functions
-
-    func startTunneling() {
-        vpnService.connectVPN()
+        }.onAppear(perform: setupValues)
     }
 }
 
@@ -218,5 +163,15 @@ struct ConnectView_Previews: PreviewProvider {
             .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
         
 #endif
+    }
+}
+
+extension ConnectView {
+    
+    private func setupValues() {
+        
+        vpnService.stateHandler = { state in
+            connectionState = state
+        }
     }
 }

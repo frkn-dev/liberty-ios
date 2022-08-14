@@ -5,25 +5,31 @@
 //  Created by Yury Soloshenko on 03.08.2022.
 //
 
-import Foundation
+import Combine
+import SwiftUI
 import NetworkExtension
 
-class VPNService {
+class VPNService: ObservableObject {
     
     // MARK: - Properties
     
     static let shared = VPNService()
     
     private let vpnManager = NEVPNManager.shared()
-    private let tunnelProvider = TunnelProvider()
+    
+    var stateHandler: UpdateStateHandler?
     
     // MARK: - VPN
     
     public func connectVPN() {
+        
+        stateHandler?(.connecting)
         initVPNTunnelProviderManager()
     }
     
     public func disconnectVPN() {
+        
+        stateHandler?(.disconnected)
         vpnManager.connection.stopVPNTunnel()
     }
     
@@ -43,21 +49,11 @@ class VPNService {
         
         switch status {
         case NEVPNStatus.connected:
-            
-            print("Connected")
-            
-        case NEVPNStatus.invalid, NEVPNStatus.disconnected :
-            
-            print("Disconnected")
-            
+            stateHandler?(.connected)
+        case NEVPNStatus.invalid, NEVPNStatus.disconnecting, NEVPNStatus.disconnected :
+            stateHandler?(.disconnected)
         case NEVPNStatus.connecting , NEVPNStatus.reasserting:
-            
-            print("Connecting")
-            
-        case NEVPNStatus.disconnecting:
-            
-            print("Disconnecting")
-            
+            stateHandler?(.connecting)
         default:
             print("Unknown VPN connection status")
         }
@@ -68,7 +64,6 @@ class VPNService {
     func initVPNTunnelProviderManager() {
         
         vpnManager.loadFromPreferences { [weak self] error in
-            
             guard let self = self,
                   error == nil else {
                 print("VPN Preferences error: 1 - \(String(describing: error))")
@@ -76,14 +71,8 @@ class VPNService {
             }
             
             self.vpnManager.protocolConfiguration = self.makeProtocolConfig()
-            self.vpnManager.localizedDescription = "FuckRKN_1"
+            self.vpnManager.localizedDescription = "IKEv2 VPN lt.fuckrkn1.xyz"
             self.vpnManager.isEnabled = true
-            self.vpnManager.isOnDemandEnabled = false
-            
-            var rules = [NEOnDemandRule]()
-            let rule = NEOnDemandRuleConnect()
-            rule.interfaceTypeMatch = .any
-            rules.append(rule)
             
             print("SAVE TO PREFERENCES...")
             
@@ -120,6 +109,7 @@ class VPNService {
                     }
                     
                     print("Starting VPN...")
+                    self.checkStatus()
                 })
             })
         }
@@ -129,10 +119,9 @@ class VPNService {
     // MARK: - .P12
     
     func dataFromFile() -> Data? {
-        let rootCertPath = Bundle.main.url(forResource: "vpnclient", withExtension: "p12")
-        print(rootCertPath?.absoluteURL as Any)
+        guard let rootCertPath = Bundle.main.url(forResource: "vpnclient", withExtension: "p12") else { return nil }
         
-        return try? Data(contentsOf: rootCertPath!.absoluteURL)
+        return try? Data(contentsOf: rootCertPath.absoluteURL)
     }
     
     // MARK: - Configuring
