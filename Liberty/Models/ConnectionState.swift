@@ -10,6 +10,7 @@ import NetworkExtension
 
 public enum ConnectionState: String {
     
+    case disconnecting = "Disconnecting"
     case disconnected = "Disconnected"
     case connecting = "Connecting"
     case connected = "Connected"
@@ -19,10 +20,12 @@ public enum ConnectionState: String {
         switch state {
         case NEVPNStatus.connected:
             self = .connected
-        case NEVPNStatus.invalid, NEVPNStatus.disconnecting, NEVPNStatus.disconnected :
+        case NEVPNStatus.invalid, NEVPNStatus.disconnected :
             self = .disconnected
         case NEVPNStatus.connecting , NEVPNStatus.reasserting:
             self = .connecting
+        case NEVPNStatus.disconnecting:
+            self = .disconnecting
         default:
             return nil
         }

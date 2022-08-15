@@ -47,9 +47,11 @@ class VPNService {
             
             self.vpnManager.isEnabled = true
             self.vpnManager.protocolConfiguration = self.makeProtocolConfig()
-            self.vpnManager.localizedDescription = "IKEv2 VPN lt.fuckrkn1.xyz"
+            self.vpnManager.localizedDescription = "lt.fuckrkn1.xyz"
             
-            print("SAVE TO PREFERENCES...")
+            var rules = [NEOnDemandRule]()
+            let rule = NEOnDemandRuleConnect()
+            rules.append(rule)
             
             self.vpnManager.saveToPreferences(completionHandler: { (error) -> Void in
                 guard error == nil else {
@@ -57,7 +59,6 @@ class VPNService {
                     return
                 }
                 
-                print("CALL LOAD TO PREFERENCES AGAIN...")
                 self.vpnManager.loadFromPreferences(completionHandler: { error in
                     guard error == nil else {
                         print("VPN Preferences error: 2 - \(String(describing: error))")
@@ -78,12 +79,11 @@ class VPNService {
                     
                     guard startError == nil else {
                         print("VPN Preferences error: 3 - \(String(describing: error))")
+                        
                         print("title: Oops.., message: Something went wrong while connecting to the VPN. Please try again.")
                         print(startError.debugDescription)
                         return
                     }
-                    
-                    print("Starting VPN...")
                 })
             })
         }
@@ -91,8 +91,14 @@ class VPNService {
     
     // MARK: - .P12
     
-    func dataFromFile() -> Data? {
+    func getP12FromFile() -> Data? {
         guard let rootCertPath = Bundle.main.url(forResource: "vpnclient", withExtension: "p12") else { return nil }
+        
+        return try? Data(contentsOf: rootCertPath.absoluteURL)
+    }
+    
+    func getCertFromFile() -> Data? {
+        guard let rootCertPath = Bundle.main.url(forResource: "ikev2vpnca", withExtension: "cer") else { return nil }
         
         return try? Data(contentsOf: rootCertPath.absoluteURL)
     }
@@ -103,6 +109,7 @@ class VPNService {
         
         let vpnProtocol = NEVPNProtocolIKEv2()
         
+        vpnProtocol.certificateType = .RSA
         vpnProtocol.authenticationMethod = .certificate
         vpnProtocol.serverAddress = VPNServerSettings.shared.vpnServerAddress
         vpnProtocol.remoteIdentifier = VPNServerSettings.shared.vpnRemoteIdentifier
@@ -121,10 +128,9 @@ class VPNService {
         
         vpnProtocol.disableRedirect = true
         
-        vpnProtocol.serverCertificateIssuerCommonName = VPNServerSettings.shared.vpnServerCertificateIssuerCommonName
-        vpnProtocol.certificateType = .RSA
+        vpnProtocol.identityReference = self.getCertFromFile()
         vpnProtocol.identityDataPassword = VPNServerSettings.shared.p12Password
-        vpnProtocol.identityData = self.dataFromFile()
+        vpnProtocol.identityData = self.getP12FromFile()
         
         return vpnProtocol
     }

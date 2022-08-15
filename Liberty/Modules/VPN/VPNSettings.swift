@@ -14,5 +14,4 @@ class VPNServerSettings: NSObject {
     let vpnServerAddress = "lt.fuckrkn1.xyz"
     let vpnRemoteIdentifier = "lt.fuckrkn1.xyz"
     let vpnLocalIdentifier = "vpnclient"
-    let vpnServerCertificateIssuerCommonName = "lt.fuckrkn1.xyz"
 }

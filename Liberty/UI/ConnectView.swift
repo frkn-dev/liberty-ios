@@ -179,7 +179,7 @@ extension ConnectView {
             if let state = ConnectionState(nevpnconn.status) {
                 connectionState = state
                 
-                print("VPN connection status is \(state)")
+                print("VPN status is \(state)")
             }
         }
     }
