@@ -10,7 +10,7 @@ import Foundation
 class VPNServerSettings: NSObject {
     static let shared = VPNServerSettings()
     
-    let p12Password = "CnKzvZujdvxU3bwBSo"
+    let p12Password = ""
     let vpnServerAddress = "lt.fuckrkn1.xyz"
     let vpnRemoteIdentifier = "lt.fuckrkn1.xyz"
     let vpnLocalIdentifier = "vpnclient"

@@ -13,6 +13,8 @@
 		03D333E828A950A90083B0D0 /* vpnclient.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 03D333E728A950A90083B0D0 /* vpnclient.p12 */; };
 		03D333EA28A964CE0083B0D0 /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333E928A964CE0083B0D0 /* ConnectionState.swift */; };
 		03D333EC28A96A1F0083B0D0 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333EB28A96A1F0083B0D0 /* Typealiases.swift */; };
+		03D333F428AC2B5C0083B0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */; };
+		03D333F628AC2CB80083B0D0 /* P12Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333F528AC2CB80083B0D0 /* P12Service.swift */; };
 		6F05DBB72894128700632934 /* LibertyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB62894128700632934 /* LibertyApp.swift */; };
 		6F05DBB92894128700632934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB82894128700632934 /* ContentView.swift */; };
 		6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		03D333E728A950A90083B0D0 /* vpnclient.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vpnclient.p12; sourceTree = "<group>"; };
 		03D333E928A964CE0083B0D0 /* ConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionState.swift; sourceTree = "<group>"; };
 		03D333EB28A96A1F0083B0D0 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03D333F528AC2CB80083B0D0 /* P12Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P12Service.swift; sourceTree = "<group>"; };
 		6F05DBB32894128700632934 /* Liberty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
 		6F05DBB82894128700632934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			children = (
 				03AD5177289AC51F0097101D /* VPNService.swift */,
 				03D333E228A942F00083B0D0 /* VPNSettings.swift */,
+				03D333F528AC2CB80083B0D0 /* P12Service.swift */,
 			);
 			path = VPN;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			children = (
 				03D333E628A950920083B0D0 /* Keys */,
 				6F45B97728942FE0001076C8 /* Fonts */,
+				03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -242,11 +248,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D333F428AC2B5C0083B0D0 /* AppDelegate.swift in Sources */,
 				6F05DBC92894130100632934 /* DonateScreen.swift in Sources */,
 				03D333EA28A964CE0083B0D0 /* ConnectionState.swift in Sources */,
 				03D333E328A942F00083B0D0 /* VPNSettings.swift in Sources */,
 				6F05DBC82894130100632934 /* ConnectView.swift in Sources */,
 				6F05DBB92894128700632934 /* ContentView.swift in Sources */,
+				03D333F628AC2CB80083B0D0 /* P12Service.swift in Sources */,
 				03D333EC28A96A1F0083B0D0 /* Typealiases.swift in Sources */,
 				03AD5178289AC51F0097101D /* VPNService.swift in Sources */,
 				6F05DBCA2894130100632934 /* AboutScreen.swift in Sources */,

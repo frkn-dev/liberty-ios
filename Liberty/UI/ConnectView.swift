@@ -175,8 +175,8 @@ extension ConnectView {
                                                object: nil,
                                                queue: nil) { notification in
 
-            let nevpnconn = notification.object as! NEVPNConnection
-            if let state = ConnectionState(nevpnconn.status) {
+            let nevpnConnect = notification.object as! NEVPNConnection
+            if let state = ConnectionState(nevpnConnect.status) {
                 connectionState = state
                 
                 print("VPN status is \(state)")

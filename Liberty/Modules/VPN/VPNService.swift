@@ -18,7 +18,7 @@ class VPNService {
     // MARK: - VPN
     
     public func connectVPN() {
-        initVPNTunnelProviderManager()
+        initVPNTunnel()
     }
     
     public func disconnectVPN() {
@@ -36,7 +36,7 @@ class VPNService {
     
     // MARK: - Tunnel Manager init
     
-    func initVPNTunnelProviderManager() {
+    func initVPNTunnel() {
         
         vpnManager.loadFromPreferences { [weak self] error in
             guard let self = self,
@@ -45,14 +45,17 @@ class VPNService {
                 return
             }
             
-            self.vpnManager.isEnabled = true
             self.vpnManager.protocolConfiguration = self.makeProtocolConfig()
-            self.vpnManager.localizedDescription = "lt.fuckrkn1.xyz"
+            self.vpnManager.localizedDescription = "IKEv2 VPN lt.fuckrkn1.xyz"
             
             var rules = [NEOnDemandRule]()
             let rule = NEOnDemandRuleConnect()
             rules.append(rule)
             
+            self.vpnManager.onDemandRules = rules
+            self.vpnManager.isOnDemandEnabled = false
+            
+            self.vpnManager.isEnabled = true
             self.vpnManager.saveToPreferences(completionHandler: { (error) -> Void in
                 guard error == nil else {
                     print("VPN Preferences error: 2 - \(String(describing: error))")
@@ -89,20 +92,6 @@ class VPNService {
         }
     }
     
-    // MARK: - .P12
-    
-    func getP12FromFile() -> Data? {
-        guard let rootCertPath = Bundle.main.url(forResource: "vpnclient", withExtension: "p12") else { return nil }
-        
-        return try? Data(contentsOf: rootCertPath.absoluteURL)
-    }
-    
-    func getCertFromFile() -> Data? {
-        guard let rootCertPath = Bundle.main.url(forResource: "ikev2vpnca", withExtension: "cer") else { return nil }
-        
-        return try? Data(contentsOf: rootCertPath.absoluteURL)
-    }
-    
     // MARK: - Configuring
     
     private func makeProtocolConfig() -> NEVPNProtocolIKEv2 {
@@ -116,21 +105,19 @@ class VPNService {
         vpnProtocol.localIdentifier = VPNServerSettings.shared.vpnLocalIdentifier
         
         vpnProtocol.useExtendedAuthentication = false
-        vpnProtocol.ikeSecurityAssociationParameters.encryptionAlgorithm = .algorithmAES256GCM
+        vpnProtocol.ikeSecurityAssociationParameters.encryptionAlgorithm = .algorithmAES256
         vpnProtocol.ikeSecurityAssociationParameters.diffieHellmanGroup = .group14
         vpnProtocol.ikeSecurityAssociationParameters.integrityAlgorithm = .SHA256
         vpnProtocol.ikeSecurityAssociationParameters.lifetimeMinutes = 1410
         
         vpnProtocol.childSecurityAssociationParameters.encryptionAlgorithm = .algorithmAES128GCM
         vpnProtocol.childSecurityAssociationParameters.diffieHellmanGroup = .group14
-        vpnProtocol.childSecurityAssociationParameters.integrityAlgorithm = .SHA96
         vpnProtocol.childSecurityAssociationParameters.lifetimeMinutes = 1410
         
         vpnProtocol.disableRedirect = true
         
-        vpnProtocol.identityReference = self.getCertFromFile()
         vpnProtocol.identityDataPassword = VPNServerSettings.shared.p12Password
-        vpnProtocol.identityData = self.getP12FromFile()
+        vpnProtocol.identityData = P12Service.shared.getP12FromFile()
         
         return vpnProtocol
     }
