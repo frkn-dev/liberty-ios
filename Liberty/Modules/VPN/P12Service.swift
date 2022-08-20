@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class P12Service {
     
@@ -16,11 +17,23 @@ class P12Service {
     // MARK: - .P12 Data
     
     func getP12FromFile() -> Data? {
-        guard let rootCertPath = Bundle.main.url(forResource: "vpnclient", withExtension: "p12") else { return nil }
+//        #if DEBUG
+//        let p12Name = "dev_fuckrkn1"
+//        #else
+        let p12Name = "fuckrkn1"
+//        #endif
+        
+        guard let rootCertPath = Bundle.main.url(forResource: p12Name, withExtension: "p12") else { return nil }
         
         let data = try? Data(contentsOf: rootCertPath)
         
+        return data
+    }
+    
+    func getPemFromFile() -> Data? {
+        guard let rootCertPath = Bundle.main.url(forResource: "ca", withExtension: "pem") else { return nil }
         
+        let data = try? Data(contentsOf: rootCertPath)
         
         return data
     }
@@ -93,6 +106,70 @@ class P12Service {
         guard importStatus == errSecSuccess else { fatalError() }
         
         return copyResult as? Data
+    }
+    
+    func workWithPEM() {
+        
+        guard let path = Bundle.main.path(forResource: "mycert", ofType: "der") else {
+            return
+        }
+        
+        do {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+            var status: OSStatus = noErr
+            guard let rootCert = SecCertificateCreateWithData(.none, data as CFData) else {
+                return
+            }
+            
+            if status == noErr {
+                print("Install root certificate success")
+            }
+            else if status == errSecDuplicateItem {
+                print("duplicate root certificate entry")
+            }
+            else {
+                print("install root certificate failure")
+            }
+            
+            let policy = SecPolicyCreateBasicX509()
+            var optionalTrust: SecTrust?
+            let certArray = [rootCert]
+            status = SecTrustCreateWithCertificates(certArray as AnyObject,
+                                                    policy,
+                                                    &optionalTrust)
+            guard status == errSecSuccess else {
+                return
+            }
+            let trust = optionalTrust!
+            
+            let exportCerts: CFArray = [rootCert] as CFArray
+            let exportStatus = SecTrustSetAnchorCertificates(trust,
+                                                             exportCerts as CFArray)
+            guard exportStatus == errSecSuccess else { fatalError() }
+            
+            var importCerts: CFArray? = nil
+            let importStatus = SecTrustCopyCustomAnchorCertificates(trust,
+                                                                    &importCerts)
+            guard importStatus == errSecSuccess else { fatalError() }
+            
+            var error: CFError?
+
+            print("Veryfing result: ", SecTrustEvaluateWithError(trust, &error))
+            print(error)
+            
+            let addquery: [String: Any] = [kSecClass as String: kSecClassCertificate,
+                                           kSecValueRef as String: rootCert,
+                                           kSecAttrLabel as String: "lt.fuckrkn1.xyz"]
+            status = SecItemAdd(addquery as CFDictionary, nil)
+            
+            print(status)
+            
+            
+        }
+        
+        catch {
+            print("Trust root certificate failure")
+        }
     }
     
 }

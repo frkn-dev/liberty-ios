@@ -13,7 +13,13 @@ class VPNService {
     
     static let shared = VPNService()
     
-    private let vpnManager = NEVPNManager.shared()
+    let vpnManager = NEVPNManager.shared()
+    
+    // MARK: - Init
+    
+    init() {
+        makeIKEv2ProviderManager()
+    }
     
     // MARK: - VPN
     
@@ -45,17 +51,6 @@ class VPNService {
                 return
             }
             
-            self.vpnManager.protocolConfiguration = self.makeProtocolConfig()
-            self.vpnManager.localizedDescription = "IKEv2 VPN lt.fuckrkn1.xyz"
-            
-            var rules = [NEOnDemandRule]()
-            let rule = NEOnDemandRuleConnect()
-            rules.append(rule)
-            
-            self.vpnManager.onDemandRules = rules
-            self.vpnManager.isOnDemandEnabled = false
-            
-            self.vpnManager.isEnabled = true
             self.vpnManager.saveToPreferences(completionHandler: { (error) -> Void in
                 guard error == nil else {
                     print("VPN Preferences error: 2 - \(String(describing: error))")
@@ -93,6 +88,23 @@ class VPNService {
     }
     
     // MARK: - Configuring
+    
+    private func makeIKEv2ProviderManager() {
+        
+        vpnManager.localizedDescription = "IKEv2 VPN lt.fuckrkn1.xyz"
+        
+        vpnManager.protocolConfiguration = makeProtocolConfig()
+        
+        var rules = [NEOnDemandRule]()
+        let connectionRule = NEOnDemandRuleConnect()
+        connectionRule.interfaceTypeMatch = .any
+        rules.append(connectionRule)
+        
+        vpnManager.onDemandRules = rules
+        vpnManager.isOnDemandEnabled = false
+        
+        vpnManager.isEnabled = true
+    }
     
     private func makeProtocolConfig() -> NEVPNProtocolIKEv2 {
         

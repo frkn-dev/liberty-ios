@@ -12,6 +12,11 @@
 		<key>Liberty.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Tunnel Extension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
 	</dict>
