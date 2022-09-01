@@ -2,6 +2,8 @@
   <img src="./media/logofckrkn.jpg" width="350" title="FuckRKN1">
 </p>
 
+[**English**](./README.md) | [**Русский**](./README-ru.md) 
+
 # FuckRKN1 VPN (iOS)
 VPN client for iOS from [**nezavisimost' Team**](https://github.com/nezavisimost).
 
