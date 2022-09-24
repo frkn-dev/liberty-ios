@@ -20,49 +20,39 @@ struct DonateScreen: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        ScrollView {
+        
+        SupplementaryScreen {
             VStack(alignment: .leading, spacing: 20) {
-                Button {
-                    dismiss()
-                } label: {
-                    Text("\(Image(systemName: "arrow.left")) Back")
-                }
-                .buttonStyle(.plain)
-                .font(.custom("Exo 2", size: 14, relativeTo: .title).bold())
-                
                 Text("We are OpenSource.\nYou can support us.")
-                    .font(.custom("Exo 2", size: 22, relativeTo: .title).bold())
+                    .font(.exoTitle.bold())
                 
                 Text("You can support us with donations or any other contribution to improve the service. Pulling requests and creating issues also helps us a lot.")
-                    .font(.custom("Exo 2", size: 14, relativeTo: .body))
+                    .font(.exoBody)
                 ForEach(supportItems, id: \.0) { item in
                     VStack(alignment: .leading) {
                         Text(item.0)
-                            .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
                         Text(item.1)
-                            .font(.custom("Exo 2", size: 14, relativeTo: .body))
+                            .font(.exoBody)
                     }
                 }
                 
                 
                 HStack {
-                    Button { } label: {
-                        Text("Patreon")
-                    }
-                    .buttonStyle(.plain)
+                    Link("Patreon \(Image(systemName: "arrow.up.right.square"))",
+                         destination: URL(string: "dev/null")!)
+
                     Spacer()
                     
-                    Button { } label: {
-                        Text("Boosty")
-                    }
-                    .buttonStyle(.plain)
+                    Link("Boosty \(Image(systemName: "arrow.up.right.square"))",
+                             destination: URL(string: "dev/null")!)
+                    
                     Spacer()
                 }
-                .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
+                .foregroundColor(.primary)
             }
+            .font(.exoBody.bold())
             .padding()
         }
-        .background(Image("Noize"))
     }
 }
 
