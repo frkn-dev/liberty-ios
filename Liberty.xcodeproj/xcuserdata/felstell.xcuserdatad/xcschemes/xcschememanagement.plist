@@ -14,14 +14,14 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Tunnel Extension.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>03A15DA428B10F9D00D73910</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6F05DBB22894128700632934</key>
 		<dict>
 			<key>primary</key>

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A15DA628B10F9D00D73910 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AD5171289AC04C0097101D /* NetworkExtension.framework */; };
-		03A15DA928B10F9D00D73910 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A15DA828B10F9D00D73910 /* PacketTunnelProvider.swift */; };
-		03A15DAE28B10F9D00D73910 /* Tunnel Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03A15DA528B10F9D00D73910 /* Tunnel Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03A15DBD28B11E6000D73910 /* dev_fuckrkn1.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 03A15DBC28B11E6000D73910 /* dev_fuckrkn1.p12 */; };
 		03AD5172289AC04C0097101D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AD5171289AC04C0097101D /* NetworkExtension.framework */; };
 		03AD5178289AC51F0097101D /* VPNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5177289AC51F0097101D /* VPNService.swift */; };
@@ -19,9 +16,6 @@
 		03D333EC28A96A1F0083B0D0 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333EB28A96A1F0083B0D0 /* Typealiases.swift */; };
 		03D333F428AC2B5C0083B0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */; };
 		03D333F628AC2CB80083B0D0 /* P12Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333F528AC2CB80083B0D0 /* P12Service.swift */; };
-		03D333FC28AD398A0083B0D0 /* ca.pem in Resources */ = {isa = PBXBuildFile; fileRef = 03D333FB28AD398A0083B0D0 /* ca.pem */; };
-		03D333FE28AD5B730083B0D0 /* mycert.der in Resources */ = {isa = PBXBuildFile; fileRef = 03D333FD28AD5B730083B0D0 /* mycert.der */; };
-		03D3340028AE6E530083B0D0 /* vpnclient.mobileconfig in Resources */ = {isa = PBXBuildFile; fileRef = 03D333FF28AE6E530083B0D0 /* vpnclient.mobileconfig */; };
 		6F05DBB72894128700632934 /* LibertyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB62894128700632934 /* LibertyApp.swift */; };
 		6F05DBB92894128700632934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB82894128700632934 /* ContentView.swift */; };
 		6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
@@ -32,16 +26,6 @@
 		6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		03A15DAC28B10F9D00D73910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6F05DBAB2894128700632934 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 03A15DA428B10F9D00D73910;
-			remoteInfo = "Tunnel Extension";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		03A15DB228B10F9D00D73910 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -49,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				03A15DAE28B10F9D00D73910 /* Tunnel Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,10 +40,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03A15DA528B10F9D00D73910 /* Tunnel Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tunnel Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03A15DA828B10F9D00D73910 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
-		03A15DAA28B10F9D00D73910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03A15DAB28B10F9D00D73910 /* Tunnel_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tunnel_Extension.entitlements; sourceTree = "<group>"; };
 		03A15DBC28B11E6000D73910 /* dev_fuckrkn1.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dev_fuckrkn1.p12; sourceTree = "<group>"; };
 		03AD5171289AC04C0097101D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
 		03AD5177289AC51F0097101D /* VPNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNService.swift; sourceTree = "<group>"; };
@@ -70,9 +49,6 @@
 		03D333EB28A96A1F0083B0D0 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D333F528AC2CB80083B0D0 /* P12Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P12Service.swift; sourceTree = "<group>"; };
-		03D333FB28AD398A0083B0D0 /* ca.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca.pem; sourceTree = "<group>"; };
-		03D333FD28AD5B730083B0D0 /* mycert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = mycert.der; sourceTree = "<group>"; };
-		03D333FF28AE6E530083B0D0 /* vpnclient.mobileconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vpnclient.mobileconfig; sourceTree = "<group>"; };
 		6F05DBB32894128700632934 /* Liberty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
 		6F05DBB82894128700632934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,14 +63,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03A15DA228B10F9D00D73910 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03A15DA628B10F9D00D73910 /* NetworkExtension.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6F05DBB02894128700632934 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,16 +74,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03A15DA728B10F9D00D73910 /* Tunnel Extension */ = {
-			isa = PBXGroup;
-			children = (
-				03A15DA828B10F9D00D73910 /* PacketTunnelProvider.swift */,
-				03A15DAA28B10F9D00D73910 /* Info.plist */,
-				03A15DAB28B10F9D00D73910 /* Tunnel_Extension.entitlements */,
-			);
-			path = "Tunnel Extension";
-			sourceTree = "<group>";
-		};
 		03A15DBA28B11DAD00D73910 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,9 +85,6 @@
 		03A15DBB28B11DB800D73910 /* Release */ = {
 			isa = PBXGroup;
 			children = (
-				03D333FF28AE6E530083B0D0 /* vpnclient.mobileconfig */,
-				03D333FD28AD5B730083B0D0 /* mycert.der */,
-				03D333FB28AD398A0083B0D0 /* ca.pem */,
 				03D333E728A950A90083B0D0 /* fuckrkn1.p12 */,
 			);
 			path = Release;
@@ -196,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				6F05DBB52894128700632934 /* Liberty */,
-				03A15DA728B10F9D00D73910 /* Tunnel Extension */,
 				6F05DBB42894128700632934 /* Products */,
 				03AD5170289AC04C0097101D /* Frameworks */,
 			);
@@ -206,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				6F05DBB32894128700632934 /* Liberty.app */,
-				03A15DA528B10F9D00D73910 /* Tunnel Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,23 +207,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03A15DA428B10F9D00D73910 /* Tunnel Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 03A15DAF28B10F9D00D73910 /* Build configuration list for PBXNativeTarget "Tunnel Extension" */;
-			buildPhases = (
-				03A15DA128B10F9D00D73910 /* Sources */,
-				03A15DA228B10F9D00D73910 /* Frameworks */,
-				03A15DA328B10F9D00D73910 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Tunnel Extension";
-			productName = "Tunnel Extension";
-			productReference = 03A15DA528B10F9D00D73910 /* Tunnel Extension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		6F05DBB22894128700632934 /* Liberty */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F05DBC22894128A00632934 /* Build configuration list for PBXNativeTarget "Liberty" */;
@@ -283,7 +219,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				03A15DAD28B10F9D00D73910 /* PBXTargetDependency */,
 			);
 			name = Liberty;
 			packageProductDependencies = (
@@ -302,9 +237,6 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					03A15DA428B10F9D00D73910 = {
-						CreatedOnToolsVersion = 13.4.1;
-					};
 					6F05DBB22894128700632934 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -326,45 +258,26 @@
 			projectRoot = "";
 			targets = (
 				6F05DBB22894128700632934 /* Liberty */,
-				03A15DA428B10F9D00D73910 /* Tunnel Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03A15DA328B10F9D00D73910 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6F05DBB12894128700632934 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D333FC28AD398A0083B0D0 /* ca.pem in Resources */,
 				6F05DBBF2894128A00632934 /* Preview Assets.xcassets in Resources */,
 				03A15DBD28B11E6000D73910 /* dev_fuckrkn1.p12 in Resources */,
 				03D333E828A950A90083B0D0 /* fuckrkn1.p12 in Resources */,
-				03D333FE28AD5B730083B0D0 /* mycert.der in Resources */,
 				6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */,
 				6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */,
-				03D3340028AE6E530083B0D0 /* vpnclient.mobileconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		03A15DA128B10F9D00D73910 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03A15DA928B10F9D00D73910 /* PacketTunnelProvider.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6F05DBAF2894128700632934 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,72 +298,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		03A15DAD28B10F9D00D73910 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 03A15DA428B10F9D00D73910 /* Tunnel Extension */;
-			targetProxy = 03A15DAC28B10F9D00D73910 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		03A15DB028B10F9D00D73910 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = "Tunnel Extension/Tunnel_Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHF63SS3MM;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tunnel Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Tunnel Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nezavisimost.Liberty.Soloshenko.Tunnel-Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		03A15DB128B10F9D00D73910 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = "Tunnel Extension/Tunnel_Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHF63SS3MM;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tunnel Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Tunnel Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nezavisimost.Liberty.Soloshenko.Tunnel-Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		6F05DBC02894128A00632934 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -567,7 +415,6 @@
 		6F05DBC32894128A00632934 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Liberty.entitlements";
@@ -610,7 +457,6 @@
 		6F05DBC42894128A00632934 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Liberty.entitlements";
@@ -653,15 +499,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03A15DAF28B10F9D00D73910 /* Build configuration list for PBXNativeTarget "Tunnel Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				03A15DB028B10F9D00D73910 /* Debug */,
-				03A15DB128B10F9D00D73910 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6F05DBAE2894128700632934 /* Build configuration list for PBXProject "Liberty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
