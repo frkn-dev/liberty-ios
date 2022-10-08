@@ -9,7 +9,7 @@ import Foundation
 
 class VPNServerSettings: NSObject {
     static let shared = VPNServerSettings()
-//
+
 //    #if DEBUG
 //    let p12Password = ""
 //    let vpnServerAddress = "dev.fuckrkn1.xyz"
