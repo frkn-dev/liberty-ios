@@ -54,12 +54,41 @@ struct VPN_WidgetEntryView : View {
     var entry: Provider.Entry
     var family: WidgetFamily = .systemSmall
     
-    let isConnected = Defaults.ConnectionData.connectionStatus == "Connected"
+    var deeplink: String {
+        switch Defaults.ConnectionData.connectionStatus {
+        case "Connected":
+            return "widget://disconnectVPN"
+        default:
+            return "widget://connectVPN"
+        }
+    }
+    
+    var buttonTitle: String {
+        switch Defaults.ConnectionData.connectionStatus {
+        case "Connected":
+            return "Disconnect"
+        case "Connecting":
+            return "Connecting..."
+        default:
+            return "Connect"
+        }
+    }
+        
+    var backgroundImage: String {
+        switch Defaults.ConnectionData.connectionStatus {
+        case "Connected":
+            return "ConnectedBackground"
+        case "Connecting":
+            return "ConnectedBackground"
+        default:
+            return "DisconnectBackground"
+        }
+    }
     
     var body: some View {
         VStack {
             Image("DisconnectBird")
-            Button(isConnected ? "Disconnect" : "Connect") {
+            Button(buttonTitle) {
             }
             .buttonStyle(.bordered)
             .cornerRadius(4)
@@ -67,14 +96,14 @@ struct VPN_WidgetEntryView : View {
             .tint(.black)
             .font(.custom("Exo 2", size: 12, relativeTo: .body).bold())
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)   // << this one !!
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
         .background() {
-            Image(isConnected ? "ConnectedBackground" : "DisconnectBackground")
+            Image(backgroundImage)
                 .resizable()
                 .scaledToFill()
         }
-        .widgetURL(URL(string: isConnected ? "widget://disconnectVPN" : "widget://connectVPN"))
+        .widgetURL(URL(string: deeplink))
     }
 }
 
