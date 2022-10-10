@@ -118,6 +118,7 @@ struct VPN_Widget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             VPN_WidgetEntryView(entry: entry)
         }
+        .supportedFamilies([.systemSmall])
         .configurationDisplayName("Liberty iOS")
         .description("This is a FuckRKN1 VPN widget")
     }
