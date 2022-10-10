@@ -7,6 +7,7 @@
 
 import Combine
 import SwiftUI
+import WidgetKit
 import NetworkExtension
 
 struct ConnectView: View {
@@ -152,7 +153,9 @@ struct ConnectView: View {
             .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
             
 #endif
-        }.onAppear(perform: setupValues)
+        }
+        .onAppear(perform: lastConnectionState)
+        .onAppear(perform: setupValues)
     }
 }
 
@@ -179,8 +182,28 @@ extension ConnectView {
             if let state = ConnectionState(nevpnConnect.status) {
                 connectionState = state
                 
+                updateWidgetWith(state)
+                
                 print("VPN status is \(state)")
             }
+        }
+    }
+    
+    private func lastConnectionState() {
+        
+        guard let state = ConnectionState(vpnService.vpnManager.connection.status)
+        else { return }
+        
+        connectionState = state
+        updateWidgetWith(state)
+    }
+    
+    private func updateWidgetWith(_ state: ConnectionState) {
+        
+        Defaults.ConnectionData.connectionStatus = state.rawValue
+        
+        Delay().execute(after: 0.5) {
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
 }

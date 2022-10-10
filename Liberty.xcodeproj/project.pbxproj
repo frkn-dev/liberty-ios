@@ -7,8 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03507E6E28F3A8A6004D0D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B33D2328F1DB31006F7BB3 /* Assets.xcassets */; };
+		03507E6F28F3A923004D0D0F /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
+		03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E7328F3B215004D0D0F /* DeeplinkParser.swift */; };
+		03507E9D28F3B954004D0D0F /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E9C28F3B954004D0D0F /* Defaults.swift */; };
+		03507E9E28F3B959004D0D0F /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E9C28F3B954004D0D0F /* Defaults.swift */; };
+		03507EA128F40E78004D0D0F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA028F40E78004D0D0F /* Delay.swift */; };
+		03507EA228F40E78004D0D0F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA028F40E78004D0D0F /* Delay.swift */; };
+		03507EA428F4BAC9004D0D0F /* WidgetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */; };
+		03507EA528F4BB27004D0D0F /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333E928A964CE0083B0D0 /* ConnectionState.swift */; };
+		03507EA728F4BBDD004D0D0F /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA628F4BBDD004D0D0F /* WidgetContent.swift */; };
+		03507EA928F4BF77004D0D0F /* VPNChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA828F4BF77004D0D0F /* VPNChecker.swift */; };
 		03A15DBD28B11E6000D73910 /* dev_fuckrkn1.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 03A15DBC28B11E6000D73910 /* dev_fuckrkn1.p12 */; };
 		03AD5178289AC51F0097101D /* VPNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5177289AC51F0097101D /* VPNService.swift */; };
+		03B33D1C28F1DB30006F7BB3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */; };
+		03B33D1E28F1DB30006F7BB3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B33D1D28F1DB30006F7BB3 /* SwiftUI.framework */; };
+		03B33D2128F1DB30006F7BB3 /* VPN_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2028F1DB30006F7BB3 /* VPN_Widget.swift */; };
+		03B33D2628F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
+		03B33D2728F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
+		03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03D333E328A942F00083B0D0 /* VPNSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333E228A942F00083B0D0 /* VPNSettings.swift */; };
 		03D333E828A950A90083B0D0 /* fuckrkn1.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 03D333E728A950A90083B0D0 /* fuckrkn1.p12 */; };
 		03D333EA28A964CE0083B0D0 /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333E928A964CE0083B0D0 /* ConnectionState.swift */; };
@@ -25,6 +42,16 @@
 		6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		03B33D2828F1DB31006F7BB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F05DBAB2894128700632934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03B33D1828F1DB30006F7BB3;
+			remoteInfo = "VPN WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		03A15DB228B10F9D00D73910 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -32,6 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,8 +67,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03507E7328F3B215004D0D0F /* DeeplinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkParser.swift; sourceTree = "<group>"; };
+		03507E9A28F3B819004D0D0F /* VPN WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VPN WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		03507E9C28F3B954004D0D0F /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		03507EA028F40E78004D0D0F /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUtils.swift; sourceTree = "<group>"; };
+		03507EA628F4BBDD004D0D0F /* WidgetContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetContent.swift; sourceTree = "<group>"; };
+		03507EA828F4BF77004D0D0F /* VPNChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNChecker.swift; sourceTree = "<group>"; };
 		03A15DBC28B11E6000D73910 /* dev_fuckrkn1.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dev_fuckrkn1.p12; sourceTree = "<group>"; };
 		03AD5177289AC51F0097101D /* VPNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNService.swift; sourceTree = "<group>"; };
+		03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VPN WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		03B33D1D28F1DB30006F7BB3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		03B33D2028F1DB30006F7BB3 /* VPN_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPN_Widget.swift; sourceTree = "<group>"; };
+		03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = VPN_Widget.intentdefinition; sourceTree = "<group>"; };
+		03B33D2328F1DB31006F7BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03B33D2528F1DB31006F7BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D333E228A942F00083B0D0 /* VPNSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNSettings.swift; sourceTree = "<group>"; };
 		03D333E728A950A90083B0D0 /* fuckrkn1.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fuckrkn1.p12; sourceTree = "<group>"; };
 		03D333E928A964CE0083B0D0 /* ConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionState.swift; sourceTree = "<group>"; };
@@ -61,6 +103,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		03B33D1628F1DB30006F7BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B33D1E28F1DB30006F7BB3 /* SwiftUI.framework in Frameworks */,
+				03B33D1C28F1DB30006F7BB3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F05DBB02894128700632934 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +122,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03507E9B28F3B849004D0D0F /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				6F05DBBC2894128A00632934 /* Liberty.entitlements */,
+				03507E9A28F3B819004D0D0F /* VPN WidgetExtension.entitlements */,
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
+		03507E9F28F40CAF004D0D0F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				03507E9C28F3B954004D0D0F /* Defaults.swift */,
+				03507EA028F40E78004D0D0F /* Delay.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		03507EAA28F4C411004D0D0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */,
+				03507EA628F4BBDD004D0D0F /* WidgetContent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		03A15DBA28B11DAD00D73910 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				03AD5173289AC2080097101D /* VPN */,
+				03507E7328F3B215004D0D0F /* DeeplinkParser.swift */,
+				03507EA828F4BF77004D0D0F /* VPNChecker.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -114,15 +194,36 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		03B33D1A28F1DB30006F7BB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */,
+				03B33D1D28F1DB30006F7BB3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03B33D1F28F1DB30006F7BB3 /* VPN Widget */ = {
+			isa = PBXGroup;
+			children = (
+				03B33D2028F1DB30006F7BB3 /* VPN_Widget.swift */,
+				03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */,
+				03507EAA28F4C411004D0D0F /* Models */,
+				03B33D2328F1DB31006F7BB3 /* Assets.xcassets */,
+				03B33D2528F1DB31006F7BB3 /* Info.plist */,
+			);
+			path = "VPN Widget";
+			sourceTree = "<group>";
+		};
 		03D333DC28A916010083B0D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */,
+				03507E9B28F3B849004D0D0F /* Entitlements */,
 				6F05DBBA2894128A00632934 /* Assets.xcassets */,
-				6F05DBBC2894128A00632934 /* Liberty.entitlements */,
 				6F05DBBD2894128A00632934 /* Preview Content */,
 				03D333E628A950920083B0D0 /* Keys */,
 				6F45B97728942FE0001076C8 /* Fonts */,
-				03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				6F05DBB52894128700632934 /* Liberty */,
+				03B33D1F28F1DB30006F7BB3 /* VPN Widget */,
+				03B33D1A28F1DB30006F7BB3 /* Frameworks */,
 				6F05DBB42894128700632934 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				6F05DBB32894128700632934 /* Liberty.app */,
+				03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +259,7 @@
 		6F05DBB52894128700632934 /* Liberty */ = {
 			isa = PBXGroup;
 			children = (
+				03507E9F28F40CAF004D0D0F /* Utils */,
 				6F45B97F289433E5001076C8 /* Info.plist */,
 				6F05DBB62894128700632934 /* LibertyApp.swift */,
 				6F45B97628942FCC001076C8 /* UI */,
@@ -195,6 +300,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		03B33D1828F1DB30006F7BB3 /* VPN WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B33D2D28F1DB31006F7BB3 /* Build configuration list for PBXNativeTarget "VPN WidgetExtension" */;
+			buildPhases = (
+				03B33D1528F1DB30006F7BB3 /* Sources */,
+				03B33D1628F1DB30006F7BB3 /* Frameworks */,
+				03B33D1728F1DB30006F7BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VPN WidgetExtension";
+			productName = "VPN WidgetExtension";
+			productReference = 03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		6F05DBB22894128700632934 /* Liberty */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F05DBC22894128A00632934 /* Build configuration list for PBXNativeTarget "Liberty" */;
@@ -207,6 +329,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				03B33D2928F1DB31006F7BB3 /* PBXTargetDependency */,
 			);
 			name = Liberty;
 			packageProductDependencies = (
@@ -222,9 +345,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					03B33D1828F1DB30006F7BB3 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 					6F05DBB22894128700632934 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -246,11 +372,21 @@
 			projectRoot = "";
 			targets = (
 				6F05DBB22894128700632934 /* Liberty */,
+				03B33D1828F1DB30006F7BB3 /* VPN WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		03B33D1728F1DB30006F7BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03507E6F28F3A923004D0D0F /* Exo2.ttf in Resources */,
+				03507E6E28F3A8A6004D0D0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F05DBB12894128700632934 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,27 +402,113 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		03B33D1528F1DB30006F7BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03507E9E28F3B959004D0D0F /* Defaults.swift in Sources */,
+				03507EA228F40E78004D0D0F /* Delay.swift in Sources */,
+				03507EA428F4BAC9004D0D0F /* WidgetUtils.swift in Sources */,
+				03B33D2128F1DB30006F7BB3 /* VPN_Widget.swift in Sources */,
+				03B33D2628F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */,
+				03507EA728F4BBDD004D0D0F /* WidgetContent.swift in Sources */,
+				03507EA528F4BB27004D0D0F /* ConnectionState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F05DBAF2894128700632934 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				03D333F428AC2B5C0083B0D0 /* AppDelegate.swift in Sources */,
+				03507E9D28F3B954004D0D0F /* Defaults.swift in Sources */,
 				6F05DBC92894130100632934 /* DonateScreen.swift in Sources */,
+				03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */,
+				03507EA928F4BF77004D0D0F /* VPNChecker.swift in Sources */,
 				03D333EA28A964CE0083B0D0 /* ConnectionState.swift in Sources */,
 				03D333E328A942F00083B0D0 /* VPNSettings.swift in Sources */,
 				6F05DBC82894130100632934 /* ConnectView.swift in Sources */,
 				6F05DBB92894128700632934 /* ContentView.swift in Sources */,
 				03D333F628AC2CB80083B0D0 /* P12Service.swift in Sources */,
+				03507EA128F40E78004D0D0F /* Delay.swift in Sources */,
 				03D333EC28A96A1F0083B0D0 /* Typealiases.swift in Sources */,
 				03AD5178289AC51F0097101D /* VPNService.swift in Sources */,
 				6F05DBCA2894130100632934 /* AboutScreen.swift in Sources */,
 				6F05DBB72894128700632934 /* LibertyApp.swift in Sources */,
+				03B33D2728F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		03B33D2928F1DB31006F7BB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03B33D1828F1DB30006F7BB3 /* VPN WidgetExtension */;
+			targetProxy = 03B33D2828F1DB31006F7BB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		03B33D2B28F1DB31006F7BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/VPN WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VPN Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VPN Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nezavisimost.Liberty.Soloshenko.VPN-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03B33D2C28F1DB31006F7BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/VPN WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VPN Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VPN Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nezavisimost.Liberty.Soloshenko.VPN-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		6F05DBC02894128A00632934 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -403,9 +625,10 @@
 		6F05DBC32894128A00632934 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Liberty.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
@@ -445,9 +668,10 @@
 		6F05DBC42894128A00632934 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Liberty.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
@@ -487,6 +711,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		03B33D2D28F1DB31006F7BB3 /* Build configuration list for PBXNativeTarget "VPN WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B33D2B28F1DB31006F7BB3 /* Debug */,
+				03B33D2C28F1DB31006F7BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6F05DBAE2894128700632934 /* Build configuration list for PBXProject "Liberty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

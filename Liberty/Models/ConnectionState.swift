@@ -8,7 +8,7 @@
 import Foundation
 import NetworkExtension
 
-public enum ConnectionState: String {
+public enum ConnectionState: String, Codable {
     
     case disconnecting = "Disconnecting"
     case disconnected = "Disconnected"
