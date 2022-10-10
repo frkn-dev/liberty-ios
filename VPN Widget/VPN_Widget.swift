@@ -9,32 +9,31 @@ import WidgetKit
 import SwiftUI
 import Intents
 
-struct Provider: IntentTimelineProvider {
+struct Provider: TimelineProvider {
     
-    func placeholder(in context: Context) -> Entry {
-        Entry(date: Date(), configuration: ConfigurationIntent())
+    func placeholder(in context: Context) -> WidgetContent {
+        WidgetContent(date: Date(),
+                      connectionState: .disconnected)
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Entry) -> ()) {
+    func getSnapshot(in context: Context, completion: @escaping (WidgetContent) -> Void) {
         
-        if context.isPreview {
-            let entry = Entry(date: Date(), configuration: ConfigurationIntent())
-            completion(entry)
-        } else {
-            let entry = Entry(date: Date(), configuration: ConfigurationIntent())
-            completion(entry)
-        }
+        let entry: WidgetContent
+        entry = WidgetContent(date: Date(),
+                              connectionState: WidgetUtils.connectionState)
+        completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<WidgetContent>) -> Void) {
         
-        var entries: [Entry] = [Entry(date: Date(), configuration: ConfigurationIntent())]
+        var entries: [WidgetContent] = []
         
         let everySecond: TimeInterval = 1
         var currentDate = Date()
         let endDate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)!
         while currentDate < endDate {
-            let entry = Entry(date: Date(), configuration: ConfigurationIntent())
+            let entry = WidgetContent(date: Date(),
+                                      connectionState: WidgetUtils.connectionState)
             entries.append(entry)
             currentDate += everySecond
         }
@@ -115,7 +114,7 @@ struct VPN_Widget: Widget {
     let kind: String = "Liberty iOS widget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
             VPN_WidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemSmall])
@@ -126,7 +125,7 @@ struct VPN_Widget: Widget {
 
 struct VPN_Widget_Previews: PreviewProvider {
     static var previews: some View {
-        VPN_WidgetEntryView(entry: Entry(date: Date(), configuration: ConfigurationIntent()))
+        VPN_WidgetEntryView(entry: WidgetContent(date: Date(), connectionState: WidgetUtils.connectionState))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

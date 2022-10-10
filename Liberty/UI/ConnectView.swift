@@ -190,7 +190,9 @@ extension ConnectView {
     }
     
     private func lastConnectionState() {
-        guard let state = ConnectionState(vpnService.vpnManager.connection.status) else { return }
+        
+        let state: ConnectionState = VPNChecker.isVpnActive() ? .connected : .disconnected
+        
         connectionState = state
         updateWidgetWith(state)
     }
