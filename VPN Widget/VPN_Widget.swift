@@ -56,32 +56,31 @@ struct VPN_WidgetEntryView : View {
     
     var deeplink: String {
         switch Defaults.ConnectionData.connectionStatus {
-        case "Connected":
-            return "widget://disconnectVPN"
-        default:
-            return "widget://connectVPN"
+        case "Connected": return "widget://disconnectVPN"
+        default: return "widget://connectVPN"
         }
     }
     
     var buttonTitle: String {
         switch Defaults.ConnectionData.connectionStatus {
-        case "Connected":
-            return "Disconnect"
-        case "Connecting":
-            return "Connecting..."
-        default:
-            return "Connect"
+        case "Connected": return "Connected"
+        case "Connecting": return "Connecting..."
+        default: return "Disconnected"
         }
     }
         
     var backgroundImage: String {
         switch Defaults.ConnectionData.connectionStatus {
-        case "Connected":
-            return "ConnectedBackground"
-        case "Connecting":
-            return "ConnectedBackground"
-        default:
-            return "DisconnectBackground"
+        case "Connected": return "ConnectedBackground"
+        case "Connecting": return "ConnectedBackground"
+        default: return "DisconnectBackground"
+        }
+    }
+    
+    var borderColor: Color {
+        switch Defaults.ConnectionData.connectionStatus {
+        case "Connected": return Color(red: 25/255, green: 184/255, blue: 146/255)
+        default: return Color(red: 134/255, green: 134/255, blue: 134/255)
         }
     }
     
@@ -90,8 +89,11 @@ struct VPN_WidgetEntryView : View {
             Image("DisconnectBird")
             Button(buttonTitle) {
             }
-            .buttonStyle(.bordered)
-            .cornerRadius(4)
+            .overlay(
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(borderColor, lineWidth: 1)
+                    .padding(EdgeInsets(top: -6, leading: -14, bottom: -6, trailing: -14))
+            )
             .padding(.horizontal, 22)
             .tint(.black)
             .font(.custom("Exo 2", size: 12, relativeTo: .body).bold())
