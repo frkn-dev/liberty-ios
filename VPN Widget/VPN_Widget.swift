@@ -54,31 +54,31 @@ struct VPN_WidgetEntryView : View {
     var family: WidgetFamily = .systemSmall
     
     var deeplink: String {
-        switch Defaults.ConnectionData.connectionStatus {
-        case "Connected": return "widget://disconnectVPN"
+        switch entry.connectionState {
+        case .connected: return "widget://disconnectVPN"
         default: return "widget://connectVPN"
         }
     }
     
     var buttonTitle: String {
-        switch Defaults.ConnectionData.connectionStatus {
-        case "Connected": return "Connected"
-        case "Connecting": return "Connecting..."
+        switch entry.connectionState {
+        case .connected: return "Connected"
+        case .connecting: return "Connecting..."
         default: return "Disconnected"
         }
     }
         
     var backgroundImage: String {
-        switch Defaults.ConnectionData.connectionStatus {
-        case "Connected": return "ConnectedBackground"
-        case "Connecting": return "ConnectedBackground"
+        switch entry.connectionState {
+        case .connected: return "ConnectedBackground"
+        case .connecting: return "ConnectedBackground"
         default: return "DisconnectBackground"
         }
     }
     
     var borderColor: Color {
-        switch Defaults.ConnectionData.connectionStatus {
-        case "Connected": return Color(red: 25/255, green: 184/255, blue: 146/255)
+        switch entry.connectionState {
+        case .connected: return Color(red: 25/255, green: 184/255, blue: 146/255)
         default: return Color(red: 134/255, green: 134/255, blue: 134/255)
         }
     }
@@ -86,6 +86,14 @@ struct VPN_WidgetEntryView : View {
     var body: some View {
         VStack {
             Image("DisconnectBird")
+                .background() {
+                    if entry.connectionState == .connecting {
+                            Image("ConnectingFire")
+                                .resizable()
+                                .padding(.vertical, -40)
+                                .padding(.horizontal, -30)
+                    }
+                }
             Button(buttonTitle) {
             }
             .overlay(

@@ -24,6 +24,7 @@ class VPNService {
     // MARK: - VPN
     
     public func connectVPN() {
+        
         initVPNTunnel()
     }
     

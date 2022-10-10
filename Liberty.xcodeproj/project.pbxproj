@@ -140,6 +140,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		03507EAA28F4C411004D0D0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */,
+				03507EA628F4BBDD004D0D0F /* WidgetContent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		03A15DBA28B11DAD00D73910 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,9 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				03B33D2028F1DB30006F7BB3 /* VPN_Widget.swift */,
-				03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */,
-				03507EA628F4BBDD004D0D0F /* WidgetContent.swift */,
 				03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */,
+				03507EAA28F4C411004D0D0F /* Models */,
 				03B33D2328F1DB31006F7BB3 /* Assets.xcassets */,
 				03B33D2528F1DB31006F7BB3 /* Info.plist */,
 			);

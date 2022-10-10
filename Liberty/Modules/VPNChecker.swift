@@ -14,10 +14,10 @@ struct VPNChecker {
     ]
 
     static func isVpnActive() -> Bool {
-        let test = CFNetService
-        
         guard let cfDict = CFNetworkCopySystemProxySettings() else { return false }
+        
         let nsDict = cfDict.takeRetainedValue() as NSDictionary
+        
         guard let keys = nsDict["__SCOPED__"] as? NSDictionary,
             let allKeys = keys.allKeys as? [String] else { return false }
 
