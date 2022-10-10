@@ -23,6 +23,7 @@ class DeeplinkParser {
         
         switch deeplink.absoluteString {
         case "widget://connectVPN": vpnService.connectVPN()
+        case "widget://disconnectVPN": vpnService.disconnectVPN()
         default: break
         }
     }

@@ -54,17 +54,27 @@ struct VPN_WidgetEntryView : View {
     var entry: Provider.Entry
     var family: WidgetFamily = .systemSmall
     
+    let isConnected = Defaults.ConnectionData.connectionStatus == "Connected"
+    
     var body: some View {
         VStack {
             Image("DisconnectBird")
-            Button("Disconnected") {
+            Button(isConnected ? "Disconnect" : "Connect") {
             }
             .buttonStyle(.bordered)
             .cornerRadius(4)
             .padding(.horizontal, 22)
             .tint(.black)
             .font(.custom("Exo 2", size: 12, relativeTo: .body).bold())
-        }.widgetURL(URL(string: "widget://connectVPN"))
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)   // << this one !!
+        .edgesIgnoringSafeArea(.all)
+        .background() {
+            Image(isConnected ? "ConnectedBackground" : "DisconnectBackground")
+                .resizable()
+                .scaledToFill()
+        }
+        .widgetURL(URL(string: isConnected ? "widget://disconnectVPN" : "widget://connectVPN"))
     }
 }
 
