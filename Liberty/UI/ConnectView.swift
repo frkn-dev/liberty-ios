@@ -12,7 +12,7 @@ import NetworkExtension
 
 struct ConnectView: View {
     
-    let vpnService = VPNService.shared
+    let vpnService = WireGuardService.shared
     
     enum SupplementaryScreen: Int, Identifiable {
         var id: Int {
@@ -191,11 +191,11 @@ extension ConnectView {
     
     private func lastConnectionState() {
         
-        guard let state = ConnectionState(vpnService.vpnManager.connection.status)
-        else { return }
-        
-        connectionState = state
-        updateWidgetWith(state)
+//        guard let state = ConnectionState(vpnService.vpnManager.connection.status)
+//        else { return }
+//        
+//        connectionState = state
+//        updateWidgetWith(state)
     }
     
     private func updateWidgetWith(_ state: ConnectionState) {
