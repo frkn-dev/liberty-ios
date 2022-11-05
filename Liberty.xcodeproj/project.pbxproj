@@ -45,6 +45,7 @@
 		03E866E32915E6B1002F3E6B /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866E22915E6B1002F3E6B /* TunnelKitWireGuard */; };
 		03E866E52915E6B1002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866E42915E6B1002F3E6B /* TunnelKitWireGuardAppExtension */; };
 		03E866E82915E7C8002F3E6B /* VPNStatus+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */; };
+		03E866EA29167140002F3E6B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E866E929167140002F3E6B /* String+Extensions.swift */; };
 		6F05DBB72894128700632934 /* LibertyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB62894128700632934 /* LibertyApp.swift */; };
 		6F05DBB92894128700632934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB82894128700632934 /* ContentView.swift */; };
 		6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
@@ -131,6 +132,7 @@
 		03E866D92915E4EB002F3E6B /* VPNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNService.swift; sourceTree = "<group>"; };
 		03E866DC2915E63D002F3E6B /* VPNStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VPNStatus+Extensions.swift"; sourceTree = "<group>"; };
 		03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VPNStatus+Extensions.swift"; sourceTree = "<group>"; };
+		03E866E929167140002F3E6B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		6F05DBB32894128700632934 /* Liberty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
 		6F05DBB82894128700632934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */,
+				03E866E929167140002F3E6B /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				03507E9D28F3B954004D0D0F /* Defaults.swift in Sources */,
 				6F05DBC92894130100632934 /* DonateScreen.swift in Sources */,
 				03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */,
+				03E866EA29167140002F3E6B /* String+Extensions.swift in Sources */,
 				03D333E328A942F00083B0D0 /* VPNSettings.swift in Sources */,
 				6F05DBC82894130100632934 /* ConnectView.swift in Sources */,
 				6F05DBB92894128700632934 /* ContentView.swift in Sources */,

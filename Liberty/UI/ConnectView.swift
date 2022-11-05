@@ -132,7 +132,7 @@ struct ConnectView: View {
                 .buttonStyle(.plain)
                 .foregroundColor(.primary)
                 .frame(width: 110, height: 110)
-                Text(connectionState.rawValue)
+                Text(connectionState.rawValue.uppercasedFirst())
                     .font(.custom("Exo 2", size: 18, relativeTo: .body).bold())
             }
         }
@@ -179,8 +179,8 @@ extension ConnectView {
                                                object: nil,
                                                queue: nil) { notification in
 
-            let nevpnConnect = notification.object as! NEVPNConnection
-            if let state = VPNStatus(nevpnConnect.status) {
+            if let nevpnConnect = notification.object as? NEVPNConnection,
+               let state = VPNStatus(nevpnConnect.status) {
                 connectionState = state
                 
                 updateWidgetWith(state)
