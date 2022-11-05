@@ -6,5 +6,6 @@
 //
 
 import Foundation
+import TunnelKit
 
-typealias UpdateStateHandler = (ConnectionState) -> Void
+typealias UpdateStateHandler = (VPNStatus) -> Void

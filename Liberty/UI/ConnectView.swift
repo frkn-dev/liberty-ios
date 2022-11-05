@@ -9,6 +9,7 @@ import Combine
 import SwiftUI
 import WidgetKit
 import NetworkExtension
+import TunnelKit
 
 struct ConnectView: View {
     
@@ -25,7 +26,7 @@ struct ConnectView: View {
     
     // MARK: - View
     
-    @State var connectionState: ConnectionState = .disconnected
+    @State var connectionState: VPNStatus = .disconnected
     @State var shownSupplementaryScreen: SupplementaryScreen? = nil
     
     var body: some View {
@@ -179,7 +180,7 @@ extension ConnectView {
                                                queue: nil) { notification in
 
             let nevpnConnect = notification.object as! NEVPNConnection
-            if let state = ConnectionState(nevpnConnect.status) {
+            if let state = VPNStatus(nevpnConnect.status) {
                 connectionState = state
                 
                 updateWidgetWith(state)
@@ -191,14 +192,13 @@ extension ConnectView {
     
     private func lastConnectionState() {
         
-//        guard let state = ConnectionState(vpnService.vpnManager.connection.status)
-//        else { return }
-//        
-//        connectionState = state
-//        updateWidgetWith(state)
+        let state = vpnService.vpnStatus
+        
+        connectionState = state
+        updateWidgetWith(state)
     }
     
-    private func updateWidgetWith(_ state: ConnectionState) {
+    private func updateWidgetWith(_ state: VPNStatus) {
         
         Defaults.ConnectionData.connectionStatus = state.rawValue
         

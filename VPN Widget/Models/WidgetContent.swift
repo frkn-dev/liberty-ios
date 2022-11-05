@@ -6,12 +6,12 @@
 //
 
 import Foundation
+import TunnelKit
 import WidgetKit
 
 struct WidgetContent: Codable, TimelineEntry {
     
     var date = Date()
 
-    let connectionState: ConnectionState
-
+    let connectionState: VPNStatus
 }

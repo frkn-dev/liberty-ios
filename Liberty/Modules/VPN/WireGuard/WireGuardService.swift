@@ -19,9 +19,7 @@ class WireGuardService {
     private let appGroup = "com.nezavisimost.Liberty.Soloshenko"
     
     private let vpn = NetworkExtensionVPN()
-    private var vpnStatus: VPNStatus = .disconnected
-    
-    
+    var vpnStatus: VPNStatus = .disconnected
     
     // MARK: - Init
     
