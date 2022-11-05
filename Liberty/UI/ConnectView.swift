@@ -9,10 +9,11 @@ import Combine
 import SwiftUI
 import WidgetKit
 import NetworkExtension
+import TunnelKit
 
 struct ConnectView: View {
     
-    let vpnService = VPNService.shared
+    let vpnService = WireGuardService.shared
     
     enum SupplementaryScreen: Int, Identifiable {
         var id: Int {
@@ -25,7 +26,7 @@ struct ConnectView: View {
     
     // MARK: - View
     
-    @State var connectionState: ConnectionState = .disconnected
+    @State var connectionState: VPNStatus = .disconnected
     @State var shownSupplementaryScreen: SupplementaryScreen? = nil
     
     var body: some View {
@@ -136,7 +137,7 @@ struct ConnectView: View {
                         PulseView()
                     }
                 }
-                Text(connectionState.rawValue)
+                Text(connectionState.rawValue.uppercasedFirst())
                     .font(.custom("Exo 2", size: 18, relativeTo: .body).bold())
             }
         }
@@ -228,8 +229,8 @@ extension ConnectView {
                                                object: nil,
                                                queue: nil) { notification in
 
-            let nevpnConnect = notification.object as! NEVPNConnection
-            if let state = ConnectionState(nevpnConnect.status) {
+            if let nevpnConnect = notification.object as? NEVPNConnection,
+               let state = VPNStatus(nevpnConnect.status) {
                 connectionState = state
                 
                 updateWidgetWith(state)
@@ -241,14 +242,13 @@ extension ConnectView {
     
     private func lastConnectionState() {
         
-        guard let state = ConnectionState(vpnService.vpnManager.connection.status)
-        else { return }
+        let state = vpnService.vpnStatus
         
         connectionState = state
         updateWidgetWith(state)
     }
     
-    private func updateWidgetWith(_ state: ConnectionState) {
+    private func updateWidgetWith(_ state: VPNStatus) {
         
         Defaults.ConnectionData.connectionStatus = state.rawValue
         

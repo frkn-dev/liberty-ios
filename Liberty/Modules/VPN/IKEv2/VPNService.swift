@@ -113,9 +113,9 @@ class VPNService {
         
         vpnProtocol.certificateType = .RSA
         vpnProtocol.authenticationMethod = .certificate
-        vpnProtocol.serverAddress = VPNServerSettings.shared.vpnServerAddress
-        vpnProtocol.remoteIdentifier = VPNServerSettings.shared.vpnRemoteIdentifier
-        vpnProtocol.localIdentifier = VPNServerSettings.shared.vpnLocalIdentifier
+        vpnProtocol.serverAddress = VPNServerSettings.shared.ikev2ServerAddress
+        vpnProtocol.remoteIdentifier = VPNServerSettings.shared.ikev2RemoteIdentifier
+        vpnProtocol.localIdentifier = VPNServerSettings.shared.ikev2LocalIdentifier
         
         vpnProtocol.useExtendedAuthentication = false
         vpnProtocol.ikeSecurityAssociationParameters.encryptionAlgorithm = .algorithmAES256
