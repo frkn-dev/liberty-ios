@@ -132,6 +132,11 @@ struct ConnectView: View {
                 .buttonStyle(.plain)
                 .foregroundColor(.primary)
                 .frame(width: 110, height: 110)
+                .background() {
+                    if connectionState == .connected {
+                        PulseView()
+                    }
+                }
                 Text(connectionState.rawValue.uppercasedFirst())
                     .font(.custom("Exo 2", size: 18, relativeTo: .body).bold())
             }
@@ -160,6 +165,49 @@ struct ConnectView: View {
     }
 }
 
+struct PulseView: View {
+    
+    var pulseColor = Color(red: 25/255, green: 184/255, blue: 146/255)
+    
+    @State var animate = false
+    
+    var body: some View {
+        ZStack {
+            
+            Circle()
+                .fill(pulseColor)
+                .frame(width: 300, height: 300)
+                .opacity(animate ? 0 : 0.25)
+                .scaleEffect(animate ? 1 : 0.75)
+            
+            Circle()
+                .fill(pulseColor)
+                .frame(width: 300, height: 300)
+                .opacity(animate ? 0.25 : 0.5)
+                .scaleEffect(animate ? 0.75 : 0.5)
+
+            Circle()
+                .fill(pulseColor)
+                .frame(width: 300, height: 300)
+                .opacity(animate ? 0.5 : 0.75)
+                .scaleEffect(animate ? 0.5 : 0.25)
+
+            Circle()
+                .fill(pulseColor)
+                .frame(width: 300, height: 300)
+                .opacity(animate ? 0.75 : 1)
+                .scaleEffect(animate ? 0.25 : 0)
+            
+            Circle().foregroundColor(.white).frame(width: 108, height: 108)
+        }
+        .onAppear {
+            animate.toggle()
+        }
+        .animation(Animation.linear(duration: 3).repeatForever(autoreverses: false),
+                   value: animate)
+    }
+}
+
 struct ConnectView_Previews: PreviewProvider {
     static var previews: some View {
         ConnectView()
@@ -172,6 +220,8 @@ struct ConnectView_Previews: PreviewProvider {
 }
 
 extension ConnectView {
+ 
+    // MARK: - Start functions
     
     private func setupValues() {
         
