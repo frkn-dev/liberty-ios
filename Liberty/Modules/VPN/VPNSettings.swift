@@ -10,15 +10,19 @@ import Foundation
 class VPNServerSettings: NSObject {
     static let shared = VPNServerSettings()
 
-//    #if DEBUG
-//    let p12Password = ""
-//    let vpnServerAddress = "dev.fuckrkn1.xyz"
-//    let vpnRemoteIdentifier = "dev.fuckrkn1.xyz"
-//    let vpnLocalIdentifier = "fuckrkn1"
-//    #else
+    // MARK: - IKEv2
+    #if DEBUG
     let p12Password = ""
-    let vpnServerAddress = "lt.fuckrkn1.xyz"
-    let vpnRemoteIdentifier = "lt.fuckrkn1.xyz"
-    let vpnLocalIdentifier = "vpnclient"
-//    #endif
+    let ikev2ServerAddress = "lt.fuckrkn1.xyz"
+    let ikev2RemoteIdentifier = "lt.fuckrkn1.xyz"
+    let ikev2LocalIdentifier = "vpnclient"
+    #else
+    let p12Password = ""
+    let ikev2ServerAddress = "lt.fuckrkn1.xyz"
+    let ikev2RemoteIdentifier = "lt.fuckrkn1.xyz"
+    let ikev2LocalIdentifier = "vpnclient"
+    #endif
+    
+    // MARK: - WireGuard
+    
 }

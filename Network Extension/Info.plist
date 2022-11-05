@@ -5,11 +5,9 @@
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.widgetkit-extension</string>
+		<string>com.apple.networkextension.packet-tunnel</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>$(PRODUCT_MODULE_NAME).PacketTunnelProvider</string>
 	</dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Exo2.tiff</string>
-	</array>
 </dict>
 </plist>

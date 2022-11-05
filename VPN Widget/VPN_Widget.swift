@@ -30,7 +30,7 @@ struct Provider: TimelineProvider {
         
         let everySecond: TimeInterval = 1
         var currentDate = Date()
-        let endDate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)!
+        guard let endDate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate) else { return }
         while currentDate < endDate {
             let entry = WidgetContent(date: Date(),
                                       connectionState: WidgetUtils.connectionState)

@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "openssl-apple",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/passepartoutvpn/openssl-apple",
+      "state" : {
+        "revision" : "757c074af45e4f2514fe63f649ccdde966183e90",
+        "version" : "1.1.11700"
+      }
+    },
+    {
+      "identity" : "swiftybeaver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver",
+      "state" : {
+        "revision" : "12b5acf96d98f91d50de447369bd18df74600f1a",
+        "version" : "1.9.6"
+      }
+    },
+    {
+      "identity" : "tunnelkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/passepartoutvpn/tunnelkit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "0d21731e12ac316274f8c200e39f4fb48097f3dd"
+      }
+    },
+    {
+      "identity" : "wireguard-apple",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/passepartoutvpn/wireguard-apple",
+      "state" : {
+        "revision" : "d3b8f1ac6f3361d69bd3daf8aee3c43012c6ec0b",
+        "version" : "1.0.16"
+      }
+    }
+  ],
+  "version" : 2
+}

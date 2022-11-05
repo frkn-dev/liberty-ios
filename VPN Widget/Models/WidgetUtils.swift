@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import TunnelKit
 
 public class WidgetUtils {
 
-    static var connectionState: ConnectionState {
+    static var connectionState: VPNStatus {
         
         guard let savedState = Defaults.ConnectionData.connectionStatus,
-              let state = ConnectionState(rawValue: savedState)
+              let state = VPNStatus(rawValue: savedState)
         else { return .disconnected }
         
         return state

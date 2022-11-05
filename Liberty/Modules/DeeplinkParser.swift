@@ -15,7 +15,7 @@ class DeeplinkParser {
     
     // MARK: - Dependencies
     
-    var vpnService = VPNService.shared
+    var vpnService = WireGuardService.shared
     
     // MARK: - Methods
     
