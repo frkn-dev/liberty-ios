@@ -122,7 +122,6 @@
 		03CDC189291323510099DE5F /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
 		03CDC18E291323510099DE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03CDC18F291323510099DE5F /* Network_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Network_Extension.entitlements; sourceTree = "<group>"; };
 		03D333E228A942F00083B0D0 /* VPNSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNSettings.swift; sourceTree = "<group>"; };
 		03D333E728A950A90083B0D0 /* fuckrkn1.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fuckrkn1.p12; sourceTree = "<group>"; };
 		03D333EB28A96A1F0083B0D0 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
@@ -133,6 +132,7 @@
 		03E866DC2915E63D002F3E6B /* VPNStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VPNStatus+Extensions.swift"; sourceTree = "<group>"; };
 		03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VPNStatus+Extensions.swift"; sourceTree = "<group>"; };
 		03E866E929167140002F3E6B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		03E866EB29168834002F3E6B /* WireGuard Network Extension iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WireGuard Network Extension iOS.entitlements"; sourceTree = "<group>"; };
 		6F05DBB32894128700632934 /* Liberty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
 		6F05DBB82894128700632934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -188,6 +188,7 @@
 			children = (
 				6F05DBBC2894128A00632934 /* Liberty.entitlements */,
 				03E866D529153A46002F3E6B /* VPN WidgetExtension.entitlements */,
+				03E866EB29168834002F3E6B /* WireGuard Network Extension iOS.entitlements */,
 			);
 			path = Entitlements;
 			sourceTree = "<group>";
@@ -289,7 +290,6 @@
 			isa = PBXGroup;
 			children = (
 				03CDC18E291323510099DE5F /* Info.plist */,
-				03CDC18F291323510099DE5F /* Network_Extension.entitlements */,
 				03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */,
 			);
 			path = "Network Extension";
@@ -687,7 +687,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/VPN WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CHF63SS3MM;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "VPN Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "VPN Widget";
@@ -712,7 +712,7 @@
 		03CDC194291323510099DE5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Network Extension/Network_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -739,7 +739,7 @@
 		03CDC195291323510099DE5F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Network Extension/Network_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -957,7 +957,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
-				DEVELOPMENT_TEAM = CHF63SS3MM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Liberty/Info.plist;
