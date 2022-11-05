@@ -32,15 +32,7 @@ class WireGuardService {
     
     public func connectVPN() {
 
-        guard let config = WireGuard.Configuration.make(
-            "TunnelKit.WireGuard",
-            appGroup: appGroup,
-            clientPrivateKey: "wBJPKf8grndmOnZH8UjdXSBIPKHhlxylMAvxwfXgNkE=",
-            clientAddress: "10.7.0.2/24",
-            serverPublicKey: "95XuJVa9H5n7k9FE/EQoiOpk/kJx+Tzu09pLDP/7zXo=",
-            serverAddress: "94.176.238.220",
-            serverPort: "51820"
-        ) else {
+        guard let config = WireGuard.TestConfiguration.make(appGroup: appGroup) else {
             print("Configuration incomplete")
             return
         }
