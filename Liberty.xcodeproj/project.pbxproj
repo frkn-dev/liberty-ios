@@ -211,6 +211,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		03941E11294551810042C67A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		03A15DBA28B11DAD00D73910 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +247,7 @@
 		03AD5174289AC2120097101D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				03941E11294551810042C67A /* Network */,
 				03AD5173289AC2080097101D /* VPN */,
 				03507E7328F3B215004D0D0F /* DeeplinkParser.swift */,
 			);
