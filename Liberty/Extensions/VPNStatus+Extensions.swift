@@ -11,7 +11,6 @@ import NetworkExtension
 extension VPNStatus {
     
     init?(_ state: NEVPNStatus) {
-            
             switch state {
             case NEVPNStatus.connected:
                 self = .connected
@@ -25,5 +24,4 @@ extension VPNStatus {
                 return nil
             }
         }
-
 }

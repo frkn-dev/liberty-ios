@@ -11,10 +11,9 @@ struct ContentView: View {
     var body: some View {
         ConnectView()
             .environment(\.colorScheme, .light)
-#if os(macOS)
-    .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
-
-#endif
+        #if os(macOS)
+            .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
+        #endif
     }
 }
 
