@@ -30,10 +30,10 @@ struct DonateScreen: View {
                 .buttonStyle(.plain)
                 .font(.custom("Exo 2", size: 14, relativeTo: .title).bold())
                 
-                Text("We are OpenSource.\nYou can support us.")
+                Text("open.source.title")
                     .font(.custom("Exo 2", size: 22, relativeTo: .title).bold())
                 
-                Text("You can support us with donations or any other contribution to improve the service. Pulling requests and creating issues also helps us a lot.")
+                Text("open.source.descr")
                     .font(.custom("Exo 2", size: 14, relativeTo: .body))
                 ForEach(supportItems, id: \.0) { item in
                     Button {

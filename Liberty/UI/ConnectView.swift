@@ -74,7 +74,7 @@ struct ConnectView: View {
                     Button {
                         shownSupplementaryScreen = .about
                     } label: {
-                        Text("About")
+                        Text("about")
                     }
                     .buttonStyle(.plain)
                     
@@ -83,7 +83,7 @@ struct ConnectView: View {
                     Button {
                         shownSupplementaryScreen = .supportUs
                     } label: {
-                        Text("Support us")
+                        Text("support.us")
                     }
                     .buttonStyle(.plain)
                 }
