@@ -28,3 +28,7 @@
 "status.connected"    = "Подключено";
 "status.connecting"   = "Подключаемся...";
 "status.disconnected" = "Не подключен";
+
+// MARK: - Buttons
+
+"back.button" = "Назад";

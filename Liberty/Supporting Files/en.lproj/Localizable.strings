@@ -28,3 +28,7 @@
 "status.connected"    = "Connected";
 "status.connecting"   = "Connecting...";
 "status.disconnected" = "Disconnected";
+
+// MARK: - Buttons
+
+"back.button" = "Back";

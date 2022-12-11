@@ -25,7 +25,7 @@ struct DonateScreen: View {
                 Button {
                     dismiss()
                 } label: {
-                    Text("\(Image(systemName: "arrow.left")) Back")
+                    Text("\(Image(systemName: "arrow.left")) \(String(localized:  "back.button"))")
                 }
                 .buttonStyle(.plain)
                 .font(.custom("Exo 2", size: 14, relativeTo: .title).bold())

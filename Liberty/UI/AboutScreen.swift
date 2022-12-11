@@ -18,7 +18,7 @@ struct AboutScreen: View {
                     Button {
                         dismiss()
                     } label: {
-                        Text("\(Image(systemName: "arrow.left")) Back")
+                        Text("\(Image(systemName: "arrow.left")) \(String(localized:  "back.button"))")
                             .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
                     }
                     .buttonStyle(.plain)
