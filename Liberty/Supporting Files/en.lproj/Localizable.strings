@@ -23,3 +23,8 @@
 "open.source.title" = "We are OpenSource.\nYou can support us.";
 "open.source.descr" = "You can support us with donations or any other contribution to improve the service. Pulling requests and creating issues also helps us a lot.";
 
+// MARK: - VPN Status
+
+"status.connected"    = "Connected";
+"status.connecting"   = "Connecting...";
+"status.disconnected" = "Disconnected";

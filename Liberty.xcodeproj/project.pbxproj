@@ -18,7 +18,7 @@
 		03507EA728F4BBDD004D0D0F /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA628F4BBDD004D0D0F /* WidgetContent.swift */; };
 		03941E13294566700042C67A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03941E12294566700042C67A /* View+Extension.swift */; };
 		03941E1F294606590042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
-		03941E20294606590042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
+		03941E2B29460F750042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
 		03A15DBD28B11E6000D73910 /* dev_fuckrkn1.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 03A15DBC28B11E6000D73910 /* dev_fuckrkn1.p12 */; };
 		03AD5178289AC51F0097101D /* WireGuardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5177289AC51F0097101D /* WireGuardService.swift */; };
 		03B33D1C28F1DB30006F7BB3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */; };
@@ -291,12 +291,12 @@
 		03B33D1F28F1DB30006F7BB3 /* VPN Widget */ = {
 			isa = PBXGroup;
 			children = (
+				03B33D2528F1DB31006F7BB3 /* Info.plist */,
+				03B33D2328F1DB31006F7BB3 /* Assets.xcassets */,
 				03B33D2028F1DB30006F7BB3 /* VPN_Widget.swift */,
 				03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */,
 				03E866DB2915E627002F3E6B /* Extensions */,
 				03507EAA28F4C411004D0D0F /* Models */,
-				03B33D2328F1DB31006F7BB3 /* Assets.xcassets */,
-				03B33D2528F1DB31006F7BB3 /* Info.plist */,
 			);
 			path = "VPN Widget";
 			sourceTree = "<group>";
@@ -587,7 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03507E6F28F3A923004D0D0F /* Exo2.ttf in Resources */,
-				03941E20294606590042C67A /* Localizable.strings in Resources */,
+				03941E2B29460F750042C67A /* Localizable.strings in Resources */,
 				03507E6E28F3A8A6004D0D0F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

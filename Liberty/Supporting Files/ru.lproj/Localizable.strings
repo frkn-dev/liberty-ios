@@ -20,5 +20,11 @@
 
 // MARK: - DonateScreen
 
-"open.source.title" = "Мы OpenSource.\ Вы можете помочь нам.";
+"open.source.title" = "Мы OpenSource.\nВы можете помочь нам.";
 "open.source.descr" = "Вы можете поддержать нас пожертвованиями или любым другим вкладом в улучшение сервиса. Пул реквесты и создание ишью также очень помогают нам.";
+
+// MARK: - VPN Status
+
+"status.connected"    = "Подключено";
+"status.connecting"   = "Подключаемся...";
+"status.disconnected" = "Не подключен";
