@@ -80,7 +80,6 @@ struct ConnectView: View {
                 }
             }
             
-            
             VStack {
                 HStack {
                     Button {

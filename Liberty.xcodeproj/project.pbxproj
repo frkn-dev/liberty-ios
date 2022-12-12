@@ -19,7 +19,6 @@
 		03941E13294566700042C67A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03941E12294566700042C67A /* View+Extension.swift */; };
 		03941E1F294606590042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
 		03941E2B29460F750042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
-		03A15DBD28B11E6000D73910 /* dev_fuckrkn1.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 03A15DBC28B11E6000D73910 /* dev_fuckrkn1.p12 */; };
 		03AD5178289AC51F0097101D /* WireGuardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5177289AC51F0097101D /* WireGuardService.swift */; };
 		03B33D1C28F1DB30006F7BB3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */; };
 		03B33D1E28F1DB30006F7BB3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B33D1D28F1DB30006F7BB3 /* SwiftUI.framework */; };
@@ -34,7 +33,6 @@
 		03CDC1A5291349F50099DE5F /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A4291349F50099DE5F /* TunnelKitWireGuard */; };
 		03CDC1A729134A000099DE5F /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A629134A000099DE5F /* TunnelKit */; };
 		03CDC1A929134A000099DE5F /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A829134A000099DE5F /* TunnelKitWireGuard */; };
-		03D333E828A950A90083B0D0 /* fuckrkn1.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 03D333E728A950A90083B0D0 /* fuckrkn1.p12 */; };
 		03D333EC28A96A1F0083B0D0 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333EB28A96A1F0083B0D0 /* Typealiases.swift */; };
 		03D333F428AC2B5C0083B0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */; };
 		03E866D2291533D4002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866D1291533D4002F3E6B /* TunnelKitWireGuardAppExtension */; };
@@ -114,7 +112,6 @@
 		03941E12294566700042C67A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		03941E21294606590042C67A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03941E24294608C60042C67A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		03A15DBC28B11E6000D73910 /* dev_fuckrkn1.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dev_fuckrkn1.p12; sourceTree = "<group>"; };
 		03AD5177289AC51F0097101D /* WireGuardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardService.swift; sourceTree = "<group>"; };
 		03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VPN WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -128,7 +125,6 @@
 		03CDC189291323510099DE5F /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
 		03CDC18E291323510099DE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03D333E728A950A90083B0D0 /* fuckrkn1.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fuckrkn1.p12; sourceTree = "<group>"; };
 		03D333EB28A96A1F0083B0D0 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03E866D529153A46002F3E6B /* VPN WidgetExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "VPN WidgetExtension.entitlements"; sourceTree = "<group>"; };
@@ -233,22 +229,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		03A15DBA28B11DAD00D73910 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				03A15DBC28B11E6000D73910 /* dev_fuckrkn1.p12 */,
-			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
-		03A15DBB28B11DB800D73910 /* Release */ = {
-			isa = PBXGroup;
-			children = (
-				03D333E728A950A90083B0D0 /* fuckrkn1.p12 */,
-			);
-			path = Release;
-			sourceTree = "<group>";
-		};
 		03AD5173289AC2080097101D /* VPN */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,19 +307,9 @@
 				03941E22294606590042C67A /* Localizable.strings */,
 				03507E9B28F3B849004D0D0F /* Entitlements */,
 				6F05DBBD2894128A00632934 /* Preview Content */,
-				03D333E628A950920083B0D0 /* Keys */,
 				6F45B97728942FE0001076C8 /* Fonts */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		03D333E628A950920083B0D0 /* Keys */ = {
-			isa = PBXGroup;
-			children = (
-				03A15DBB28B11DB800D73910 /* Release */,
-				03A15DBA28B11DAD00D73910 /* Debug */,
-			);
-			path = Keys;
 			sourceTree = "<group>";
 		};
 		03E866DB2915E627002F3E6B /* Extensions */ = {
@@ -605,8 +575,6 @@
 			files = (
 				6F05DBBF2894128A00632934 /* Preview Assets.xcassets in Resources */,
 				03941E1F294606590042C67A /* Localizable.strings in Resources */,
-				03A15DBD28B11E6000D73910 /* dev_fuckrkn1.p12 in Resources */,
-				03D333E828A950A90083B0D0 /* fuckrkn1.p12 in Resources */,
 				6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */,
 				6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */,
 			);
