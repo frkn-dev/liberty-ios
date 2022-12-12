@@ -25,34 +25,46 @@ struct DonateScreen: View {
                 Button {
                     dismiss()
                 } label: {
-                    Text("\(Image(systemName: "arrow.left")) Back")
+                    Text("\(Image(systemName: "arrow.left")) \(String(localized:  "back.button"))")
                 }
                 .buttonStyle(.plain)
                 .font(.custom("Exo 2", size: 14, relativeTo: .title).bold())
                 
-                Text("We are OpenSource.\nYou can support us.")
+                Text("open.source.title")
                     .font(.custom("Exo 2", size: 22, relativeTo: .title).bold())
                 
-                Text("You can support us with donations or any other contribution to improve the service. Pulling requests and creating issues also helps us a lot.")
+                Text("open.source.descr")
                     .font(.custom("Exo 2", size: 14, relativeTo: .body))
                 ForEach(supportItems, id: \.0) { item in
-                    VStack(alignment: .leading) {
-                        Text(item.0)
-                            .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
-                        Text(item.1)
-                            .font(.custom("Exo 2", size: 14, relativeTo: .body))
+                    Button {
+                        UIPasteboard.general.string = item.1
+                    } label : {
+                        VStack(alignment: .leading) {
+                            Text(item.0)
+                                .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
+                                .foregroundColor(.black)
+                            Text(item.1)
+                                .font(.custom("Exo 2", size: 14, relativeTo: .body))
+                                .multilineTextAlignment(.leading)
+                                .foregroundColor(.black)
+                        }
                     }
                 }
                 
-                
                 HStack {
-                    Button { } label: {
+                    Button {
+                        open(url: "https://www.patreon.com/2pizza")
+                    } label: {
+                        Image("Patreon")
                         Text("Patreon")
                     }
                     .buttonStyle(.plain)
                     Spacer()
                     
-                    Button { } label: {
+                    Button {
+                        open(url: "https://boosty.to/the2pizza")
+                    } label: {
+                        Image("Boosty")
                         Text("Boosty")
                     }
                     .buttonStyle(.plain)

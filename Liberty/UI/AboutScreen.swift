@@ -18,19 +18,19 @@ struct AboutScreen: View {
                     Button {
                         dismiss()
                     } label: {
-                        Text("\(Image(systemName: "arrow.left")) Back")
+                        Text("\(Image(systemName: "arrow.left")) \(String(localized:  "back.button"))")
                             .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
                     }
                     .buttonStyle(.plain)
                     
-                    Text("Free VPN for free humans")
+                    Text("free.vpn.title")
                         .font(.custom("Exo 2", size: 24, relativeTo: .title).weight(.medium))
 
                     
-                    Text("We are making a non-commercial VPN that does not collect any data.")
+                    Text("free.vpn.descr.1")
                         .font(.custom("Exo 2", size: 14, relativeTo: .body))
                     
-                    Text("We are for freedom of speech and against any kind of censorship.")
+                    Text("free.vpn.descr.2")
                         .font(.custom("Exo 2", size: 14, relativeTo: .body))
                 }
                 .padding(.horizontal)
@@ -40,26 +40,34 @@ struct AboutScreen: View {
                     .scaledToFit()
                 Group {
                         
-                    Text("Today, freedom of speech is especially vulnerable. Independent media are banned, people are brainwashed with propaganda, VPN services are blocked, and it is dangerous to express one's position and opinion. This is the reason why we took on this project. It is non-commercial, no profit is pursued either. We are rather small, but yet, we have a great potential.")
+                    Text("free.vpn.descr.3")
                         .font(.custom("Exo 2", size: 14, relativeTo: .body))
                         
                     
                     HStack(alignment: .bottom) {
-                        Button {} label: {
+                        Button {
+                            open(url: "https://t.me/FuckRKN1")
+                        } label: {
                             VStack {
                                 Image("Telegram")
                                 Text("Telegram")
                             }
                         }
                         Spacer()
-                        Button {} label: {
+                        
+                        Button {
+                            open(url: "https://twitter.com/fuckrkn1")
+                        } label: {
                             VStack {
                                 Image("Twitter")
                                 Text("Twitter")
                             }
                         }
                         Spacer()
-                        Button {} label: {
+                        
+                        Button {
+                            open(url: "https://github.com/nezavisimost")
+                        } label: {
                             VStack {
                                 Image("GitHub")
                                 Text("GitHub")

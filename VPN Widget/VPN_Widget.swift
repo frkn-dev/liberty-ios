@@ -62,9 +62,12 @@ struct VPN_WidgetEntryView : View {
     
     var buttonTitle: String {
         switch entry.connectionState {
-        case .connected: return "Connected"
-        case .connecting: return "Connecting..."
-        default: return "Disconnected"
+        case .connected:
+            return String(localized: "status.connected")
+        case .connecting:
+            return String(localized: "status.connecting")
+        default:
+            return String(localized: "status.disconnected")
         }
     }
         
@@ -94,7 +97,9 @@ struct VPN_WidgetEntryView : View {
                                 .padding(.horizontal, -30)
                     }
                 }
-            Button(buttonTitle) {
+            Button {}
+            label: {
+                Text(buttonTitle)
             }
             .overlay(
                 RoundedRectangle(cornerRadius: 4)

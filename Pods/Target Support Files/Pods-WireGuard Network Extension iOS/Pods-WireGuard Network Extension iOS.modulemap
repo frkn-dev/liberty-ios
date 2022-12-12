@@ -1,0 +1,6 @@
+framework module Pods_WireGuard_Network_Extension_iOS {
+  umbrella header "Pods-WireGuard Network Extension iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

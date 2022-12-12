@@ -40,13 +40,18 @@ extension WireGuard {
         
         static func make(appGroup: String) -> WireGuard.ProviderConfiguration? {
                 
-            var builder = try! WireGuard.ConfigurationBuilder("wBJPKf8grndmOnZH8UjdXSBIPKHhlxylMAvxwfXgNkE=")
+            var builder = try! WireGuard.ConfigurationBuilder("IH3WHTfF0R+ehS5q+I/14NVibmDJGKwmtx/KxeDBn2A=")
             builder.addresses = ["10.7.0.2/24"]
             builder.dnsServers = ["1.1.1.1", "1.0.0.1"]
-            try! builder.addPeer("95XuJVa9H5n7k9FE/EQoiOpk/kJx+Tzu09pLDP/7zXo=",
+            try! builder.addPeer("DXn0oXV5/5fCtgKlf9VjqKkECX/wibquJYX6/9wCASM=",
                                  endpoint: "94.176.238.220:51820")
-            builder.addAllowedIP("0.0.0.0/0, ::/0", toPeer: 0)
-            try! builder.setPreSharedKey("ve+HQl9x0ypTEt1UL5LDhcZFrhgPnvY/3Iz7I52qVnQ=", ofPeer: 0)
+            
+            builder.addDefaultGatewayIPv4(toPeer: 0)
+            
+            builder.setKeepAlive(25, forPeer: 0)
+            try! builder.setPreSharedKey("WCmLsc3sH6iCQ689P/hk42JLXz+5jSjvF9is3/CYHzQ=",
+                                         ofPeer: 0)
+            
             let config = builder.build()
             
             return WireGuard.ProviderConfiguration("fuckrkn1",

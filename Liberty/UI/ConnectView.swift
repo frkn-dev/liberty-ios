@@ -24,6 +24,18 @@ struct ConnectView: View {
         case supportUs
     }
     
+    var connectionStateDescription: String {
+        
+        switch connectionState {
+        case .connected:
+            return String(localized: "status.connected")
+        case .connecting:
+            return String(localized: "status.connecting")
+        default:
+            return String(localized: "status.disconnected")
+        }
+    }
+    
     // MARK: - View
     
     @State var connectionState: VPNStatus = .disconnected
@@ -68,13 +80,12 @@ struct ConnectView: View {
                 }
             }
             
-            
             VStack {
                 HStack {
                     Button {
                         shownSupplementaryScreen = .about
                     } label: {
-                        Text("About")
+                        Text("about")
                     }
                     .buttonStyle(.plain)
                     
@@ -83,7 +94,7 @@ struct ConnectView: View {
                     Button {
                         shownSupplementaryScreen = .supportUs
                     } label: {
-                        Text("Support us")
+                        Text("support.us")
                     }
                     .buttonStyle(.plain)
                 }
@@ -137,7 +148,7 @@ struct ConnectView: View {
                         PulseView()
                     }
                 }
-                Text(connectionState.rawValue.uppercasedFirst())
+                Text("\(connectionStateDescription)")
                     .font(.custom("Exo 2", size: 18, relativeTo: .body).bold())
             }
         }
@@ -155,10 +166,9 @@ struct ConnectView: View {
             }
             .background(Color.white)
             .environment(\.colorScheme, .light)
-#if os(macOS)
+        #if os(macOS)
             .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
-            
-#endif
+        #endif
         }
         .onAppear(perform: lastConnectionState)
         .onAppear(perform: setupValues)
@@ -212,10 +222,9 @@ struct ConnectView_Previews: PreviewProvider {
     static var previews: some View {
         ConnectView()
             .environment(\.colorScheme, .light)
-#if os(macOS)
+        #if os(macOS)
             .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
-        
-#endif
+        #endif
     }
 }
 
