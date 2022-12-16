@@ -62,7 +62,6 @@
 		03CDC1A729134A000099DE5F /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A629134A000099DE5F /* TunnelKit */; };
 		03CDC1A929134A000099DE5F /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A829134A000099DE5F /* TunnelKitWireGuard */; };
 		03D333EC28A96A1F0083B0D0 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333EB28A96A1F0083B0D0 /* Typealiases.swift */; };
-		03D333F428AC2B5C0083B0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */; };
 		03E866D2291533D4002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866D1291533D4002F3E6B /* TunnelKitWireGuardAppExtension */; };
 		03E866D4291533DB002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866D3291533DB002F3E6B /* TunnelKitWireGuardAppExtension */; };
 		03E866D729153B20002F3E6B /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */; };
@@ -207,7 +206,6 @@
 		03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
 		03CDC18E291323510099DE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D333EB28A96A1F0083B0D0 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
-		03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03E866D529153A46002F3E6B /* VPN WidgetExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "VPN WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		03E866DC2915E63D002F3E6B /* VPNStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VPNStatus+Extensions.swift"; sourceTree = "<group>"; };
 		03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VPNStatus+Extensions.swift"; sourceTree = "<group>"; };
@@ -436,7 +434,6 @@
 			isa = PBXGroup;
 			children = (
 				6F05DBBA2894128A00632934 /* Assets.xcassets */,
-				03D333F328AC2B5C0083B0D0 /* AppDelegate.swift */,
 				03941E22294606590042C67A /* Localizable.strings */,
 				03507E9B28F3B849004D0D0F /* Entitlements */,
 				6F05DBBD2894128A00632934 /* Preview Content */,
@@ -1021,7 +1018,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D333F428AC2B5C0083B0D0 /* AppDelegate.swift in Sources */,
 				03507E9D28F3B954004D0D0F /* Defaults.swift in Sources */,
 				6F05DBC92894130100632934 /* DonateScreen.swift in Sources */,
 				03941E13294566700042C67A /* View+Extension.swift in Sources */,

@@ -37,7 +37,7 @@ struct DonateScreen: View {
                     .font(.custom("Exo 2", size: 14, relativeTo: .body))
                 ForEach(supportItems, id: \.0) { item in
                     Button {
-                        UIPasteboard.general.string = item.1
+                        copy(toClipboard: item.1)
                     } label : {
                         VStack(alignment: .leading) {
                             Text(item.0)

@@ -12,8 +12,6 @@ struct LibertyApp: App {
     
     var deeplinkParser = DeeplinkParser.shared
     
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
