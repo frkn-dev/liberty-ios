@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1410"
-   wasCreatedForAppExtension = "YES"
-   version = "2.0">
+   LastUpgradeVersion = "1420"
+   version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -15,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03CDC187291323510099DE5F"
-               BuildableName = "WireGuard Network Extension iOS.appex"
-               BlueprintName = "WireGuard Network Extension iOS"
-               ReferencedContainer = "container:Liberty.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F05DBB22894128700632934"
-               BuildableName = "Liberty iOS.app"
-               BlueprintName = "Liberty iOS"
+               BlueprintIdentifier = "03A1007F294C0B77005E3324"
+               BuildableName = "Liberty macOS.app"
+               BlueprintName = "Liberty macOS"
                ReferencedContainer = "container:Liberty.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,23 +32,21 @@
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = ""
-      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      askForAppToLaunch = "Yes"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES"
-      launchAutomaticallySubstyle = "2">
+      allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F05DBB22894128700632934"
-            BuildableName = "Liberty iOS.app"
-            BlueprintName = "Liberty iOS"
+            BlueprintIdentifier = "03A1007F294C0B77005E3324"
+            BuildableName = "Liberty macOS.app"
+            BlueprintName = "Liberty macOS"
             ReferencedContainer = "container:Liberty.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -73,16 +56,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES"
-      askForAppToLaunch = "Yes"
-      launchAutomaticallySubstyle = "2">
+      debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F05DBB22894128700632934"
-            BuildableName = "Liberty iOS.app"
-            BlueprintName = "Liberty iOS"
+            BlueprintIdentifier = "03A1007F294C0B77005E3324"
+            BuildableName = "Liberty macOS.app"
+            BlueprintName = "Liberty macOS"
             ReferencedContainer = "container:Liberty.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

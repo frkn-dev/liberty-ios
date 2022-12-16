@@ -1,0 +1,6 @@
+framework module Pods_Liberty_iOS {
+  umbrella header "Pods-Liberty iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

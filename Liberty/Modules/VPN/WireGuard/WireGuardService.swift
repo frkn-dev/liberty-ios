@@ -15,7 +15,7 @@ class WireGuardService {
     
     static let shared = WireGuardService()
     
-    private let tunnelIdentifier = "com.nezavisimost.Liberty.Soloshenko.Network-Extension"
+    private let tunnelIdentifier = "com.nezavisimost.Liberty.Soloshenko.WireGuard-Network-Extension.macOS"
     private let appGroup = "group.vpn.nezavisimost.Soloshenko"
     
     private let vpn = NetworkExtensionVPN()
