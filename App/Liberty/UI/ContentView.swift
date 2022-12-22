@@ -12,7 +12,7 @@ struct ContentView: View {
         ConnectView()
             .environment(\.colorScheme, .light)
         #if os(macOS)
-            .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
+            .frame(width: 400, height: 620)
         #endif
     }
 }
