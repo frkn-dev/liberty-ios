@@ -5,7 +5,6 @@
 //  Created by Yury Soloshenko on 11.12.2022.
 //
 
-import Cocoa
 import SwiftUI
 
 extension View {
@@ -27,7 +26,7 @@ extension View {
     func copy(toClipboard text: String) {
         
         #if os(iOS)
-        UIPasteboard.general.string = item.1
+        UIPasteboard.general.string = text
         #endif
         
         #if os(macOS)

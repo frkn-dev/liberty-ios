@@ -180,6 +180,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0313C87329543CC8007EE448 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03507E7328F3B215004D0D0F /* DeeplinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkParser.swift; sourceTree = "<group>"; };
 		03507E9C28F3B954004D0D0F /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		03507EA028F40E78004D0D0F /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
@@ -757,6 +758,7 @@
 				en,
 				Base,
 				ru,
+				uk,
 			);
 			mainGroup = 6F05DBAA2894128700632934;
 			packageReferences = (
@@ -1091,6 +1093,7 @@
 			children = (
 				03941E21294606590042C67A /* en */,
 				03941E24294608C60042C67A /* ru */,
+				0313C87329543CC8007EE448 /* uk */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
