@@ -17,7 +17,10 @@ struct LibertyApp: App {
             ContentView()
                 .onOpenURL { url in
                     deeplinkParser.parse(url)
-            }
+                }
         }
+        #if os(macOS)
+        .windowResizabilityContentSize()
+        #endif
     }
 }
