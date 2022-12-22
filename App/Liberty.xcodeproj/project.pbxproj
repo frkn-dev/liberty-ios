@@ -41,7 +41,6 @@
 		03A100A3294C0B77005E3324 /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03A1008D294C0B77005E3324 /* TunnelKitWireGuardAppExtension */; };
 		03A100A6294C0B77005E3324 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBE2894128A00632934 /* Preview Assets.xcassets */; };
 		03A100A7294C0B77005E3324 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
-		03A100A8294C0B77005E3324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
 		03A100A9294C0B77005E3324 /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
 		03A100BA294C1124005E3324 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CDC189291323510099DE5F /* NetworkExtension.framework */; };
 		03A100C2294C1124005E3324 /* WireGuard Network Extension macOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -61,6 +60,8 @@
 		03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
 		03CC30422954617A00EBB91E /* macOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CC30412954617A00EBB91E /* macOS Info.plist */; };
 		03CC30432954617A00EBB91E /* macOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CC30412954617A00EBB91E /* macOS Info.plist */; };
+		03CC304429546AC500EBB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
+		03CC304529546AC800EBB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
 		03CDC18A291323510099DE5F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CDC189291323510099DE5F /* NetworkExtension.framework */; };
 		03CDC192291323510099DE5F /* WireGuard Network Extension iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03CDC1A3291349F50099DE5F /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A2291349F50099DE5F /* TunnelKit */; };
@@ -81,7 +82,6 @@
 		5828D1D153780436198D100B /* Pods_WireGuard_Network_Extension_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46139BA8727B480E6021303 /* Pods_WireGuard_Network_Extension_iOS.framework */; };
 		6F05DBB72894128700632934 /* LibertyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB62894128700632934 /* LibertyApp.swift */; };
 		6F05DBB92894128700632934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB82894128700632934 /* ContentView.swift */; };
-		6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
 		6F05DBBF2894128A00632934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBE2894128A00632934 /* Preview Assets.xcassets */; };
 		6F05DBC82894130100632934 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC52894130100632934 /* ConnectView.swift */; };
 		6F05DBC92894130100632934 /* DonateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC62894130100632934 /* DonateScreen.swift */; };
@@ -793,8 +793,8 @@
 				03A100A6294C0B77005E3324 /* Preview Assets.xcassets in Resources */,
 				03A100A7294C0B77005E3324 /* Localizable.strings in Resources */,
 				03CC30432954617A00EBB91E /* macOS Info.plist in Resources */,
-				03A100A8294C0B77005E3324 /* Assets.xcassets in Resources */,
 				03A100A9294C0B77005E3324 /* Exo2.ttf in Resources */,
+				03CC304429546AC500EBB91E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,8 +829,8 @@
 				6F05DBBF2894128A00632934 /* Preview Assets.xcassets in Resources */,
 				03941E1F294606590042C67A /* Localizable.strings in Resources */,
 				03CC30422954617A00EBB91E /* macOS Info.plist in Resources */,
-				6F05DBBB2894128A00632934 /* Assets.xcassets in Resources */,
 				6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */,
+				03CC304529546AC800EBB91E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1145,7 +1145,7 @@
 			baseConfigurationReference = 7539D3D417486920368436F9 /* Pods-Liberty macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon macOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
@@ -1193,7 +1193,7 @@
 			baseConfigurationReference = 9A87FC979B9275D380EAFEC1 /* Pods-Liberty macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon macOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
@@ -1563,7 +1563,7 @@
 			baseConfigurationReference = 8FF64B75A60B43CF90A5E21B /* Pods-Liberty iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
@@ -1611,7 +1611,7 @@
 			baseConfigurationReference = DAA2F32BEBEAE44CB37F342C /* Pods-Liberty iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
