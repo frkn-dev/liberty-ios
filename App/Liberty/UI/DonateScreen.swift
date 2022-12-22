@@ -48,7 +48,7 @@ struct DonateScreen: View {
                                 .multilineTextAlignment(.leading)
                                 .foregroundColor(.black)
                         }
-                    }
+                    }.buttonStyle(.plain)
                 }
                 
                 HStack {

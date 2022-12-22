@@ -58,10 +58,10 @@
 		03BDDE6929152C6C0026B1E4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDDE6829152C6C0026B1E4 /* Configuration.swift */; };
 		03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
 		03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
-		03CC30422954617A00EBB91E /* macOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CC30412954617A00EBB91E /* macOS Info.plist */; };
 		03CC30432954617A00EBB91E /* macOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CC30412954617A00EBB91E /* macOS Info.plist */; };
 		03CC304429546AC500EBB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
 		03CC304529546AC800EBB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
+		03CC30482954721000EBB91E /* iOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97F289433E5001076C8 /* iOS Info.plist */; };
 		03CDC18A291323510099DE5F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CDC189291323510099DE5F /* NetworkExtension.framework */; };
 		03CDC192291323510099DE5F /* WireGuard Network Extension iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03CDC1A3291349F50099DE5F /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A2291349F50099DE5F /* TunnelKit */; };
@@ -527,8 +527,8 @@
 		6F05DBB52894128700632934 /* Liberty */ = {
 			isa = PBXGroup;
 			children = (
-				03507E9F28F40CAF004D0D0F /* Utils */,
 				6F05DBB62894128700632934 /* LibertyApp.swift */,
+				03507E9F28F40CAF004D0D0F /* Utils */,
 				6F45B97628942FCC001076C8 /* UI */,
 				03E866E62915E7A9002F3E6B /* Extensions */,
 				03AD5179289AC6E30097101D /* Models */,
@@ -826,9 +826,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CC30482954721000EBB91E /* iOS Info.plist in Resources */,
 				6F05DBBF2894128A00632934 /* Preview Assets.xcassets in Resources */,
 				03941E1F294606590042C67A /* Localizable.strings in Resources */,
-				03CC30422954617A00EBB91E /* macOS Info.plist in Resources */,
 				6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */,
 				03CC304529546AC800EBB91E /* Assets.xcassets in Resources */,
 			);
@@ -1156,7 +1156,7 @@
 				DEVELOPMENT_TEAM = CHF63SS3MM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1204,7 +1204,7 @@
 				DEVELOPMENT_TEAM = CHF63SS3MM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
