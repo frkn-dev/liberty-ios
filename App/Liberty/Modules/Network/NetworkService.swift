@@ -15,7 +15,13 @@ class NetworkService {
     
     // MARK: - Properties
     
-    public var selectedCountry: Country = .netherlands
+    public var networkObservers: [NetworkObserver] = []
+    
+    public var selectedCountry: Country = .netherlands {
+        didSet {
+            networkObservers.forEach { $0.countryUpdated() }
+        }
+    }
     
     // MARK: - Functions
     

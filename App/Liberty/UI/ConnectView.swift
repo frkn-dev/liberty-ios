@@ -42,6 +42,7 @@ struct ConnectView: View {
     
     // MARK: - View
     
+    @State var selectedCountry: Country = .netherlands
     @State var connectionState: VPNStatus = .disconnected
     @State var shownSupplementaryScreen: SupplementaryScreen? = nil
     
@@ -164,7 +165,7 @@ struct ConnectView: View {
                             Text(String(localized: "country.button").uppercased())
                                 .font(.custom("Exo 2", size: 9, relativeTo: .body))
                                 .foregroundColor(.gray)
-                            Text(networkService.selectedCountry.description)
+                            Text("\(selectedCountry.description)")
                                 .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
                         }
                         Spacer()
@@ -270,6 +271,8 @@ extension ConnectView {
     
     private func setupValues() {
         
+        networkService.networkObservers.append(self)
+        
         NotificationCenter.default.addObserver(forName: NSNotification.Name.NEVPNStatusDidChange,
                                                object: nil,
                                                queue: nil) { notification in
@@ -300,5 +303,12 @@ extension ConnectView {
         Delay().execute(after: 0.5) {
             WidgetCenter.shared.reloadAllTimelines()
         }
+    }
+}
+
+extension ConnectView: NetworkObserver {
+    
+    func countryUpdated() {
+        selectedCountry = networkService.selectedCountry
     }
 }
