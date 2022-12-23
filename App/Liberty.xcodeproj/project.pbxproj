@@ -18,6 +18,10 @@
 		03507EA728F4BBDD004D0D0F /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA628F4BBDD004D0D0F /* WidgetContent.swift */; };
 		035DC53A294C968C005FD6B0 /* WireGuardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DC539294C968C005FD6B0 /* WireGuardConfig.swift */; };
 		035DC53B294C968C005FD6B0 /* WireGuardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DC539294C968C005FD6B0 /* WireGuardConfig.swift */; };
+		036653E4295547B600D9FFF6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E3295547B600D9FFF6 /* Country.swift */; };
+		036653E5295547B600D9FFF6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E3295547B600D9FFF6 /* Country.swift */; };
+		036653EA29554E5800D9FFF6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E929554E5800D9FFF6 /* NetworkService.swift */; };
+		036653EB29554E5800D9FFF6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E929554E5800D9FFF6 /* NetworkService.swift */; };
 		03941E13294566700042C67A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03941E12294566700042C67A /* View+Extension.swift */; };
 		03941E1F294606590042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
 		03941E2B29460F750042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
@@ -191,6 +195,8 @@
 		03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUtils.swift; sourceTree = "<group>"; };
 		03507EA628F4BBDD004D0D0F /* WidgetContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetContent.swift; sourceTree = "<group>"; };
 		035DC539294C968C005FD6B0 /* WireGuardConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardConfig.swift; sourceTree = "<group>"; };
+		036653E3295547B600D9FFF6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		036653E929554E5800D9FFF6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		03941E12294566700042C67A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		03941E21294606590042C67A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03941E24294608C60042C67A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -353,6 +359,7 @@
 		03941E11294551810042C67A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				036653E929554E5800D9FFF6 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -395,8 +402,9 @@
 		03AD5179289AC6E30097101D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				03D333EB28A96A1F0083B0D0 /* Typealiases.swift */,
 				035DC538294C9674005FD6B0 /* Network */,
+				03D333EB28A96A1F0083B0D0 /* Typealiases.swift */,
+				036653E3295547B600D9FFF6 /* Country.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -992,11 +1000,13 @@
 				03A10091294C0B77005E3324 /* Defaults.swift in Sources */,
 				03A10092294C0B77005E3324 /* DonateScreen.swift in Sources */,
 				03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */,
+				036653E5295547B600D9FFF6 /* Country.swift in Sources */,
 				03A10093294C0B77005E3324 /* View+Extension.swift in Sources */,
 				03A10094294C0B77005E3324 /* DeeplinkParser.swift in Sources */,
 				03A10095294C0B77005E3324 /* String+Extensions.swift in Sources */,
 				03A10096294C0B77005E3324 /* ConnectView.swift in Sources */,
 				03A10097294C0B77005E3324 /* ContentView.swift in Sources */,
+				036653EB29554E5800D9FFF6 /* NetworkService.swift in Sources */,
 				03A10098294C0B77005E3324 /* VPNStatus+Extensions.swift in Sources */,
 				03A10099294C0B77005E3324 /* Configuration.swift in Sources */,
 				03A1009A294C0B77005E3324 /* Delay.swift in Sources */,
@@ -1046,11 +1056,13 @@
 				03507E9D28F3B954004D0D0F /* Defaults.swift in Sources */,
 				6F05DBC92894130100632934 /* DonateScreen.swift in Sources */,
 				03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */,
+				036653E4295547B600D9FFF6 /* Country.swift in Sources */,
 				03941E13294566700042C67A /* View+Extension.swift in Sources */,
 				03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */,
 				03E866EA29167140002F3E6B /* String+Extensions.swift in Sources */,
 				6F05DBC82894130100632934 /* ConnectView.swift in Sources */,
 				6F05DBB92894128700632934 /* ContentView.swift in Sources */,
+				036653EA29554E5800D9FFF6 /* NetworkService.swift in Sources */,
 				03E866E82915E7C8002F3E6B /* VPNStatus+Extensions.swift in Sources */,
 				03BDDE6929152C6C0026B1E4 /* Configuration.swift in Sources */,
 				03507EA128F40E78004D0D0F /* Delay.swift in Sources */,

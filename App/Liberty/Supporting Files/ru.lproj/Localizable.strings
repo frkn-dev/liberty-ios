@@ -31,4 +31,15 @@
 
 // MARK: - Buttons
 
-"back.button" = "Назад";
+"back.button"    = "Назад";
+"country.button" = "Страна";
+
+// MARK: - Countries
+
+"country.russia"        = "Россия";
+"country.ukraine"       = "Украина";
+"country.netherlands"   = "Нидерланды";
+"country.latvia"        = "Латвия";
+"country.lithuania"     = "Литва";
+"country.unitedKingdom" = "Великобритания";
+"country.usa"           = "США";

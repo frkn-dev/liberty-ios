@@ -13,7 +13,10 @@ import TunnelKit
 
 struct ConnectView: View {
     
-    let vpnService = WireGuardService.shared
+    // MARK: - Properties
+    
+    let vpnService     = WireGuardService.shared
+    let networkService = NetworkService.shared
     
     enum SupplementaryScreen: Int, Identifiable {
         var id: Int {
@@ -122,6 +125,7 @@ struct ConnectView: View {
             }
             
             VStack(spacing: 0) {
+                
                 ZStack {
                     Image("Pterodactyl")
                         .resizable()
@@ -150,6 +154,35 @@ struct ConnectView: View {
                 }
                 Text("\(connectionStateDescription)")
                     .font(.custom("Exo 2", size: 18, relativeTo: .body).bold())
+                
+                Button {
+                    
+                } label: {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(String(localized: "country.button").uppercased())
+                                .font(.custom("Exo 2", size: 9, relativeTo: .body))
+                                .foregroundColor(.gray)
+                            Text(networkService.selectedCountry.description)
+                                .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
+                        }
+                        Spacer()
+                        Image("downArrow")
+                    }
+                    .padding(.horizontal, 9)
+                    .padding(.vertical, 5)
+                    .background(.white)
+                    .overlay() {
+                            RoundedRectangle(cornerRadius: 8,
+                                             style: .continuous)
+                            .stroke(.gray)
+                    }
+                }
+                .frame(minWidth: 307, idealWidth: 339, maxWidth: 350, idealHeight: 46)
+                .buttonStyle(.plain)
+                .foregroundColor(.black)
+                .cornerRadius(8)
+                .offset(y: 48)
             }
         }
         .background(Color.white)
@@ -167,7 +200,7 @@ struct ConnectView: View {
             .background(Color.white)
             .environment(\.colorScheme, .light)
         #if os(macOS)
-            .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
+            .frame(width: 400, height: 620)
         #endif
         }
         .onAppear(perform: lastConnectionState)
@@ -223,7 +256,7 @@ struct ConnectView_Previews: PreviewProvider {
         ConnectView()
             .environment(\.colorScheme, .light)
         #if os(macOS)
-            .frame(minWidth: 340, maxWidth: 340, minHeight: 570, maxHeight: 570)
+            .frame(width: 400, height: 620)
         #endif
     }
 }
