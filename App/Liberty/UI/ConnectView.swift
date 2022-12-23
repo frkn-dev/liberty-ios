@@ -128,6 +128,7 @@ struct ConnectView: View {
             
             VStack(spacing: 0) {
                 
+                Spacer()
                 ZStack {
                     Image("Pterodactyl")
                         .resizable()
@@ -157,6 +158,8 @@ struct ConnectView: View {
                 Text("\(connectionStateDescription)")
                     .font(.custom("Exo 2", size: 18, relativeTo: .body).bold())
                 
+                Spacer()
+                
                 Button {
                     shownSupplementaryScreen = .countries
                 } label: {
@@ -184,7 +187,7 @@ struct ConnectView: View {
                 .buttonStyle(.plain)
                 .foregroundColor(.black)
                 .cornerRadius(8)
-                .offset(y: 48)
+                Spacer()
             }
         }
         .background(Color.white)
