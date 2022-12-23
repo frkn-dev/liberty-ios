@@ -25,6 +25,7 @@ struct ConnectView: View {
         
         case about
         case supportUs
+        case countries
     }
     
     var connectionStateDescription: String {
@@ -156,7 +157,7 @@ struct ConnectView: View {
                     .font(.custom("Exo 2", size: 18, relativeTo: .body).bold())
                 
                 Button {
-                    
+                    shownSupplementaryScreen = .countries
                 } label: {
                     HStack {
                         VStack(alignment: .leading) {
@@ -195,6 +196,8 @@ struct ConnectView: View {
                     AboutScreen()
                 case .supportUs:
                     DonateScreen()
+                case .countries:
+                    CountriesScreen()
                 }
             }
             .background(Color.white)
