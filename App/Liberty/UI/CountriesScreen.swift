@@ -43,11 +43,12 @@ struct CountriesScreen: View {
                     } label: {
                         HStack {
                             Text(item.description)
-                                .font(.custom("Exo 2", size: 14, relativeTo: .title).bold())
+                                .font(.custom("Exo 2", size: 16, relativeTo: .title).bold())
+                                .frame(maxWidth: .infinity, alignment: .leading)
                         }
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .buttonStyle(.plain)
+                    .foregroundColor(.black)
+                    .buttonStyle(.borderless)
                 }
             }
             .padding()

@@ -272,6 +272,7 @@ extension ConnectView {
     private func setupValues() {
         
         networkService.networkObservers.append(self)
+        selectedCountry = networkService.selectedCountry
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name.NEVPNStatusDidChange,
                                                object: nil,
