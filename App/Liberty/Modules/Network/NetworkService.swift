@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import Alamofire
 
-class NetworkService {
+class NetworkService: NetworkBase {
     
     // MARK: - Singleton
     
@@ -25,5 +26,11 @@ class NetworkService {
     
     // MARK: - Functions
     
-    
+    public func getPeer(completion: @escaping (DataResponse<WireGuardConfig, AFError>) -> Void) {
+        
+        var parameters: Parameters = [:]
+        
+        let request = Router.getPeer(parameters: parameters)
+        requestAndParse(router: request, type: WireGuardConfig.self, completion: completion)
+    }
 }

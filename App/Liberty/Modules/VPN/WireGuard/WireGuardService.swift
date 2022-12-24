@@ -18,6 +18,8 @@ class WireGuardService {
     private let tunnelIdentifier = "com.nezavisimost.Liberty.Soloshenko.WireGuard-Network-Extension.macOS"
     private let appGroup         = "group.vpn.nezavisimost.Soloshenko"
     
+    private let networkService   = NetworkService.shared
+    
     private let vpn = NetworkExtensionVPN()
     var vpnStatus: VPNStatus = .disconnected
     
@@ -32,18 +34,27 @@ class WireGuardService {
     
     public func connectVPN() {
 
-        guard let config = WireGuard.TestConfiguration.make(appGroup: appGroup) else {
-            print("Configuration incomplete")
-            return
-        }
+        vpnStatus = .connecting
+        networkService.getPeer() { result in
+            
+            guard let connectionInfo = result.value else {
+                self.disconnectVPN()
+                return
+            }
+            
+            guard let config = WireGuard.Configuration.make(from: connectionInfo, and: self.appGroup) else {
+                print("Configuration incomplete")
+                return
+            }
 
-        Task {
-            try await vpn.reconnect(
-                tunnelIdentifier,
-                configuration: config,
-                extra: nil,
-                after: .seconds(2)
-            )
+            Task {
+                try await self.vpn.reconnect(
+                    self.tunnelIdentifier,
+                    configuration: config,
+                    extra: nil,
+                    after: .seconds(2)
+                )
+            }
         }
     }
     
