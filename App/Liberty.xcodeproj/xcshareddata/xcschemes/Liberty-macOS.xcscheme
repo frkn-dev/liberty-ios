@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "03A1007F294C0B77005E3324"
-               BuildableName = "Liberty macOS.app"
-               BlueprintName = "Liberty macOS"
+               BuildableName = "Liberty_macOS.app"
+               BlueprintName = "Liberty_macOS"
                ReferencedContainer = "container:Liberty.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "03A1007F294C0B77005E3324"
-            BuildableName = "Liberty macOS.app"
-            BlueprintName = "Liberty macOS"
+            BuildableName = "Liberty_macOS.app"
+            BlueprintName = "Liberty_macOS"
             ReferencedContainer = "container:Liberty.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "03A1007F294C0B77005E3324"
-            BuildableName = "Liberty macOS.app"
-            BlueprintName = "Liberty macOS"
+            BuildableName = "Liberty_macOS.app"
+            BlueprintName = "Liberty_macOS"
             ReferencedContainer = "container:Liberty.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

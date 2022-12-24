@@ -222,7 +222,7 @@
 		03941E21294606590042C67A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03941E24294608C60042C67A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03A10070294C0A85005E3324 /* Pods_WireGuard_Network_Extension_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WireGuard_Network_Extension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		03A100B3294C0B77005E3324 /* Liberty macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Liberty macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A100B3294C0B77005E3324 /* Liberty_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WireGuard Network Extension macOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A100D0294C1405005E3324 /* WireGuard Network Extension macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WireGuard Network Extension macOS.entitlements"; sourceTree = "<group>"; };
 		03A100D1294C1405005E3324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		03E866EB29168834002F3E6B /* WireGuard Network Extension iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WireGuard Network Extension iOS.entitlements"; sourceTree = "<group>"; };
 		1504707A52871250305B4DC6 /* Pods-VPN WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPN WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-VPN WidgetExtension/Pods-VPN WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		4BC61969CC50D7320F6B0489 /* Pods_Liberty_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liberty_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F05DBB32894128700632934 /* Liberty iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Liberty iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F05DBB32894128700632934 /* Liberty_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
 		6F05DBB82894128700632934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F05DBBA2894128A00632934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -558,10 +558,10 @@
 		6F05DBB42894128700632934 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F05DBB32894128700632934 /* Liberty iOS.app */,
+				6F05DBB32894128700632934 /* Liberty_iOS.app */,
 				03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */,
 				03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */,
-				03A100B3294C0B77005E3324 /* Liberty macOS.app */,
+				03A100B3294C0B77005E3324 /* Liberty_macOS.app */,
 				03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */,
 			);
 			name = Products;
@@ -643,9 +643,9 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		03A1007F294C0B77005E3324 /* Liberty macOS */ = {
+		03A1007F294C0B77005E3324 /* Liberty_macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03A100B0294C0B77005E3324 /* Build configuration list for PBXNativeTarget "Liberty macOS" */;
+			buildConfigurationList = 03A100B0294C0B77005E3324 /* Build configuration list for PBXNativeTarget "Liberty_macOS" */;
 			buildPhases = (
 				03A1008E294C0B77005E3324 /* [CP] Check Pods Manifest.lock */,
 				03A1008F294C0B77005E3324 /* Sources */,
@@ -654,20 +654,21 @@
 				03A100AA294C0B77005E3324 /* Embed Foundation Extensions */,
 				03A100AE294C0B77005E3324 /* [CP] Embed Pods Frameworks */,
 				03A100AF294C0B77005E3324 /* Embed System Extensions */,
+				030278352956C0430044DC5A /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				03A10088294C0B77005E3324 /* PBXTargetDependency */,
 			);
-			name = "Liberty macOS";
+			name = Liberty_macOS;
 			packageProductDependencies = (
 				03A1008A294C0B77005E3324 /* TunnelKit */,
 				03A1008C294C0B77005E3324 /* TunnelKitWireGuard */,
 				03A1008D294C0B77005E3324 /* TunnelKitWireGuardAppExtension */,
 			);
 			productName = Liberty;
-			productReference = 03A100B3294C0B77005E3324 /* Liberty macOS.app */;
+			productReference = 03A100B3294C0B77005E3324 /* Liberty_macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		03A100B8294C1124005E3324 /* WireGuard Network Extension macOS */ = {
@@ -742,9 +743,9 @@
 			productReference = 03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		6F05DBB22894128700632934 /* Liberty iOS */ = {
+		6F05DBB22894128700632934 /* Liberty_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F05DBC22894128A00632934 /* Build configuration list for PBXNativeTarget "Liberty iOS" */;
+			buildConfigurationList = 6F05DBC22894128A00632934 /* Build configuration list for PBXNativeTarget "Liberty_iOS" */;
 			buildPhases = (
 				3013BB7357272A1C04C38707 /* [CP] Check Pods Manifest.lock */,
 				6F05DBAF2894128700632934 /* Sources */,
@@ -753,6 +754,7 @@
 				03A15DB228B10F9D00D73910 /* Embed Foundation Extensions */,
 				A91808BDA5D5D2EEBBED43B4 /* [CP] Embed Pods Frameworks */,
 				03A1005F294C09E5005E3324 /* Embed System Extensions */,
+				030278342956C02C0044DC5A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -760,14 +762,14 @@
 				03B33D2928F1DB31006F7BB3 /* PBXTargetDependency */,
 				03CDC191291323510099DE5F /* PBXTargetDependency */,
 			);
-			name = "Liberty iOS";
+			name = Liberty_iOS;
 			packageProductDependencies = (
 				03CDC1A629134A000099DE5F /* TunnelKit */,
 				03CDC1A829134A000099DE5F /* TunnelKitWireGuard */,
 				03E866D1291533D4002F3E6B /* TunnelKitWireGuardAppExtension */,
 			);
 			productName = Liberty;
-			productReference = 6F05DBB32894128700632934 /* Liberty iOS.app */;
+			productReference = 6F05DBB32894128700632934 /* Liberty_iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -818,8 +820,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6F05DBB22894128700632934 /* Liberty iOS */,
-				03A1007F294C0B77005E3324 /* Liberty macOS */,
+				6F05DBB22894128700632934 /* Liberty_iOS */,
+				03A1007F294C0B77005E3324 /* Liberty_macOS */,
 				03B33D1828F1DB30006F7BB3 /* VPN WidgetExtension */,
 				03CDC187291323510099DE5F /* WireGuard Network Extension iOS */,
 				03A100B8294C1124005E3324 /* WireGuard Network Extension macOS */,
@@ -881,6 +883,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		030278342956C02C0044DC5A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PLUGINS_FOLDER_PATH}/Liberty(iOS).appex/Frameworks\"\n";
+		};
+		030278352956C0430044DC5A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PLUGINS_FOLDER_PATH}/Liberty(macOS).appex/Frameworks\"\n";
+		};
 		03A1008E294C0B77005E3324 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1742,7 +1778,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03A100B0294C0B77005E3324 /* Build configuration list for PBXNativeTarget "Liberty macOS" */ = {
+		03A100B0294C0B77005E3324 /* Build configuration list for PBXNativeTarget "Liberty_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03A100B1294C0B77005E3324 /* Debug */,
@@ -1796,7 +1832,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F05DBC22894128A00632934 /* Build configuration list for PBXNativeTarget "Liberty iOS" */ = {
+		6F05DBC22894128A00632934 /* Build configuration list for PBXNativeTarget "Liberty_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F05DBC32894128A00632934 /* Debug */,
