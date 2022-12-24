@@ -32,9 +32,18 @@ class WireGuardService {
     private let vpn = NetworkExtensionVPN()
     var vpnStatus: VPNStatus = .disconnected
     
+    private var tryCount = 0
+    
     // MARK: - Init
     
     init() {
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(VPNDidFail(notification:)),
+            name: VPNNotification.didFail,
+            object: nil
+        )
         
         Task { await vpn.prepare() }
     }
@@ -45,10 +54,13 @@ class WireGuardService {
         
         var peerConfig: WireGuardConfig?
         
+        let needsNewConfig = tryCount >= 4
+        tryCount = needsNewConfig ? 0 : tryCount
+        
         let group = DispatchGroup()
         group.enter()
         
-        if let oldConfig = Defaults.ConnectionData.wireGuardConfig {
+        if let oldConfig = Defaults.ConnectionData.wireGuardConfig, !needsNewConfig {
             peerConfig = oldConfig
             group.leave()
         } else {
@@ -86,5 +98,12 @@ class WireGuardService {
     
     public func disconnectVPN() {
         Task { await vpn.disconnect() }
+    }
+    
+    // MARK: - Action
+    
+    @objc private func VPNDidFail(notification: Notification) {
+        tryCount += 1
+        connectVPN()
     }
 }
