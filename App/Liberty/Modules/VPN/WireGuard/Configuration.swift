@@ -16,12 +16,14 @@ extension WireGuard {
         static func make(from config: WireGuardConfig, and appGroup: String) -> WireGuard.ProviderConfiguration? {
                 
             var builder = try! WireGuard.ConfigurationBuilder(config.interface.key)
-            builder.addresses = [config.interface.address]
-            builder.dnsServers = [config.interface.dns]
+            builder.addresses = config.interface.address.components(separatedBy: ",")
+            builder.dnsServers = config.interface.dns.components(separatedBy: ",")
             try! builder.addPeer(config.peer.pubkey,
                                  endpoint: "\(config.peer.endpoint.inet):51820")
             
-            builder.addDefaultGatewayIPv4(toPeer: 0)
+            config.peer.allowed_ips.components(separatedBy: ",").forEach {
+                builder.addAllowedIP($0, toPeer: 0)
+            }
             
             builder.setKeepAlive(25, forPeer: 0)
             try! builder.setPreSharedKey(config.peer.psk,
