@@ -42,7 +42,7 @@ class WireGuardService {
             }
             
             guard let config = WireGuard.Configuration.make(from: connectionInfo, and: self.appGroup) else {
-                print("Configuration incomplete")
+                self.disconnectVPN()
                 return
             }
 
