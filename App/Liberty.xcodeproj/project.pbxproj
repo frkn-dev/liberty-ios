@@ -61,7 +61,7 @@
 		03A100A7294C0B77005E3324 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
 		03A100A9294C0B77005E3324 /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
 		03A100BA294C1124005E3324 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CDC189291323510099DE5F /* NetworkExtension.framework */; };
-		03A100C2294C1124005E3324 /* WireGuard Network Extension macOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03A100C2294C1124005E3324 /* WireGuard Network Extension macOS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03A100C7294C1155005E3324 /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03A100C6294C1155005E3324 /* TunnelKit */; };
 		03A100C9294C1155005E3324 /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03A100C8294C1155005E3324 /* TunnelKitWireGuard */; };
 		03A100CB294C1155005E3324 /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03A100CA294C1155005E3324 /* TunnelKitWireGuardAppExtension */; };
@@ -72,7 +72,7 @@
 		03B33D2128F1DB30006F7BB3 /* VPN_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2028F1DB30006F7BB3 /* VPN_Widget.swift */; };
 		03B33D2628F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
 		03B33D2728F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
-		03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03BDDE6929152C6C0026B1E4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDDE6829152C6C0026B1E4 /* Configuration.swift */; };
 		03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
 		03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
@@ -81,7 +81,7 @@
 		03CC304529546AC800EBB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
 		03CC30482954721000EBB91E /* iOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97F289433E5001076C8 /* iOS Info.plist */; };
 		03CDC18A291323510099DE5F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CDC189291323510099DE5F /* NetworkExtension.framework */; };
-		03CDC192291323510099DE5F /* WireGuard Network Extension iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03CDC192291323510099DE5F /* WireGuard Network Extension iOS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03CDC1A3291349F50099DE5F /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A2291349F50099DE5F /* TunnelKit */; };
 		03CDC1A5291349F50099DE5F /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A4291349F50099DE5F /* TunnelKitWireGuard */; };
 		03CDC1A729134A000099DE5F /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A629134A000099DE5F /* TunnelKit */; };
@@ -166,15 +166,15 @@
 			name = "Embed System Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		03A100AA294C0B77005E3324 /* Embed App Extensions */ = {
+		03A100AA294C0B77005E3324 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				03A100C2294C1124005E3324 /* WireGuard Network Extension macOS.appex in Embed App Extensions */,
+				03A100C2294C1124005E3324 /* WireGuard Network Extension macOS.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		03A100AF294C0B77005E3324 /* Embed System Extensions */ = {
@@ -187,16 +187,16 @@
 			name = "Embed System Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		03A15DB228B10F9D00D73910 /* Embed App Extensions */ = {
+		03A15DB228B10F9D00D73910 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				03CDC192291323510099DE5F /* WireGuard Network Extension iOS.appex in Embed App Extensions */,
-				03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed App Extensions */,
+				03CDC192291323510099DE5F /* WireGuard Network Extension iOS.appex in Embed Foundation Extensions */,
+				03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -651,7 +651,7 @@
 				03A1008F294C0B77005E3324 /* Sources */,
 				03A100A0294C0B77005E3324 /* Frameworks */,
 				03A100A5294C0B77005E3324 /* Resources */,
-				03A100AA294C0B77005E3324 /* Embed App Extensions */,
+				03A100AA294C0B77005E3324 /* Embed Foundation Extensions */,
 				03A100AE294C0B77005E3324 /* [CP] Embed Pods Frameworks */,
 				03A100AF294C0B77005E3324 /* Embed System Extensions */,
 			);
@@ -750,7 +750,7 @@
 				6F05DBAF2894128700632934 /* Sources */,
 				6F05DBB02894128700632934 /* Frameworks */,
 				6F05DBB12894128700632934 /* Resources */,
-				03A15DB228B10F9D00D73910 /* Embed App Extensions */,
+				03A15DB228B10F9D00D73910 /* Embed Foundation Extensions */,
 				A91808BDA5D5D2EEBBED43B4 /* [CP] Embed Pods Frameworks */,
 				03A1005F294C09E5005E3324 /* Embed System Extensions */,
 			);
@@ -778,7 +778,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					03A10040294C073E005E3324 = {
 						CreatedOnToolsVersion = 14.2;
@@ -1177,6 +1177,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUGGING_SYMBOLS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = CHF63SS3MM;
@@ -1193,6 +1194,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = CHF63SS3MM;
 				OTHER_CFLAGS = "";
@@ -1211,9 +1213,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = CHF63SS3MM;
 				ENABLE_PREVIEWS = YES;
@@ -1259,9 +1264,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = CHF63SS3MM;
 				ENABLE_PREVIEWS = YES;
@@ -1303,8 +1311,11 @@
 			baseConfigurationReference = 8C98E9AE2B25F9490BA011EC /* Pods-WireGuard Network Extension macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CHF63SS3MM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1332,8 +1343,11 @@
 			baseConfigurationReference = AB87EC59FCEE91475678578A /* Pods-WireGuard Network Extension macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CHF63SS3MM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;

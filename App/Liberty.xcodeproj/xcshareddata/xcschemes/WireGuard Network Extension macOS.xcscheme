@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03A10065294C0A6C005E3324"
+               BlueprintIdentifier = "03A100B8294C1124005E3324"
                BuildableName = "WireGuard Network Extension macOS.appex"
                BlueprintName = "WireGuard Network Extension macOS"
                ReferencedContainer = "container:Liberty.xcodeproj">

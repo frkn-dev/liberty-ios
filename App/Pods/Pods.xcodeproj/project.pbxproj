@@ -125,7 +125,7 @@
 		0337E4DB1D9856625CA89E7FF9564007 /* Pods-VPN WidgetExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VPN WidgetExtension.modulemap"; sourceTree = "<group>"; };
 		053146A45CD0DEC8422FD736230EE00D /* Pods-WireGuard Network Extension macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WireGuard Network Extension macOS-umbrella.h"; sourceTree = "<group>"; };
 		0A77B8025496832379400BFE242DB3E5 /* Pods-WireGuard Network Extension macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WireGuard Network Extension macOS.modulemap"; sourceTree = "<group>"; };
-		0CCE9CB82B4F89C8E07ADCACFD3DB134 /* Alamofire-macOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Alamofire-macOS"; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CCE9CB82B4F89C8E07ADCACFD3DB134 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4CAA00ACC56724DF6CDEB5D6219956 /* Pods-Liberty iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Liberty iOS-Info.plist"; sourceTree = "<group>"; };
 		0DDCEC756EC7F46EEE76CF99D6BFB6EF /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		13AC1441473254412218608650CE468F /* Pods-VPN WidgetExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VPN WidgetExtension-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		4F3D88D3AA6138AFFE5B0DCCFCF09217 /* Pods-Liberty macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Liberty macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5004B13362F7A603FB1DF376750D76DB /* Pods-WireGuard Network Extension iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WireGuard Network Extension iOS.modulemap"; sourceTree = "<group>"; };
 		533B344E132BAFF38A4966F07039819F /* Alamofire-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-iOS-dummy.m"; sourceTree = "<group>"; };
-		5D67277485C3CBDAC54AA2A0070637BD /* Pods-Liberty macOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Liberty macOS"; path = Pods_Liberty_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D67277485C3CBDAC54AA2A0070637BD /* Pods_Liberty_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liberty_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		603732E26D8DE4E73C8D5442F0D293AF /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		60E2D5C0484BCBA76D8563283B65E4C0 /* Alamofire-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		6256A1B5AF54C92A848375415C0C1DE2 /* Pods-Liberty iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Liberty iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -178,15 +178,15 @@
 		92EB403890122911DC0C4A6939866113 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		958252619EFC46025A8BF7743B32B398 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		960CC0622640070FC57C07DAF1115A01 /* Pods-WireGuard Network Extension macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WireGuard Network Extension macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		966AA42878212207687E9A2A4DBCD618 /* Alamofire-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Alamofire-iOS"; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B7D96216C93965B8A510407697343C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		97E7E6393CA9611052A7ED204A101C97 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		9BC2773C3052254A988DAC727F84607B /* Pods-Liberty macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Liberty macOS-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A353933EC22ACCDCB3F39C30A038478E /* Pods-VPN WidgetExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VPN WidgetExtension"; path = Pods_VPN_WidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37150C1F02F5B579E5936AEDD5AAC7B /* Pods-Liberty macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Liberty macOS-Info.plist"; sourceTree = "<group>"; };
 		A4FCCDD431D51E8C3589E5AA0DF52F80 /* Pods-VPN WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VPN WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
-		AA7AC224C2272682CCC527905270D412 /* Pods-WireGuard Network Extension macOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WireGuard Network Extension macOS"; path = Pods_WireGuard_Network_Extension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7AC224C2272682CCC527905270D412 /* Pods_WireGuard_Network_Extension_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireGuard_Network_Extension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB36A8BB9AD39FA4028AB0F79A3D7022 /* Pods-WireGuard Network Extension iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WireGuard Network Extension iOS-Info.plist"; sourceTree = "<group>"; };
 		ACDF06C5E0319296F7BFDCA7CEC4412B /* Pods-Liberty macOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Liberty macOS-frameworks.sh"; sourceTree = "<group>"; };
 		B013F42A879619D5FCE9EBA5B3D8E01B /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
@@ -364,7 +364,6 @@
 				F88E0F93E1B49A18C0F0E248FDAEA081 /* Validation.swift */,
 				D8A84274CC1328B8CE310F4D401E9C1B /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -451,13 +450,13 @@
 		AAECFF59E9F635E00CCF82042331D272 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				966AA42878212207687E9A2A4DBCD618 /* Alamofire-iOS */,
-				0CCE9CB82B4F89C8E07ADCACFD3DB134 /* Alamofire-macOS */,
+				966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */,
+				0CCE9CB82B4F89C8E07ADCACFD3DB134 /* Alamofire.framework */,
 				BB4B479927E02327C029593BAA1E5690 /* Pods-Liberty iOS */,
-				5D67277485C3CBDAC54AA2A0070637BD /* Pods-Liberty macOS */,
+				5D67277485C3CBDAC54AA2A0070637BD /* Pods_Liberty_macOS.framework */,
 				A353933EC22ACCDCB3F39C30A038478E /* Pods-VPN WidgetExtension */,
 				B56CAA2A94BCE0AB3991A6F33967FEF7 /* Pods-WireGuard Network Extension iOS */,
-				AA7AC224C2272682CCC527905270D412 /* Pods-WireGuard Network Extension macOS */,
+				AA7AC224C2272682CCC527905270D412 /* Pods_WireGuard_Network_Extension_macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -588,7 +587,7 @@
 			);
 			name = "Alamofire-macOS";
 			productName = Alamofire;
-			productReference = 0CCE9CB82B4F89C8E07ADCACFD3DB134 /* Alamofire-macOS */;
+			productReference = 0CCE9CB82B4F89C8E07ADCACFD3DB134 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		0F1D2C027268BAA104A34DD91D1067FC /* Pods-Liberty iOS */ = {
@@ -644,7 +643,7 @@
 			);
 			name = "Pods-Liberty macOS";
 			productName = Pods_Liberty_macOS;
-			productReference = 5D67277485C3CBDAC54AA2A0070637BD /* Pods-Liberty macOS */;
+			productReference = 5D67277485C3CBDAC54AA2A0070637BD /* Pods_Liberty_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8EF192C4828235AE6F3DA918C9B0E980 /* Pods-WireGuard Network Extension iOS */ = {
@@ -680,7 +679,7 @@
 			);
 			name = "Pods-WireGuard Network Extension macOS";
 			productName = Pods_WireGuard_Network_Extension_macOS;
-			productReference = AA7AC224C2272682CCC527905270D412 /* Pods-WireGuard Network Extension macOS */;
+			productReference = AA7AC224C2272682CCC527905270D412 /* Pods_WireGuard_Network_Extension_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */ = {
@@ -698,7 +697,7 @@
 			);
 			name = "Alamofire-iOS";
 			productName = Alamofire;
-			productReference = 966AA42878212207687E9A2A4DBCD618 /* Alamofire-iOS */;
+			productReference = 966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -708,7 +707,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1420;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -968,6 +967,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1038,13 +1038,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B12117C68A0C508C71CC3560CCD2411E /* Alamofire-macOS.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1057,7 +1057,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "Target Support Files/Alamofire-macOS/Alamofire-macOS.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -1113,12 +1113,12 @@
 			baseConfigurationReference = E925E9614954DDC525888EC3BFA013EC /* Pods-Liberty macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1150,12 +1150,12 @@
 			baseConfigurationReference = D5FF1583AF8A799424402F1D428F609F /* Pods-Liberty macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1217,6 +1217,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1265,7 +1266,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1289,12 +1290,12 @@
 			baseConfigurationReference = BC75F35CADD9D0229AB034E4FEB56ED6 /* Pods-WireGuard Network Extension macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1337,7 +1338,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1436,13 +1437,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C55AD4DDAF71BB199ACC128709E9A289 /* Alamofire-macOS.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1455,7 +1456,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MODULEMAP_FILE = "Target Support Files/Alamofire-macOS/Alamofire-macOS.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -1510,12 +1511,12 @@
 			baseConfigurationReference = 960CC0622640070FC57C07DAF1115A01 /* Pods-WireGuard Network Extension macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
