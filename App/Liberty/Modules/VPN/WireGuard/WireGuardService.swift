@@ -19,10 +19,10 @@ class WireGuardService {
     
     #if os(macOS)
     private let tunnelIdentifier =
-    "com.nezavisimost.Liberty.Soloshenko.WireGuard-Network-Extension.macOS"
+    "com.nezavisimost.Liberty.Soloshenko.macOSWireGuardNetworkExtension"
     #elseif os(iOS)
     private let tunnelIdentifier =
-    "com.nezavisimost.Liberty.Soloshenko.Network-Extension.iOS"
+    "com.nezavisimost.Liberty.Soloshenko.iOSWireGuardNetworkExtension"
     #endif
     
     private let appGroup         = "group.vpn.nezavisimost.Soloshenko"
