@@ -658,7 +658,6 @@
 				03A100AA294C0B77005E3324 /* Embed Foundation Extensions */,
 				03A100AE294C0B77005E3324 /* [CP] Embed Pods Frameworks */,
 				03A100AF294C0B77005E3324 /* Embed System Extensions */,
-				030278352956C0430044DC5A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -758,7 +757,6 @@
 				03A15DB228B10F9D00D73910 /* Embed Foundation Extensions */,
 				A91808BDA5D5D2EEBBED43B4 /* [CP] Embed Pods Frameworks */,
 				03A1005F294C09E5005E3324 /* Embed System Extensions */,
-				030278342956C02C0044DC5A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -887,40 +885,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		030278342956C02C0044DC5A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PLUGINS_FOLDER_PATH}/Liberty(iOS).appex/Frameworks\"\n";
-		};
-		030278352956C0430044DC5A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PLUGINS_FOLDER_PATH}/Liberty(macOS).appex/Frameworks\"\n";
-		};
 		03A1008E294C0B77005E3324 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
