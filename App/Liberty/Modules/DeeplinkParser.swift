@@ -22,7 +22,7 @@ class DeeplinkParser {
     public func parse(_ deeplink: URL) {
         
         switch deeplink.absoluteString {
-        case "widget://connectVPN": vpnService.connectVPN()
+        case "widget://connectVPN":    vpnService.connectVPN()
         case "widget://disconnectVPN": vpnService.disconnectVPN()
         default: break
         }
