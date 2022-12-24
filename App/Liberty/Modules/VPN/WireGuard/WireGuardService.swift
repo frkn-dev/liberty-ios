@@ -11,9 +11,11 @@ import TunnelKitWireGuard
 
 class WireGuardService {
     
-    // MARK: - Properties
+    // MARK: - Singleton
     
     static let shared = WireGuardService()
+    
+    // MARK: - Properties
     
     private let tunnelIdentifier = "com.nezavisimost.Liberty.Soloshenko.WireGuard-Network-Extension.macOS"
     private let appGroup         = "group.vpn.nezavisimost.Soloshenko"
