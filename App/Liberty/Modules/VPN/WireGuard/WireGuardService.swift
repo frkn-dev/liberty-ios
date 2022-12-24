@@ -33,19 +33,37 @@ class WireGuardService {
     // MARK: - VPN
     
     public func connectVPN() {
-
-        networkService.getPeer() { result in
-            
-            guard let connectionInfo = result.value else {
+        
+        var peerConfig: WireGuardConfig?
+        
+        let group = DispatchGroup()
+        group.enter()
+        
+        if let oldConfig = Defaults.ConnectionData.wireGuardConfig {
+            peerConfig = oldConfig
+            group.leave()
+        } else {
+            networkService.getPeer() { result in
+                
+                guard let connectionInfo = result.value else {
+                    self.disconnectVPN()
+                    return
+                }
+                
+                peerConfig = connectionInfo
+                group.leave()
+            }
+        }
+        
+        group.notify(queue: .main) {
+            guard let peerConfig,
+                  let config = WireGuard.Configuration.make(from: peerConfig, and: self.appGroup) else {
                 self.disconnectVPN()
                 return
             }
             
-            guard let config = WireGuard.Configuration.make(from: connectionInfo, and: self.appGroup) else {
-                self.disconnectVPN()
-                return
-            }
-
+            Defaults.ConnectionData.wireGuardConfig = peerConfig
+            
             Task {
                 try await self.vpn.reconnect(
                     self.tunnelIdentifier,
