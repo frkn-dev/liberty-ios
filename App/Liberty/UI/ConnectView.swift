@@ -139,8 +139,11 @@ struct ConnectView: View {
                 .zIndex(2)
                 Button {
                     switch connectionState {
-                    case .disconnected: vpnService.connectVPN()
-                    case .connected: vpnService.disconnectVPN()
+                    case .disconnected:
+                        connectionState = .connecting
+                        vpnService.connectVPN()
+                    case .connected:
+                        vpnService.disconnectVPN()
                     default: break
                     }
                 } label: {

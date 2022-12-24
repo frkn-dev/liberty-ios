@@ -34,7 +34,6 @@ class WireGuardService {
     
     public func connectVPN() {
 
-        vpnStatus = .connecting
         networkService.getPeer() { result in
             
             guard let connectionInfo = result.value else {
