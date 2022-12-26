@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0301002A295975C800DA03A5 /* VPNStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010029295975C800DA03A5 /* VPNStatusObserver.swift */; };
+		0301002B295975C800DA03A5 /* VPNStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010029295975C800DA03A5 /* VPNStatusObserver.swift */; };
 		0302783A2956D4AF0044DC5A /* WireGuardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DC539294C968C005FD6B0 /* WireGuardConfig.swift */; };
 		0302783B2956D4DA0044DC5A /* WireGuardInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332213029567FEB00C7A154 /* WireGuardInterface.swift */; };
 		0302783C2956D4E00044DC5A /* WireGuardPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332212D29567FE400C7A154 /* WireGuardPeer.swift */; };
@@ -209,6 +211,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03010029295975C800DA03A5 /* VPNStatusObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusObserver.swift; sourceTree = "<group>"; };
 		0313C87329543CC8007EE448 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0332212D29567FE400C7A154 /* WireGuardPeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardPeer.swift; sourceTree = "<group>"; };
 		0332213029567FEB00C7A154 /* WireGuardInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardInterface.swift; sourceTree = "<group>"; };
@@ -428,6 +431,7 @@
 		03AD5173289AC2080097101D /* VPN */ = {
 			isa = PBXGroup;
 			children = (
+				03010029295975C800DA03A5 /* VPNStatusObserver.swift */,
 				03BDDE6A29152D280026B1E4 /* WireGuard */,
 			);
 			path = VPN;
@@ -1057,6 +1061,7 @@
 				03A10094294C0B77005E3324 /* DeeplinkParser.swift in Sources */,
 				03A10095294C0B77005E3324 /* String+Extensions.swift in Sources */,
 				03A10096294C0B77005E3324 /* ConnectView.swift in Sources */,
+				0301002B295975C800DA03A5 /* VPNStatusObserver.swift in Sources */,
 				03A10097294C0B77005E3324 /* ContentView.swift in Sources */,
 				03BDD315295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				036653EB29554E5800D9FFF6 /* NetworkService.swift in Sources */,
@@ -1126,6 +1131,7 @@
 				03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */,
 				03E866EA29167140002F3E6B /* String+Extensions.swift in Sources */,
 				6F05DBC82894130100632934 /* ConnectView.swift in Sources */,
+				0301002A295975C800DA03A5 /* VPNStatusObserver.swift in Sources */,
 				6F05DBB92894128700632934 /* ContentView.swift in Sources */,
 				03BDD314295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				036653EA29554E5800D9FFF6 /* NetworkService.swift in Sources */,

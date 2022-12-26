@@ -22,6 +22,8 @@ class WireGuardService {
     private let vpn = NetworkExtensionVPN()
     var vpnStatus: VPNStatus = .disconnected
     
+    var observers: [VPNStatusObserver] = []
+    
     private var tryCount = 0
     
     // MARK: - Init
@@ -59,6 +61,7 @@ class WireGuardService {
             networkService.getPeer() { result in
                 if let connectionInfo = result.value {
                     peerConfig = connectionInfo
+                    Defaults.ConnectionData.wireGuardConfig = peerConfig
                 } else {
                     self.disconnectVPN()
                 }
@@ -76,8 +79,6 @@ class WireGuardService {
                 self.disconnectVPN()
                 return
             }
-            
-            Defaults.ConnectionData.wireGuardConfig = peerConfig
             
             Task {
                 try await self.vpn.reconnect(
@@ -97,6 +98,14 @@ class WireGuardService {
     // MARK: - Action
     
     @objc private func VPNDidFail(notification: Notification) {
+        
+        guard let userInfo = notification.userInfo,
+              let error = userInfo["Error"] as? Error,
+              error.localizedDescription != "permission denied"
+        else {
+            observers.forEach { $0.permissionDenied() }
+            return
+        }
         
         tryCount += 1
         connectVPN()

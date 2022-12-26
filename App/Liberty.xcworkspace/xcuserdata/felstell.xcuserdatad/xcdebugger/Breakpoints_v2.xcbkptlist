@@ -14,8 +14,8 @@
             filePath = "Liberty/UI/ConnectView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "291"
-            endingLineNumber = "291"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
             landmarkName = "setupValues()"
             landmarkType = "7">
          </BreakpointContent>

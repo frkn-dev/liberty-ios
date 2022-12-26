@@ -15,8 +15,8 @@ struct ConnectView: View {
     
     // MARK: - Properties
     
-    let vpnService     = WireGuardService.shared
-    let networkService = NetworkService.shared
+    let wireGuardService = WireGuardService.shared
+    let networkService   = NetworkService.shared
     
     enum SupplementaryScreen: Int, Identifiable {
         var id: Int {
@@ -141,9 +141,9 @@ struct ConnectView: View {
                     switch connectionState {
                     case .disconnected:
                         connectionState = .connecting
-                        vpnService.connectVPN()
+                        wireGuardService.connectVPN()
                     case .connected:
-                        vpnService.disconnectVPN()
+                        wireGuardService.disconnectVPN()
                     default: break
                     }
                 } label: {
@@ -280,14 +280,16 @@ extension ConnectView {
         networkService.networkObservers.append(self)
         selectedCountry = networkService.selectedCountry
         
+        wireGuardService.observers.append(self)
+        
         NotificationCenter.default.addObserver(forName: NSNotification.Name.NEVPNStatusDidChange,
                                                object: nil,
                                                queue: nil) { notification in
 
             if let nevpnConnect = notification.object as? NEVPNConnection,
                let state = VPNStatus(nevpnConnect.status) {
-                connectionState = state
                 
+                connectionState = state
                 updateWidgetWith(state)
                 
                 print("VPN status is \(state)")
@@ -297,7 +299,7 @@ extension ConnectView {
     
     private func lastConnectionState() {
         
-        let state = vpnService.vpnStatus
+        let state = wireGuardService.vpnStatus
         
         connectionState = state
         updateWidgetWith(state)
@@ -317,5 +319,14 @@ extension ConnectView: NetworkObserver {
     
     func countryUpdated() {
         selectedCountry = networkService.selectedCountry
+    }
+}
+
+extension ConnectView: VPNStatusObserver {
+    
+    func permissionDenied() {
+        
+        connectionState = .disconnected
+        updateWidgetWith(.disconnected)
     }
 }
