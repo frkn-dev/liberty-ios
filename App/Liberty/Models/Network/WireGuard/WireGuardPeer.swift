@@ -14,7 +14,7 @@ struct WireGuardPeer: Codable {
     let pubkey:      String
     let psk:         String
     let allowed_ips: String
-    let endpoint:    WireGuardEndpoint
+    let endpoint:    String
     
     enum CodingKeys: String, CodingKey {
         case pubkey
@@ -32,6 +32,6 @@ struct WireGuardPeer: Codable {
         pubkey      = try container.decode(String.self, forKey: .pubkey)
         psk         = try container.decode(String.self, forKey: .psk)
         allowed_ips = try container.decode(String.self, forKey: .allowed_ips)
-        endpoint    = try container.decode(WireGuardEndpoint.self, forKey: .endpoint)
+        endpoint    = try container.decode(String.self, forKey: .endpoint)
     }
 }

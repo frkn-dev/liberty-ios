@@ -20,5 +20,101 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23B78629-F90D-475F-8FCB-91C6EE7899E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "connectVPN()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "23B78629-F90D-475F-8FCB-91C6EE7899E9 - dec3385999c35f9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in Liberty_iOS.WireGuardService.connectVPN() -&gt; ()"
+                  moduleName = "Liberty_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felstell/Documents/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "976">
+               </Location>
+               <Location
+                  uuid = "23B78629-F90D-475F-8FCB-91C6EE7899E9 - a6275f76dbcd71df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Liberty_iOS.VPNStatusObserver) -&gt; () in closure #2 () -&gt; () in Liberty_iOS.WireGuardService.connectVPN() -&gt; ()"
+                  moduleName = "Liberty_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felstell/Documents/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB172485-54E2-4C94-B7F7-E1E60356D3A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "connectVPN()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB172485-54E2-4C94-B7F7-E1E60356D3A6 - c9022c748231fd3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Liberty_iOS.WireGuardConfig, Alamofire.AFError&gt;) -&gt; () in Liberty_iOS.WireGuardService.connectVPN() -&gt; ()"
+                  moduleName = "Liberty_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felstell/Documents/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "DB172485-54E2-4C94-B7F7-E1E60356D3A6 - 7276b1fe4a54f786"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Liberty_iOS.VPNStatusObserver) -&gt; () in closure #1 (Alamofire.DataResponse&lt;Liberty_iOS.WireGuardConfig, Alamofire.AFError&gt;) -&gt; () in Liberty_iOS.WireGuardService.connectVPN() -&gt; ()"
+                  moduleName = "Liberty_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felstell/Documents/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

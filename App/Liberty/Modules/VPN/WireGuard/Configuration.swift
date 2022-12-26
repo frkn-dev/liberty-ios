@@ -19,7 +19,7 @@ extension WireGuard {
             builder.addresses = config.interface.address.components(separatedBy: ",")
             builder.dnsServers = config.interface.dns.components(separatedBy: ",")
             try! builder.addPeer(config.peer.pubkey,
-                                 endpoint: "\(config.peer.endpoint.inet):51820")
+                                 endpoint: config.peer.endpoint)
             
             config.peer.allowed_ips.components(separatedBy: ",").forEach {
                 builder.addAllowedIP($0, toPeer: 0)
