@@ -7,6 +7,7 @@
 
 import Foundation
 
+public let appGroup = "group.vpn.nezavisimost.Soloshenko"
 
 #if os(macOS)
 public let tunnelIdentifier =
@@ -15,5 +16,3 @@ public let tunnelIdentifier =
 public let tunnelIdentifier =
 "com.nezavisimost.Liberty.Soloshenko.iOSWireGuardNetworkExtension"
 #endif
-
-public let appGroup         = "group.vpn.nezavisimost.Soloshenko"

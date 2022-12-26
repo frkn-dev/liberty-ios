@@ -44,26 +44,30 @@ class WireGuardService {
         
         var peerConfig: WireGuardConfig?
         
-        let needsNewConfig = tryCount >= 4
-        tryCount = needsNewConfig ? 0 : tryCount
+        guard tryCount < 6 else {
+            tryCount = 0
+            return
+        }
+        
+        let oldConfig = Defaults.ConnectionData.wireGuardConfig
+        let needsNewConfig = tryCount == 4 || oldConfig == nil
         
         let group = DispatchGroup()
         group.enter()
         
-        if let oldConfig = Defaults.ConnectionData.wireGuardConfig, !needsNewConfig {
-            peerConfig = oldConfig
-            group.leave()
-        } else {
+        if needsNewConfig {
             networkService.getPeer() { result in
-                
-                guard let connectionInfo = result.value else {
+                if let connectionInfo = result.value {
+                    peerConfig = connectionInfo
+                } else {
                     self.disconnectVPN()
-                    return
                 }
                 
-                peerConfig = connectionInfo
                 group.leave()
             }
+        } else {
+            peerConfig = oldConfig
+            group.leave()
         }
         
         group.notify(queue: .main) {
@@ -93,6 +97,7 @@ class WireGuardService {
     // MARK: - Action
     
     @objc private func VPNDidFail(notification: Notification) {
+        
         tryCount += 1
         connectVPN()
     }
