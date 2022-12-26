@@ -27,7 +27,7 @@ enum Country: String {
         case .netherlands:   return "🇳🇱 " + String(localized: "country.netherlands")
         case .latvia:        return "🇱🇻 " + String(localized: "country.latvia")
         case .lithuania:     return "🇱🇹 " + String(localized: "country.lithuania")
-        case .unitedKingdom: return "🏴󠁧󠁢󠁥󠁮󠁧󠁿 " + String(localized: "country.unitedKingdom")
+        case .unitedKingdom: return "🇬🇧 " + String(localized: "country.unitedKingdom")
         case .usa:           return "🇺🇸 " + String(localized: "country.usa")
         }
     }
