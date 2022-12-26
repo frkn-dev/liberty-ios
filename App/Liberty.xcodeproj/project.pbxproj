@@ -25,7 +25,6 @@
 		03507E6F28F3A923004D0D0F /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
 		03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E7328F3B215004D0D0F /* DeeplinkParser.swift */; };
 		03507E9D28F3B954004D0D0F /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E9C28F3B954004D0D0F /* Defaults.swift */; };
-		03507E9E28F3B959004D0D0F /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E9C28F3B954004D0D0F /* Defaults.swift */; };
 		03507EA128F40E78004D0D0F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA028F40E78004D0D0F /* Delay.swift */; };
 		03507EA228F40E78004D0D0F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA028F40E78004D0D0F /* Delay.swift */; };
 		03507EA428F4BAC9004D0D0F /* WidgetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */; };
@@ -77,6 +76,7 @@
 		03B33D2628F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
 		03B33D2728F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
 		03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03BDD3122959340100D43321 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E9C28F3B954004D0D0F /* Defaults.swift */; };
 		03BDDE6929152C6C0026B1E4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDDE6829152C6C0026B1E4 /* Configuration.swift */; };
 		03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
 		03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
@@ -1078,7 +1078,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0302783A2956D4AF0044DC5A /* WireGuardConfig.swift in Sources */,
-				03507E9E28F3B959004D0D0F /* Defaults.swift in Sources */,
 				0302783C2956D4E00044DC5A /* WireGuardPeer.swift in Sources */,
 				03507EA228F40E78004D0D0F /* Delay.swift in Sources */,
 				03507EA428F4BAC9004D0D0F /* WidgetUtils.swift in Sources */,
@@ -1088,6 +1087,7 @@
 				0302783D2956D4E40044DC5A /* WireGuardEndpoint.swift in Sources */,
 				03507EA728F4BBDD004D0D0F /* WidgetContent.swift in Sources */,
 				03E866DD2915E63D002F3E6B /* VPNStatus+Extensions.swift in Sources */,
+				03BDD3122959340100D43321 /* Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1402,7 +1402,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nezavisimost.Liberty.Soloshenko.VPN-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1433,7 +1433,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nezavisimost.Liberty.Soloshenko.VPN-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

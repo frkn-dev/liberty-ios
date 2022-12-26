@@ -12,17 +12,17 @@ struct UserDefault<T: Codable> {
     
     let key: String
     let defaultValue: T
-
+    
     let appGroup = "group.vpn.nezavisimost.Soloshenko"
     
     init(_ key: String, defaultValue: T) {
         self.key = key
         self.defaultValue = defaultValue
     }
-
+    
     var wrappedValue: T {
         get {
-            guard let data = UserDefaults.standard.object(forKey: key) as? Data,
+            guard let data = UserDefaults(suiteName: appGroup)?.object(forKey: key) as? Data,
                   let value = try? JSONDecoder().decode(T.self, from: data)
             else {
                 return defaultValue
@@ -31,7 +31,7 @@ struct UserDefault<T: Codable> {
         }
         set {
             if let encoded = try? JSONEncoder().encode(newValue) {
-                UserDefaults.standard.set(encoded, forKey: key)
+                UserDefaults(suiteName: appGroup)?.set(encoded, forKey: key)
             }
         }
     }
@@ -47,6 +47,8 @@ struct UserDefaultCodable<T: Codable> {
     let key: String
     let defaultValue: T
     
+    let appGroup = "group.vpn.nezavisimost.Soloshenko"
+    
     init(_ key: String, defaultValue: T) {
         self.key = key
         self.defaultValue = defaultValue
@@ -54,14 +56,14 @@ struct UserDefaultCodable<T: Codable> {
     
     var wrappedValue: T {
         get {
-            guard let data = UserDefaults.standard.object(forKey: key) as? Data else { return defaultValue }
+            guard let data = UserDefaults(suiteName: appGroup)?.object(forKey: key) as? Data else { return defaultValue }
             let value = try? JSONDecoder().decode(Wrapper<T>.self, from: data)
             return value?.wrapped ?? defaultValue
         }
         set {
             do {
                 let data = try JSONEncoder().encode(Wrapper(wrapped:newValue))
-                UserDefaults.standard.set(data, forKey: key)
+                UserDefaults(suiteName: appGroup)?.set(data, forKey: key)
             } catch {
                 print("User defaults error wrapped value: \(error.localizedDescription)")
             }
