@@ -63,7 +63,7 @@ class WireGuardService {
                     peerConfig = connectionInfo
                     Defaults.ConnectionData.wireGuardConfig = peerConfig
                 } else {
-                    self.disconnectVPN()
+                    self.observers.forEach { $0.disconnectedByFailure() }
                 }
                 
                 group.leave()
@@ -76,7 +76,7 @@ class WireGuardService {
         group.notify(queue: .main) {
             guard let peerConfig,
                   let config = WireGuard.Configuration.make(from: peerConfig) else {
-                self.disconnectVPN()
+                self.observers.forEach { $0.disconnectedByFailure() }
                 return
             }
             
@@ -103,7 +103,7 @@ class WireGuardService {
               let error = userInfo["Error"] as? Error,
               error.localizedDescription != "permission denied"
         else {
-            observers.forEach { $0.permissionDenied() }
+            observers.forEach { $0.disconnectedByFailure() }
             return
         }
         

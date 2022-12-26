@@ -9,5 +9,5 @@ import Foundation
 
 protocol VPNStatusObserver {
     
-    func permissionDenied()
+    func disconnectedByFailure()
 }

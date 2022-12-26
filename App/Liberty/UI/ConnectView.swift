@@ -324,7 +324,7 @@ extension ConnectView: NetworkObserver {
 
 extension ConnectView: VPNStatusObserver {
     
-    func permissionDenied() {
+    func disconnectedByFailure() {
         
         connectionState = .disconnected
         updateWidgetWith(.disconnected)
