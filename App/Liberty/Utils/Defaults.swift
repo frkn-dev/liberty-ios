@@ -13,8 +13,6 @@ struct UserDefault<T: Codable> {
     let key: String
     let defaultValue: T
     
-    let appGroup = "group.vpn.nezavisimost.Soloshenko"
-    
     init(_ key: String, defaultValue: T) {
         self.key = key
         self.defaultValue = defaultValue
@@ -46,8 +44,6 @@ struct UserDefaultCodable<T: Codable> {
     
     let key: String
     let defaultValue: T
-    
-    let appGroup = "group.vpn.nezavisimost.Soloshenko"
     
     init(_ key: String, defaultValue: T) {
         self.key = key

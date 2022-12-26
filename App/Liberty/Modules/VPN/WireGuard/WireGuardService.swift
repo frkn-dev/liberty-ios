@@ -17,17 +17,7 @@ class WireGuardService {
     
     // MARK: - Properties
     
-    #if os(macOS)
-    private let tunnelIdentifier =
-    "com.nezavisimost.Liberty.Soloshenko.macOSWireGuardNetworkExtension"
-    #elseif os(iOS)
-    private let tunnelIdentifier =
-    "com.nezavisimost.Liberty.Soloshenko.iOSWireGuardNetworkExtension"
-    #endif
-    
-    private let appGroup         = "group.vpn.nezavisimost.Soloshenko"
-    
-    private let networkService   = NetworkService.shared
+    private let networkService = NetworkService.shared
     
     private let vpn = NetworkExtensionVPN()
     var vpnStatus: VPNStatus = .disconnected
@@ -78,7 +68,7 @@ class WireGuardService {
         
         group.notify(queue: .main) {
             guard let peerConfig,
-                  let config = WireGuard.Configuration.make(from: peerConfig, and: self.appGroup) else {
+                  let config = WireGuard.Configuration.make(from: peerConfig) else {
                 self.disconnectVPN()
                 return
             }
@@ -87,7 +77,7 @@ class WireGuardService {
             
             Task {
                 try await self.vpn.reconnect(
-                    self.tunnelIdentifier,
+                    tunnelIdentifier,
                     configuration: config,
                     extra: nil,
                     after: .seconds(2)

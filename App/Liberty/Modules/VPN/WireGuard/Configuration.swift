@@ -13,7 +13,7 @@ extension WireGuard {
     
     struct Configuration {
         
-        static func make(from config: WireGuardConfig, and appGroup: String) -> WireGuard.ProviderConfiguration? {
+        static func make(from config: WireGuardConfig) -> WireGuard.ProviderConfiguration? {
                 
             var builder = try! WireGuard.ConfigurationBuilder(config.interface.key)
             builder.addresses = config.interface.address.components(separatedBy: ",")
@@ -39,7 +39,7 @@ extension WireGuard {
     
     struct TestConfiguration {
         
-        static func make(appGroup: String) -> WireGuard.ProviderConfiguration? {
+        static func make() -> WireGuard.ProviderConfiguration? {
                 
             var builder = try! WireGuard.ConfigurationBuilder("IH3WHTfF0R+ehS5q+I/14NVibmDJGKwmtx/KxeDBn2A=")
             builder.addresses = ["10.7.0.2/24"]

@@ -77,6 +77,9 @@
 		03B33D2728F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
 		03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03BDD3122959340100D43321 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E9C28F3B954004D0D0F /* Defaults.swift */; };
+		03BDD314295937DB00D43321 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDD313295937DB00D43321 /* GlobalFunctions.swift */; };
+		03BDD315295937DB00D43321 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDD313295937DB00D43321 /* GlobalFunctions.swift */; };
+		03BDD316295937DB00D43321 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDD313295937DB00D43321 /* GlobalFunctions.swift */; };
 		03BDDE6929152C6C0026B1E4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDDE6829152C6C0026B1E4 /* Configuration.swift */; };
 		03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
 		03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
@@ -238,6 +241,7 @@
 		03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = VPN_Widget.intentdefinition; sourceTree = "<group>"; };
 		03B33D2328F1DB31006F7BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03B33D2528F1DB31006F7BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BDD313295937DB00D43321 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		03BDDE6829152C6C0026B1E4 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		03CC303E29545D1000EBB91E /* Scene+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scene+Extensions.swift"; sourceTree = "<group>"; };
 		03CC30412954617A00EBB91E /* macOS Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "macOS Info.plist"; sourceTree = "<group>"; };
@@ -371,6 +375,7 @@
 			children = (
 				03507E9C28F3B954004D0D0F /* Defaults.swift */,
 				03507EA028F40E78004D0D0F /* Delay.swift */,
+				03BDD313295937DB00D43321 /* GlobalFunctions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1053,6 +1058,7 @@
 				03A10095294C0B77005E3324 /* String+Extensions.swift in Sources */,
 				03A10096294C0B77005E3324 /* ConnectView.swift in Sources */,
 				03A10097294C0B77005E3324 /* ContentView.swift in Sources */,
+				03BDD315295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				036653EB29554E5800D9FFF6 /* NetworkService.swift in Sources */,
 				03A10098294C0B77005E3324 /* VPNStatus+Extensions.swift in Sources */,
 				03A10099294C0B77005E3324 /* Configuration.swift in Sources */,
@@ -1079,6 +1085,7 @@
 			files = (
 				0302783A2956D4AF0044DC5A /* WireGuardConfig.swift in Sources */,
 				0302783C2956D4E00044DC5A /* WireGuardPeer.swift in Sources */,
+				03BDD316295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				03507EA228F40E78004D0D0F /* Delay.swift in Sources */,
 				03507EA428F4BAC9004D0D0F /* WidgetUtils.swift in Sources */,
 				03B33D2128F1DB30006F7BB3 /* VPN_Widget.swift in Sources */,
@@ -1120,6 +1127,7 @@
 				03E866EA29167140002F3E6B /* String+Extensions.swift in Sources */,
 				6F05DBC82894130100632934 /* ConnectView.swift in Sources */,
 				6F05DBB92894128700632934 /* ContentView.swift in Sources */,
+				03BDD314295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				036653EA29554E5800D9FFF6 /* NetworkService.swift in Sources */,
 				03E866E82915E7C8002F3E6B /* VPNStatus+Extensions.swift in Sources */,
 				03BDDE6929152C6C0026B1E4 /* Configuration.swift in Sources */,
