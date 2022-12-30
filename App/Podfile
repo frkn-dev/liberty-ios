@@ -5,11 +5,12 @@
 
 def network
   pod 'Alamofire'
+  pod 'SwiftyJSON'
 end
 
 # App targets
 
-target 'Liberty iOS' do
+target 'Liberty_iOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -17,7 +18,7 @@ target 'Liberty iOS' do
 
 end
 
-target 'Liberty macOS' do
+target 'Liberty_macOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 

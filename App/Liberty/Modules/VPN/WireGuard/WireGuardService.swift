@@ -18,6 +18,7 @@ class WireGuardService {
     // MARK: - Properties
     
     private let networkService = NetworkService.shared
+    private let countryService = CountryService.shared
     
     private let vpn = NetworkExtensionVPN()
     var vpnStatus: VPNStatus = .disconnected
@@ -58,11 +59,12 @@ class WireGuardService {
         group.enter()
         
         if needsNewConfig {
-            networkService.getPeer() { result in
-                if let connectionInfo = result.value {
-                    peerConfig = connectionInfo
+            networkService.getPeer(for: countryService.selectedCountry.code) { result in
+                switch result {
+                case .success(let config):
+                    peerConfig = config
                     Defaults.ConnectionData.wireGuardConfig = peerConfig
-                } else {
+                case .failure:
                     self.observers.forEach { $0.disconnectedByFailure() }
                 }
                 

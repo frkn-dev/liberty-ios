@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire-macOS/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON-macOS/SwiftyJSON.framework

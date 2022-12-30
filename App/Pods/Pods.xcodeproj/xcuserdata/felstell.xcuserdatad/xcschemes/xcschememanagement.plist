@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Liberty iOS.xcscheme</key>
+		<key>Pods-Liberty_iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Liberty macOS.xcscheme</key>
+		<key>Pods-Liberty_macOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -35,6 +35,16 @@
 			<false/>
 		</dict>
 		<key>Pods-WireGuard Network Extension macOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON-macOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

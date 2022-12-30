@@ -6,29 +6,49 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-enum Country: String {
+struct Country: JSONInitializable, Codable {
     
-    case russia        = "RU"
-    case ukraine       = "UA"
-    case netherlands   = "NL"
-    case latvia        = "LT"
-    case lithuania     = "LV"
-    case unitedKingdom = "UK"
-    case usa           = "USA"
+    // MARK: - Properties
     
+    let code: String
+    let name: String
     
-    var description: String {
-        
-        switch self {
-            
-        case .russia:        return "🇷🇺 " + String(localized: "country.russia")
-        case .ukraine:       return "🇺🇦 " + String(localized: "country.ukraine")
-        case .netherlands:   return "🇳🇱 " + String(localized: "country.netherlands")
-        case .latvia:        return "🇱🇻 " + String(localized: "country.latvia")
-        case .lithuania:     return "🇱🇹 " + String(localized: "country.lithuania")
-        case .unitedKingdom: return "🇬🇧 " + String(localized: "country.unitedKingdom")
-        case .usa:           return "🇺🇸 " + String(localized: "country.usa")
+    enum CodingKeys: String, CodingKey {
+        case code
+        case name
+    }
+    
+    // MARK: - Init
+    
+    init?(json: JSON) {
+        guard json.isNotEmpty else { return nil }
+        guard
+            let code = json["code"].string,
+            let name = json["name"].string
+        else {
+            // TODO: Add logging
+            return nil
         }
+        self.code = code
+        self.name = name
+    }
+    
+    public init(from decoder: Decoder) throws {
+        
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        code = try container.decode(String.self, forKey: .code)
+        name = try container.decode(String.self, forKey: .name)
+    }
+    
+    public init(code: String = "dev", name: String = "🏴‍☠️ Development") {
+        
+        self.code = code
+        self.name = name
     }
 }
+
+extension Country: Hashable {}
+

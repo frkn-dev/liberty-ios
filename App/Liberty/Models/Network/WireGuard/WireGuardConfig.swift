@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-struct WireGuardConfig: Codable {
+struct WireGuardConfig: JSONInitializable, Codable {
     
     // MARK: - Properties
     
@@ -20,6 +21,19 @@ struct WireGuardConfig: Codable {
     }
     
     // MARK: - Init
+    
+    init?(json: JSON) {
+        guard json.isNotEmpty else { return nil }
+        guard
+            let interface = WireGuardInterface(json: json["interface"]),
+            let peer      = WireGuardPeer(json: json["peer"])
+        else {
+            // TODO: Add logging
+            return nil
+        }
+        self.interface = interface
+        self.peer      = peer
+    }
     
     public init(from decoder: Decoder) throws {
         

@@ -14,23 +14,20 @@ class NetworkService: NetworkBase {
     
     public static let shared = NetworkService()
     
-    // MARK: - Properties
-    
-    public var networkObservers: [NetworkObserver] = []
-    
-    public var selectedCountry: Country = .netherlands {
-        didSet {
-            networkObservers.forEach { $0.countryUpdated() }
-        }
-    }
-    
     // MARK: - Functions
     
-    public func getPeer(completion: @escaping (DataResponse<WireGuardConfig, AFError>) -> Void) {
+    public func getPeer(for countryCode: String,
+                        completion: @escaping (Result<WireGuardConfig, AFError>) -> Void) {
         
-        var parameters: Parameters = [:]
+        let parameters: Parameters = ["location" : countryCode]
         
         let request = Router.getPeer(parameters: parameters)
         requestAndParse(router: request, type: WireGuardConfig.self, completion: completion)
+    }
+    
+    public func getLocations(completion: @escaping (Result<[Country], AFError>) -> Void) {
+        
+        let request = Router.getLocations
+        requestAndParseArray(router: request, type: Country.self, completion: completion)
     }
 }

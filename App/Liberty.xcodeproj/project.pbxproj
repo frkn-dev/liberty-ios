@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0301002A295975C800DA03A5 /* VPNStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010029295975C800DA03A5 /* VPNStatusObserver.swift */; };
 		0301002B295975C800DA03A5 /* VPNStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010029295975C800DA03A5 /* VPNStatusObserver.swift */; };
+		0301002E295D5CB000DA03A5 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0301002D295D5CB000DA03A5 /* CountryService.swift */; };
+		0301002F295D5CB300DA03A5 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0301002D295D5CB000DA03A5 /* CountryService.swift */; };
+		03010032295D646F00DA03A5 /* JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010031295D646F00DA03A5 /* JSONInitializable.swift */; };
+		03010033295D646F00DA03A5 /* JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010031295D646F00DA03A5 /* JSONInitializable.swift */; };
+		03010035295D654500DA03A5 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010034295D654500DA03A5 /* Collection+Extensions.swift */; };
+		03010036295D654500DA03A5 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010034295D654500DA03A5 /* Collection+Extensions.swift */; };
 		0302783A2956D4AF0044DC5A /* WireGuardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DC539294C968C005FD6B0 /* WireGuardConfig.swift */; };
 		0302783B2956D4DA0044DC5A /* WireGuardInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332213029567FEB00C7A154 /* WireGuardInterface.swift */; };
 		0302783C2956D4E00044DC5A /* WireGuardPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332212D29567FE400C7A154 /* WireGuardPeer.swift */; };
@@ -36,8 +42,8 @@
 		036653EB29554E5800D9FFF6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E929554E5800D9FFF6 /* NetworkService.swift */; };
 		036653F629556D8B00D9FFF6 /* CountriesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F529556D8B00D9FFF6 /* CountriesScreen.swift */; };
 		036653F729556D8B00D9FFF6 /* CountriesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F529556D8B00D9FFF6 /* CountriesScreen.swift */; };
-		036653F92955778100D9FFF6 /* NetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F82955778100D9FFF6 /* NetworkObserver.swift */; };
-		036653FA2955778100D9FFF6 /* NetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F82955778100D9FFF6 /* NetworkObserver.swift */; };
+		036653F92955778100D9FFF6 /* CountryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F82955778100D9FFF6 /* CountryObserver.swift */; };
+		036653FA2955778100D9FFF6 /* CountryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F82955778100D9FFF6 /* CountryObserver.swift */; };
 		03941E13294566700042C67A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03941E12294566700042C67A /* View+Extension.swift */; };
 		03941E1F294606590042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
 		03941E2B29460F750042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
@@ -209,6 +215,9 @@
 
 /* Begin PBXFileReference section */
 		03010029295975C800DA03A5 /* VPNStatusObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusObserver.swift; sourceTree = "<group>"; };
+		0301002D295D5CB000DA03A5 /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		03010031295D646F00DA03A5 /* JSONInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONInitializable.swift; sourceTree = "<group>"; };
+		03010034295D654500DA03A5 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		0313C87329543CC8007EE448 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0332212D29567FE400C7A154 /* WireGuardPeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardPeer.swift; sourceTree = "<group>"; };
 		0332213029567FEB00C7A154 /* WireGuardInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardInterface.swift; sourceTree = "<group>"; };
@@ -223,7 +232,7 @@
 		036653E3295547B600D9FFF6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		036653E929554E5800D9FFF6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		036653F529556D8B00D9FFF6 /* CountriesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesScreen.swift; sourceTree = "<group>"; };
-		036653F82955778100D9FFF6 /* NetworkObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkObserver.swift; sourceTree = "<group>"; };
+		036653F82955778100D9FFF6 /* CountryObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryObserver.swift; sourceTree = "<group>"; };
 		03941E12294566700042C67A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		03941E21294606590042C67A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03941E24294608C60042C67A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -255,6 +264,7 @@
 		03E866E929167140002F3E6B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		03E866EB29168834002F3E6B /* WireGuard Network Extension iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WireGuard Network Extension iOS.entitlements"; sourceTree = "<group>"; };
 		1504707A52871250305B4DC6 /* Pods-VPN WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPN WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-VPN WidgetExtension/Pods-VPN WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		2AE54A182FFDC4578ECBD237 /* Pods-Liberty_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty_macOS.release.xcconfig"; path = "Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		4BC61969CC50D7320F6B0489 /* Pods_Liberty_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liberty_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F05DBB32894128700632934 /* Liberty_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
@@ -280,6 +290,9 @@
 		B06B16AC07D440EEA040C444 /* Pods_WireGuard_Network_Extension_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireGuard_Network_Extension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4EDFE703991775E2288987 /* Pods_Liberty_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liberty_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA09D73B8FBFDD80CB4FF0C /* Pods_VPN_WidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPN_WidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB91BE31D87A975C0948261E /* Pods-Liberty_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty_iOS.release.xcconfig"; path = "Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C0A0FC36B96CAAEF4C3C3B4E /* Pods-Liberty_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C893F8BF46C1328564903698 /* Pods-Liberty_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CD5AC1D7C5E8C2E99CBD4B42 /* Pods-VPN WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPN WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-VPN WidgetExtension/Pods-VPN WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		DAA2F32BEBEAE44CB37F342C /* Pods-Liberty iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty iOS.release.xcconfig"; path = "Target Support Files/Pods-Liberty iOS/Pods-Liberty iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -347,6 +360,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0301002C295D5C9F00DA03A5 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				0301002D295D5CB000DA03A5 /* CountryService.swift */,
+				036653F82955778100D9FFF6 /* CountryObserver.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		03010030295D646300DA03A5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				03010031295D646F00DA03A5 /* JSONInitializable.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		033221362956828F00C7A154 /* WireGuard */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,7 +429,6 @@
 			isa = PBXGroup;
 			children = (
 				036653E929554E5800D9FFF6 /* NetworkService.swift */,
-				036653F82955778100D9FFF6 /* NetworkObserver.swift */,
 				033221372956882500C7A154 /* NetworkBase.swift */,
 				0332213A295688FD00C7A154 /* Router.swift */,
 			);
@@ -435,6 +464,7 @@
 		03AD5174289AC2120097101D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0301002C295D5C9F00DA03A5 /* Country */,
 				03941E11294551810042C67A /* Network */,
 				03AD5173289AC2080097101D /* VPN */,
 				03507E7328F3B215004D0D0F /* DeeplinkParser.swift */,
@@ -445,8 +475,8 @@
 		03AD5179289AC6E30097101D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				035DC538294C9674005FD6B0 /* Network */,
 				03D333EB28A96A1F0083B0D0 /* Typealiases.swift */,
+				035DC538294C9674005FD6B0 /* Network */,
 				036653E3295547B600D9FFF6 /* Country.swift */,
 			);
 			path = Models;
@@ -523,10 +553,11 @@
 		03E866E62915E7A9002F3E6B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */,
-				03E866E929167140002F3E6B /* String+Extensions.swift */,
 				03941E12294566700042C67A /* View+Extension.swift */,
+				03E866E929167140002F3E6B /* String+Extensions.swift */,
 				03CC303E29545D1000EBB91E /* Scene+Extensions.swift */,
+				03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */,
+				03010034295D654500DA03A5 /* Collection+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -546,6 +577,10 @@
 				DAA2F32BEBEAE44CB37F342C /* Pods-Liberty iOS.release.xcconfig */,
 				7539D3D417486920368436F9 /* Pods-Liberty macOS.debug.xcconfig */,
 				9A87FC979B9275D380EAFEC1 /* Pods-Liberty macOS.release.xcconfig */,
+				C893F8BF46C1328564903698 /* Pods-Liberty_iOS.debug.xcconfig */,
+				BB91BE31D87A975C0948261E /* Pods-Liberty_iOS.release.xcconfig */,
+				C0A0FC36B96CAAEF4C3C3B4E /* Pods-Liberty_macOS.debug.xcconfig */,
+				2AE54A182FFDC4578ECBD237 /* Pods-Liberty_macOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -579,12 +614,13 @@
 			isa = PBXGroup;
 			children = (
 				6F05DBB62894128700632934 /* LibertyApp.swift */,
-				03507E9F28F40CAF004D0D0F /* Utils */,
 				6F45B97628942FCC001076C8 /* UI */,
 				03E866E62915E7A9002F3E6B /* Extensions */,
 				03AD5179289AC6E30097101D /* Models */,
 				03AD5174289AC2120097101D /* Modules */,
 				03D333DC28A916010083B0D0 /* Supporting Files */,
+				03010030295D646300DA03A5 /* Other */,
+				03507E9F28F40CAF004D0D0F /* Utils */,
 			);
 			path = Liberty;
 			sourceTree = "<group>";
@@ -904,7 +940,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Liberty macOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Liberty_macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -917,15 +953,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Liberty macOS/Pods-Liberty macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Liberty macOS/Pods-Liberty macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Liberty macOS/Pods-Liberty macOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3013BB7357272A1C04C38707 /* [CP] Check Pods Manifest.lock */ = {
@@ -943,7 +979,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Liberty iOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Liberty_iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -978,15 +1014,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Liberty iOS/Pods-Liberty iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Liberty iOS/Pods-Liberty iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Liberty iOS/Pods-Liberty iOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB1C226EF330B1AEEAC8FF7E /* [CP] Check Pods Manifest.lock */ = {
@@ -1041,10 +1077,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				036653F729556D8B00D9FFF6 /* CountriesScreen.swift in Sources */,
-				036653FA2955778100D9FFF6 /* NetworkObserver.swift in Sources */,
+				036653FA2955778100D9FFF6 /* CountryObserver.swift in Sources */,
 				035DC53B294C968C005FD6B0 /* WireGuardConfig.swift in Sources */,
 				0332212F29567FE400C7A154 /* WireGuardPeer.swift in Sources */,
 				03A10091294C0B77005E3324 /* Defaults.swift in Sources */,
+				03010033295D646F00DA03A5 /* JSONInitializable.swift in Sources */,
 				03A10092294C0B77005E3324 /* DonateScreen.swift in Sources */,
 				03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */,
 				033221392956882500C7A154 /* NetworkBase.swift in Sources */,
@@ -1056,6 +1093,7 @@
 				03A10095294C0B77005E3324 /* String+Extensions.swift in Sources */,
 				03A10096294C0B77005E3324 /* ConnectView.swift in Sources */,
 				0301002B295975C800DA03A5 /* VPNStatusObserver.swift in Sources */,
+				0301002F295D5CB300DA03A5 /* CountryService.swift in Sources */,
 				03A10097294C0B77005E3324 /* ContentView.swift in Sources */,
 				03BDD315295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				036653EB29554E5800D9FFF6 /* NetworkService.swift in Sources */,
@@ -1067,6 +1105,7 @@
 				03A1009D294C0B77005E3324 /* AboutScreen.swift in Sources */,
 				03A1009E294C0B77005E3324 /* LibertyApp.swift in Sources */,
 				03A1009F294C0B77005E3324 /* VPN_Widget.intentdefinition in Sources */,
+				03010036295D654500DA03A5 /* Collection+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,10 +1148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				036653F629556D8B00D9FFF6 /* CountriesScreen.swift in Sources */,
-				036653F92955778100D9FFF6 /* NetworkObserver.swift in Sources */,
+				036653F92955778100D9FFF6 /* CountryObserver.swift in Sources */,
 				035DC53A294C968C005FD6B0 /* WireGuardConfig.swift in Sources */,
 				0332212E29567FE400C7A154 /* WireGuardPeer.swift in Sources */,
 				03507E9D28F3B954004D0D0F /* Defaults.swift in Sources */,
+				03010032295D646F00DA03A5 /* JSONInitializable.swift in Sources */,
 				6F05DBC92894130100632934 /* DonateScreen.swift in Sources */,
 				03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */,
 				033221382956882500C7A154 /* NetworkBase.swift in Sources */,
@@ -1124,6 +1164,7 @@
 				03E866EA29167140002F3E6B /* String+Extensions.swift in Sources */,
 				6F05DBC82894130100632934 /* ConnectView.swift in Sources */,
 				0301002A295975C800DA03A5 /* VPNStatusObserver.swift in Sources */,
+				0301002E295D5CB000DA03A5 /* CountryService.swift in Sources */,
 				6F05DBB92894128700632934 /* ContentView.swift in Sources */,
 				03BDD314295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				036653EA29554E5800D9FFF6 /* NetworkService.swift in Sources */,
@@ -1135,6 +1176,7 @@
 				6F05DBCA2894130100632934 /* AboutScreen.swift in Sources */,
 				6F05DBB72894128700632934 /* LibertyApp.swift in Sources */,
 				03B33D2728F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */,
+				03010035295D654500DA03A5 /* Collection+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1220,7 +1262,7 @@
 		};
 		03A100B1294C0B77005E3324 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7539D3D417486920368436F9 /* Pods-Liberty macOS.debug.xcconfig */;
+			baseConfigurationReference = C0A0FC36B96CAAEF4C3C3B4E /* Pods-Liberty_macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon macOS";
@@ -1272,7 +1314,7 @@
 		};
 		03A100B2294C0B77005E3324 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A87FC979B9275D380EAFEC1 /* Pods-Liberty macOS.release.xcconfig */;
+			baseConfigurationReference = 2AE54A182FFDC4578ECBD237 /* Pods-Liberty_macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon macOS";
@@ -1652,7 +1694,7 @@
 		};
 		6F05DBC32894128A00632934 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FF64B75A60B43CF90A5E21B /* Pods-Liberty iOS.debug.xcconfig */;
+			baseConfigurationReference = C893F8BF46C1328564903698 /* Pods-Liberty_iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";
@@ -1701,7 +1743,7 @@
 		};
 		6F05DBC42894128A00632934 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA2F32BEBEAE44CB37F342C /* Pods-Liberty iOS.release.xcconfig */;
+			baseConfigurationReference = BB91BE31D87A975C0948261E /* Pods-Liberty_iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";

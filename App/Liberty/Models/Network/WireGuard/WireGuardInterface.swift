@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 struct WireGuardInterface: Codable {
     
@@ -22,6 +23,21 @@ struct WireGuardInterface: Codable {
     }
     
     // MARK: - Init
+    
+    init?(json: JSON) {
+        guard json.isNotEmpty else { return nil }
+        guard
+            let address = json["address"].string,
+            let key     = json["key"].string,
+            let dns     = json["dns"].string
+        else {
+            // TODO: Add logging
+            return nil
+        }
+        self.address = address
+        self.key     = key
+        self.dns     = dns
+    }
     
     public init(from decoder: Decoder) throws {
         

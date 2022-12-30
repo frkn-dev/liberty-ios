@@ -17,6 +17,7 @@ struct ConnectView: View {
     
     let wireGuardService = WireGuardService.shared
     let networkService   = NetworkService.shared
+    let countryService   = CountryService.shared
     
     enum SupplementaryScreen: Int, Identifiable {
         var id: Int {
@@ -42,7 +43,7 @@ struct ConnectView: View {
     
     // MARK: - View
     
-    @State var selectedCountry: Country = .netherlands
+    @State var selectedCountry = Country()
     @State var connectionState: VPNStatus = .disconnected
     @State var shownSupplementaryScreen: SupplementaryScreen? = nil
     
@@ -171,7 +172,7 @@ struct ConnectView: View {
                             Text(String(localized: "country.button").uppercased())
                                 .font(.custom("Exo 2", size: 9, relativeTo: .body))
                                 .foregroundColor(.gray)
-                            Text("\(selectedCountry.description)")
+                            Text("\(selectedCountry.name)")
                                 .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
                         }
                         Spacer()
@@ -215,6 +216,7 @@ struct ConnectView: View {
         }
         .onAppear(perform: lastConnectionState)
         .onAppear(perform: setupValues)
+        .onAppear(perform: getLocations)
     }
 }
 
@@ -277,8 +279,8 @@ extension ConnectView {
     
     private func setupValues() {
         
-        networkService.networkObservers.append(self)
-        selectedCountry = networkService.selectedCountry
+        countryService.countryObservers.append(self)
+        selectedCountry = countryService.selectedCountry
         
         wireGuardService.observers.append(self)
         
@@ -293,6 +295,17 @@ extension ConnectView {
                 updateWidgetWith(state)
                 
                 print("VPN status is \(state)")
+            }
+        }
+    }
+    
+    private func getLocations() {
+        networkService.getLocations() { result in
+            switch result {
+            case .success(let countries):
+                countryService.supportedCountries = countries
+            case .failure:
+                countryService.supportedCountries = []
             }
         }
     }
@@ -315,10 +328,10 @@ extension ConnectView {
     }
 }
 
-extension ConnectView: NetworkObserver {
+extension ConnectView: CountryObserver {
     
     func countryUpdated() {
-        selectedCountry = networkService.selectedCountry
+        selectedCountry = countryService.selectedCountry
     }
 }
 

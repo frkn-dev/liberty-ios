@@ -12,16 +12,13 @@ struct CountriesScreen: View {
     // MARK: - Properties
     
     let networkService = NetworkService.shared
+    let countryService = CountryService.shared
     
-    let supportedCountries: [Country] = [
-        .netherlands,
-        .russia,
-        .ukraine,
-        .unitedKingdom,
-        .usa
-    ]
+    // MARK: - Shortcuts
     
-    // MARK: -
+    var supportedCountries: [Country] { return countryService.supportedCountries }
+    
+    // MARK: - UI
     
     @Environment(\.dismiss) var dismiss
     
@@ -35,14 +32,15 @@ struct CountriesScreen: View {
                 }
                 .buttonStyle(.plain)
                 .font(.custom("Exo 2", size: 14, relativeTo: .title).bold())
+                .frame(maxWidth: .infinity, alignment: .leading)
                 
                 ForEach(supportedCountries, id: \.self) { item in
                     Button {
-                        networkService.selectedCountry = item
+                        countryService.selectedCountry = item
                         dismiss()
                     } label: {
                         HStack {
-                            Text(item.description)
+                            Text(item.name)
                                 .font(.custom("Exo 2", size: 16, relativeTo: .title).bold())
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }

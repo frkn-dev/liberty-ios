@@ -16,12 +16,14 @@ public enum Router: URLRequestConvertible {
     // MARK: - Case
     
     case getPeer(parameters: Parameters)
+    case getLocations
     
     // MARK: - Method
     
     var method: HTTPMethod {
         switch self {
-            case .getPeer: return .get
+            case .getPeer:      return .get
+            case .getLocations: return .get
         }
     }
     
@@ -29,7 +31,8 @@ public enum Router: URLRequestConvertible {
     
     var path: String {
         switch self {
-            case .getPeer: return "/peer"
+            case .getPeer:      return "/peer"
+            case .getLocations: return "/locations"
         }
     }
     

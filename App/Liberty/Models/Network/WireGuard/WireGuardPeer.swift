@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-struct WireGuardPeer: Codable {
+struct WireGuardPeer: JSONInitializable, Codable {
     
     // MARK: - Properties
     
@@ -24,6 +25,23 @@ struct WireGuardPeer: Codable {
     }
     
     // MARK: - Init
+    
+    init?(json: JSON) {
+        guard json.isNotEmpty else { return nil }
+        guard
+            let pubkey      = json["pubkey"].string,
+            let psk         = json["psk"].string,
+            let allowed_ips = json["allowed_ips"].string,
+            let endpoint    = json["endpoint"].string
+        else {
+            // TODO: Add logging
+            return nil
+        }
+        self.pubkey      = pubkey
+        self.psk         = psk
+        self.allowed_ips = allowed_ips
+        self.endpoint    = endpoint
+    }
     
     public init(from decoder: Decoder) throws {
         
