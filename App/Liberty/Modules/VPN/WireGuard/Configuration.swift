@@ -16,24 +16,23 @@ extension WireGuard {
         static func make(from config: WireGuardConfig) -> WireGuard.ProviderConfiguration? {
                 
             var builder = try! WireGuard.ConfigurationBuilder(config.interface.key)
-            builder.addresses = config.interface.address.components(separatedBy: ",")
-            builder.dnsServers = config.interface.dns.components(separatedBy: ",")
+            builder.addresses = config.interface.address.components(separatedBy: ", ")
+            builder.dnsServers = config.interface.dns.components(separatedBy: ", ")
             try! builder.addPeer(config.peer.pubkey,
                                  endpoint: config.peer.endpoint)
             
-            config.peer.allowed_ips.components(separatedBy: ",").forEach {
+            config.peer.allowed_ips.components(separatedBy: ", ").forEach {
                 builder.addAllowedIP($0, toPeer: 0)
             }
             
             builder.setKeepAlive(25, forPeer: 0)
-            try! builder.setPreSharedKey(config.peer.psk,
-                                         ofPeer: 0)
+            try! builder.setPreSharedKey(config.peer.psk, ofPeer: 0)
             
-            let config = builder.build()
+            let wgConfig = builder.build()
             
             return WireGuard.ProviderConfiguration("fuckrkn1",
                                                    appGroup: appGroup,
-                                                   configuration: config)
+                                                   configuration: wgConfig)
         }
     }
     
