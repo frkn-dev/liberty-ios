@@ -11,7 +11,7 @@ public enum Router: URLRequestConvertible {
     
     // MARK: - BaseURL
     
-    public static var baseURLString: String = "http://94.176.238.220:8080"
+    public static var baseURLString: String = "https://api.fuckrkn1.xyz"
     
     // MARK: - Case
     

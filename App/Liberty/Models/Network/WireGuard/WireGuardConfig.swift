@@ -25,7 +25,7 @@ struct WireGuardConfig: JSONInitializable, Codable {
     init?(json: JSON) {
         guard json.isNotEmpty else { return nil }
         guard
-            let interface = WireGuardInterface(json: json["interface"]),
+            let interface = WireGuardInterface(json: json["iface"]),
             let peer      = WireGuardPeer(json: json["peer"])
         else {
             // TODO: Add logging
