@@ -1,0 +1,1974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0301002A295975C800DA03A5 /* VPNStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010029295975C800DA03A5 /* VPNStatusObserver.swift */; };
+		0301002B295975C800DA03A5 /* VPNStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010029295975C800DA03A5 /* VPNStatusObserver.swift */; };
+		0301002E295D5CB000DA03A5 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0301002D295D5CB000DA03A5 /* CountryService.swift */; };
+		0301002F295D5CB300DA03A5 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0301002D295D5CB000DA03A5 /* CountryService.swift */; };
+		03010032295D646F00DA03A5 /* JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010031295D646F00DA03A5 /* JSONInitializable.swift */; };
+		03010033295D646F00DA03A5 /* JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010031295D646F00DA03A5 /* JSONInitializable.swift */; };
+		03010035295D654500DA03A5 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010034295D654500DA03A5 /* Collection+Extensions.swift */; };
+		03010036295D654500DA03A5 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010034295D654500DA03A5 /* Collection+Extensions.swift */; };
+		0332212E29567FE400C7A154 /* WireGuardPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332212D29567FE400C7A154 /* WireGuardPeer.swift */; };
+		0332212F29567FE400C7A154 /* WireGuardPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332212D29567FE400C7A154 /* WireGuardPeer.swift */; };
+		0332213129567FEB00C7A154 /* WireGuardInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332213029567FEB00C7A154 /* WireGuardInterface.swift */; };
+		0332213229567FEB00C7A154 /* WireGuardInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332213029567FEB00C7A154 /* WireGuardInterface.swift */; };
+		033221382956882500C7A154 /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033221372956882500C7A154 /* NetworkBase.swift */; };
+		033221392956882500C7A154 /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033221372956882500C7A154 /* NetworkBase.swift */; };
+		0332213B295688FD00C7A154 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332213A295688FD00C7A154 /* Router.swift */; };
+		0332213C295688FD00C7A154 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332213A295688FD00C7A154 /* Router.swift */; };
+		03507E6E28F3A8A6004D0D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B33D2328F1DB31006F7BB3 /* Assets.xcassets */; };
+		03507E6F28F3A923004D0D0F /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
+		03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E7328F3B215004D0D0F /* DeeplinkParser.swift */; };
+		03507E9D28F3B954004D0D0F /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E9C28F3B954004D0D0F /* Defaults.swift */; };
+		03507EA128F40E78004D0D0F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA028F40E78004D0D0F /* Delay.swift */; };
+		03507EA228F40E78004D0D0F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA028F40E78004D0D0F /* Delay.swift */; };
+		03507EA428F4BAC9004D0D0F /* WidgetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */; };
+		03507EA728F4BBDD004D0D0F /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA628F4BBDD004D0D0F /* WidgetContent.swift */; };
+		035DC53A294C968C005FD6B0 /* WireGuardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DC539294C968C005FD6B0 /* WireGuardConfig.swift */; };
+		035DC53B294C968C005FD6B0 /* WireGuardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DC539294C968C005FD6B0 /* WireGuardConfig.swift */; };
+		036653E4295547B600D9FFF6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E3295547B600D9FFF6 /* Country.swift */; };
+		036653E5295547B600D9FFF6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E3295547B600D9FFF6 /* Country.swift */; };
+		036653EA29554E5800D9FFF6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E929554E5800D9FFF6 /* NetworkService.swift */; };
+		036653EB29554E5800D9FFF6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E929554E5800D9FFF6 /* NetworkService.swift */; };
+		036653F629556D8B00D9FFF6 /* CountriesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F529556D8B00D9FFF6 /* CountriesScreen.swift */; };
+		036653F729556D8B00D9FFF6 /* CountriesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F529556D8B00D9FFF6 /* CountriesScreen.swift */; };
+		036653F92955778100D9FFF6 /* CountryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F82955778100D9FFF6 /* CountryObserver.swift */; };
+		036653FA2955778100D9FFF6 /* CountryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F82955778100D9FFF6 /* CountryObserver.swift */; };
+		03941E13294566700042C67A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03941E12294566700042C67A /* View+Extension.swift */; };
+		03941E1F294606590042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
+		03941E2B29460F750042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
+		03A10091294C0B77005E3324 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E9C28F3B954004D0D0F /* Defaults.swift */; };
+		03A10092294C0B77005E3324 /* DonateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC62894130100632934 /* DonateScreen.swift */; };
+		03A10093294C0B77005E3324 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03941E12294566700042C67A /* View+Extension.swift */; };
+		03A10094294C0B77005E3324 /* DeeplinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E7328F3B215004D0D0F /* DeeplinkParser.swift */; };
+		03A10095294C0B77005E3324 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E866E929167140002F3E6B /* String+Extensions.swift */; };
+		03A10096294C0B77005E3324 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC52894130100632934 /* ConnectView.swift */; };
+		03A10097294C0B77005E3324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB82894128700632934 /* ContentView.swift */; };
+		03A10098294C0B77005E3324 /* VPNStatus+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */; };
+		03A10099294C0B77005E3324 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDDE6829152C6C0026B1E4 /* Configuration.swift */; };
+		03A1009A294C0B77005E3324 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507EA028F40E78004D0D0F /* Delay.swift */; };
+		03A1009B294C0B77005E3324 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333EB28A96A1F0083B0D0 /* Typealiases.swift */; };
+		03A1009C294C0B77005E3324 /* WireGuardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5177289AC51F0097101D /* WireGuardService.swift */; };
+		03A1009D294C0B77005E3324 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC72894130100632934 /* AboutScreen.swift */; };
+		03A1009E294C0B77005E3324 /* LibertyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB62894128700632934 /* LibertyApp.swift */; };
+		03A1009F294C0B77005E3324 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
+		03A100A1294C0B77005E3324 /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03A1008C294C0B77005E3324 /* TunnelKitWireGuard */; };
+		03A100A2294C0B77005E3324 /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03A1008A294C0B77005E3324 /* TunnelKit */; };
+		03A100A3294C0B77005E3324 /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03A1008D294C0B77005E3324 /* TunnelKitWireGuardAppExtension */; };
+		03A100A6294C0B77005E3324 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBE2894128A00632934 /* Preview Assets.xcassets */; };
+		03A100A7294C0B77005E3324 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
+		03A100A9294C0B77005E3324 /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
+		03A100BA294C1124005E3324 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CDC189291323510099DE5F /* NetworkExtension.framework */; };
+		03A100C2294C1124005E3324 /* WireGuard Network Extension macOS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03A100C7294C1155005E3324 /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03A100C6294C1155005E3324 /* TunnelKit */; };
+		03A100C9294C1155005E3324 /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03A100C8294C1155005E3324 /* TunnelKitWireGuard */; };
+		03A100CB294C1155005E3324 /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03A100CA294C1155005E3324 /* TunnelKitWireGuardAppExtension */; };
+		03A100D6294C174E005E3324 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */; };
+		03AD5178289AC51F0097101D /* WireGuardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5177289AC51F0097101D /* WireGuardService.swift */; };
+		03B33D1C28F1DB30006F7BB3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */; };
+		03B33D1E28F1DB30006F7BB3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B33D1D28F1DB30006F7BB3 /* SwiftUI.framework */; };
+		03B33D2128F1DB30006F7BB3 /* VPN_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2028F1DB30006F7BB3 /* VPN_Widget.swift */; };
+		03B33D2628F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
+		03B33D2728F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */; };
+		03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03BDD3122959340100D43321 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03507E9C28F3B954004D0D0F /* Defaults.swift */; };
+		03BDD314295937DB00D43321 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDD313295937DB00D43321 /* GlobalFunctions.swift */; };
+		03BDD315295937DB00D43321 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDD313295937DB00D43321 /* GlobalFunctions.swift */; };
+		03BDD316295937DB00D43321 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDD313295937DB00D43321 /* GlobalFunctions.swift */; };
+		03BDDE6929152C6C0026B1E4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDDE6829152C6C0026B1E4 /* Configuration.swift */; };
+		03CAA6DC295F509500FFCC82 /* WireGuardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DC539294C968C005FD6B0 /* WireGuardConfig.swift */; };
+		03CAA6DD295F509800FFCC82 /* WireGuardInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332213029567FEB00C7A154 /* WireGuardInterface.swift */; };
+		03CAA6DE295F509A00FFCC82 /* WireGuardPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332212D29567FE400C7A154 /* WireGuardPeer.swift */; };
+		03CAA6DF295F50DD00FFCC82 /* JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010031295D646F00DA03A5 /* JSONInitializable.swift */; };
+		03CAA6E0295F50E700FFCC82 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010034295D654500DA03A5 /* Collection+Extensions.swift */; };
+		03CAA6E1296C83DE00FFCC82 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E3295547B600D9FFF6 /* Country.swift */; };
+		03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
+		03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
+		03CC30432954617A00EBB91E /* macOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CC30412954617A00EBB91E /* macOS Info.plist */; };
+		03CC304429546AC500EBB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
+		03CC304529546AC800EBB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBA2894128A00632934 /* Assets.xcassets */; };
+		03CC30482954721000EBB91E /* iOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97F289433E5001076C8 /* iOS Info.plist */; };
+		03CDC18A291323510099DE5F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CDC189291323510099DE5F /* NetworkExtension.framework */; };
+		03CDC192291323510099DE5F /* WireGuard Network Extension iOS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03CDC1A3291349F50099DE5F /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A2291349F50099DE5F /* TunnelKit */; };
+		03CDC1A5291349F50099DE5F /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A4291349F50099DE5F /* TunnelKitWireGuard */; };
+		03CDC1A729134A000099DE5F /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A629134A000099DE5F /* TunnelKit */; };
+		03CDC1A929134A000099DE5F /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03CDC1A829134A000099DE5F /* TunnelKitWireGuard */; };
+		03D333EC28A96A1F0083B0D0 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D333EB28A96A1F0083B0D0 /* Typealiases.swift */; };
+		03E866D2291533D4002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866D1291533D4002F3E6B /* TunnelKitWireGuardAppExtension */; };
+		03E866D4291533DB002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866D3291533DB002F3E6B /* TunnelKitWireGuardAppExtension */; };
+		03E866D729153B20002F3E6B /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */; };
+		03E866DD2915E63D002F3E6B /* VPNStatus+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E866DC2915E63D002F3E6B /* VPNStatus+Extensions.swift */; };
+		03E866E12915E6B1002F3E6B /* TunnelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866E02915E6B1002F3E6B /* TunnelKit */; };
+		03E866E32915E6B1002F3E6B /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866E22915E6B1002F3E6B /* TunnelKitWireGuard */; };
+		03E866E52915E6B1002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03E866E42915E6B1002F3E6B /* TunnelKitWireGuardAppExtension */; };
+		03E866E82915E7C8002F3E6B /* VPNStatus+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */; };
+		03E866EA29167140002F3E6B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E866E929167140002F3E6B /* String+Extensions.swift */; };
+		5450C945C95DCE3C1D82F309 /* Pods_Liberty_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC61969CC50D7320F6B0489 /* Pods_Liberty_macOS.framework */; };
+		5828D1D153780436198D100B /* Pods_WireGuard_Network_Extension_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46139BA8727B480E6021303 /* Pods_WireGuard_Network_Extension_iOS.framework */; };
+		6F05DBB72894128700632934 /* LibertyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB62894128700632934 /* LibertyApp.swift */; };
+		6F05DBB92894128700632934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBB82894128700632934 /* ContentView.swift */; };
+		6F05DBBF2894128A00632934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F05DBBE2894128A00632934 /* Preview Assets.xcassets */; };
+		6F05DBC82894130100632934 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC52894130100632934 /* ConnectView.swift */; };
+		6F05DBC92894130100632934 /* DonateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC62894130100632934 /* DonateScreen.swift */; };
+		6F05DBCA2894130100632934 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F05DBC72894130100632934 /* AboutScreen.swift */; };
+		6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F45B97D289430CD001076C8 /* Exo2.ttf */; };
+		BC65004EC44ED2D10BC7C48C /* Pods_Liberty_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4EDFE703991775E2288987 /* Pods_Liberty_iOS.framework */; };
+		C13F488B3D0F33852CA06667 /* Pods_VPN_WidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA09D73B8FBFDD80CB4FF0C /* Pods_VPN_WidgetExtension.framework */; };
+		C2FFFDBB231A88E409D89180 /* Pods_WireGuard_Network_Extension_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A10070294C0A85005E3324 /* Pods_WireGuard_Network_Extension_macOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03A10089294C0B77005E3324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F05DBAB2894128700632934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03A100B8294C1124005E3324;
+			remoteInfo = "WireGuard Network Extension macOS";
+		};
+		03A100D3294C16F0005E3324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F05DBAB2894128700632934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03A10040294C073E005E3324;
+			remoteInfo = WireGuardBridgemacOS;
+		};
+		03B33D2828F1DB31006F7BB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F05DBAB2894128700632934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03B33D1828F1DB30006F7BB3;
+			remoteInfo = "VPN WidgetExtension";
+		};
+		03CDC190291323510099DE5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F05DBAB2894128700632934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03CDC187291323510099DE5F;
+			remoteInfo = "Network Extension";
+		};
+		03CDC1A0291349F00099DE5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F05DBAB2894128700632934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03CDC196291323F20099DE5F;
+			remoteInfo = WireGuardBridgeiOS;
+		};
+		03E866DE2915E6A9002F3E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F05DBAB2894128700632934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03CDC187291323510099DE5F;
+			remoteInfo = "WireGuard Network Extension iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03A1005F294C09E5005E3324 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A100AA294C0B77005E3324 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03A100C2294C1124005E3324 /* WireGuard Network Extension macOS.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A100AF294C0B77005E3324 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A15DB228B10F9D00D73910 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03CDC192291323510099DE5F /* WireGuard Network Extension iOS.appex in Embed Foundation Extensions */,
+				03B33D2A28F1DB31006F7BB3 /* VPN WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03010029295975C800DA03A5 /* VPNStatusObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusObserver.swift; sourceTree = "<group>"; };
+		0301002D295D5CB000DA03A5 /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		03010031295D646F00DA03A5 /* JSONInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONInitializable.swift; sourceTree = "<group>"; };
+		03010034295D654500DA03A5 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		0313C87329543CC8007EE448 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0332212D29567FE400C7A154 /* WireGuardPeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardPeer.swift; sourceTree = "<group>"; };
+		0332213029567FEB00C7A154 /* WireGuardInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardInterface.swift; sourceTree = "<group>"; };
+		033221372956882500C7A154 /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
+		0332213A295688FD00C7A154 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		03507E7328F3B215004D0D0F /* DeeplinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkParser.swift; sourceTree = "<group>"; };
+		03507E9C28F3B954004D0D0F /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		03507EA028F40E78004D0D0F /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUtils.swift; sourceTree = "<group>"; };
+		03507EA628F4BBDD004D0D0F /* WidgetContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetContent.swift; sourceTree = "<group>"; };
+		035DC539294C968C005FD6B0 /* WireGuardConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardConfig.swift; sourceTree = "<group>"; };
+		036653E3295547B600D9FFF6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		036653E929554E5800D9FFF6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		036653F529556D8B00D9FFF6 /* CountriesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesScreen.swift; sourceTree = "<group>"; };
+		036653F82955778100D9FFF6 /* CountryObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryObserver.swift; sourceTree = "<group>"; };
+		03941E12294566700042C67A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		03941E21294606590042C67A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		03941E24294608C60042C67A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		03A10070294C0A85005E3324 /* Pods_WireGuard_Network_Extension_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WireGuard_Network_Extension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A100B3294C0B77005E3324 /* Liberty_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WireGuard Network Extension macOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A100D0294C1405005E3324 /* WireGuard Network Extension macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WireGuard Network Extension macOS.entitlements"; sourceTree = "<group>"; };
+		03A100D1294C1405005E3324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03AD5177289AC51F0097101D /* WireGuardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardService.swift; sourceTree = "<group>"; };
+		03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VPN WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		03B33D1D28F1DB30006F7BB3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		03B33D2028F1DB30006F7BB3 /* VPN_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPN_Widget.swift; sourceTree = "<group>"; };
+		03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = VPN_Widget.intentdefinition; sourceTree = "<group>"; };
+		03B33D2328F1DB31006F7BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03B33D2528F1DB31006F7BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BDD313295937DB00D43321 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		03BDDE6829152C6C0026B1E4 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		03CC303E29545D1000EBB91E /* Scene+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scene+Extensions.swift"; sourceTree = "<group>"; };
+		03CC30412954617A00EBB91E /* macOS Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "macOS Info.plist"; sourceTree = "<group>"; };
+		03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WireGuard Network Extension iOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CDC189291323510099DE5F /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		03CDC18E291323510099DE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D333EB28A96A1F0083B0D0 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		03E866D529153A46002F3E6B /* VPN WidgetExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "VPN WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		03E866DC2915E63D002F3E6B /* VPNStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VPNStatus+Extensions.swift"; sourceTree = "<group>"; };
+		03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VPNStatus+Extensions.swift"; sourceTree = "<group>"; };
+		03E866E929167140002F3E6B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		03E866EB29168834002F3E6B /* WireGuard Network Extension iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WireGuard Network Extension iOS.entitlements"; sourceTree = "<group>"; };
+		1504707A52871250305B4DC6 /* Pods-VPN WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPN WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-VPN WidgetExtension/Pods-VPN WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		2AE54A182FFDC4578ECBD237 /* Pods-Liberty_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty_macOS.release.xcconfig"; path = "Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		4BC61969CC50D7320F6B0489 /* Pods_Liberty_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liberty_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F05DBB32894128700632934 /* Liberty_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
+		6F05DBB82894128700632934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6F05DBBA2894128A00632934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F05DBBC2894128A00632934 /* Liberty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Liberty.entitlements; sourceTree = "<group>"; };
+		6F05DBBE2894128A00632934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F05DBC52894130100632934 /* ConnectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		6F05DBC62894130100632934 /* DonateScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateScreen.swift; sourceTree = "<group>"; };
+		6F05DBC72894130100632934 /* AboutScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		6F45B97D289430CD001076C8 /* Exo2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Exo2.ttf; sourceTree = "<group>"; };
+		6F45B97F289433E5001076C8 /* iOS Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS Info.plist"; sourceTree = "<group>"; };
+		714E9482DC9B3897A467F0BD /* Pods-WireGuard Network Extension iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireGuard Network Extension iOS.release.xcconfig"; path = "Target Support Files/Pods-WireGuard Network Extension iOS/Pods-WireGuard Network Extension iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7539D3D417486920368436F9 /* Pods-Liberty macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty macOS.debug.xcconfig"; path = "Target Support Files/Pods-Liberty macOS/Pods-Liberty macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		82DBBA8999B97505A6687C25 /* Pods-Liberty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty.debug.xcconfig"; path = "Target Support Files/Pods-Liberty/Pods-Liberty.debug.xcconfig"; sourceTree = "<group>"; };
+		8417F209ACAD3C09332ADC35 /* Pods-Liberty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty.release.xcconfig"; path = "Target Support Files/Pods-Liberty/Pods-Liberty.release.xcconfig"; sourceTree = "<group>"; };
+		8C98E9AE2B25F9490BA011EC /* Pods-WireGuard Network Extension macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireGuard Network Extension macOS.debug.xcconfig"; path = "Target Support Files/Pods-WireGuard Network Extension macOS/Pods-WireGuard Network Extension macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8FF64B75A60B43CF90A5E21B /* Pods-Liberty iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty iOS.debug.xcconfig"; path = "Target Support Files/Pods-Liberty iOS/Pods-Liberty iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9A39BF29397498B03115E318 /* Pods-WireGuard Network Extension iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireGuard Network Extension iOS.debug.xcconfig"; path = "Target Support Files/Pods-WireGuard Network Extension iOS/Pods-WireGuard Network Extension iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9A87FC979B9275D380EAFEC1 /* Pods-Liberty macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty macOS.release.xcconfig"; path = "Target Support Files/Pods-Liberty macOS/Pods-Liberty macOS.release.xcconfig"; sourceTree = "<group>"; };
+		A46139BA8727B480E6021303 /* Pods_WireGuard_Network_Extension_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireGuard_Network_Extension_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB87EC59FCEE91475678578A /* Pods-WireGuard Network Extension macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WireGuard Network Extension macOS.release.xcconfig"; path = "Target Support Files/Pods-WireGuard Network Extension macOS/Pods-WireGuard Network Extension macOS.release.xcconfig"; sourceTree = "<group>"; };
+		B06B16AC07D440EEA040C444 /* Pods_WireGuard_Network_Extension_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WireGuard_Network_Extension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4EDFE703991775E2288987 /* Pods_Liberty_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liberty_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA09D73B8FBFDD80CB4FF0C /* Pods_VPN_WidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPN_WidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB91BE31D87A975C0948261E /* Pods-Liberty_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty_iOS.release.xcconfig"; path = "Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C0A0FC36B96CAAEF4C3C3B4E /* Pods-Liberty_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty_macOS.debug.xcconfig"; path = "Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C893F8BF46C1328564903698 /* Pods-Liberty_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CD5AC1D7C5E8C2E99CBD4B42 /* Pods-VPN WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPN WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-VPN WidgetExtension/Pods-VPN WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		DAA2F32BEBEAE44CB37F342C /* Pods-Liberty iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty iOS.release.xcconfig"; path = "Target Support Files/Pods-Liberty iOS/Pods-Liberty iOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03A100A0294C0B77005E3324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A100A1294C0B77005E3324 /* TunnelKitWireGuard in Frameworks */,
+				03A100A2294C0B77005E3324 /* TunnelKit in Frameworks */,
+				03A100A3294C0B77005E3324 /* TunnelKitWireGuardAppExtension in Frameworks */,
+				5450C945C95DCE3C1D82F309 /* Pods_Liberty_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A100B6294C1124005E3324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A100C7294C1155005E3324 /* TunnelKit in Frameworks */,
+				03A100BA294C1124005E3324 /* NetworkExtension.framework in Frameworks */,
+				03A100CB294C1155005E3324 /* TunnelKitWireGuardAppExtension in Frameworks */,
+				03A100C9294C1155005E3324 /* TunnelKitWireGuard in Frameworks */,
+				C2FFFDBB231A88E409D89180 /* Pods_WireGuard_Network_Extension_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B33D1628F1DB30006F7BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E866E12915E6B1002F3E6B /* TunnelKit in Frameworks */,
+				03B33D1E28F1DB30006F7BB3 /* SwiftUI.framework in Frameworks */,
+				03E866E52915E6B1002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */,
+				03E866E32915E6B1002F3E6B /* TunnelKitWireGuard in Frameworks */,
+				03B33D1C28F1DB30006F7BB3 /* WidgetKit.framework in Frameworks */,
+				C13F488B3D0F33852CA06667 /* Pods_VPN_WidgetExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CDC185291323510099DE5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E866D4291533DB002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */,
+				03CDC18A291323510099DE5F /* NetworkExtension.framework in Frameworks */,
+				03CDC1A5291349F50099DE5F /* TunnelKitWireGuard in Frameworks */,
+				03CDC1A3291349F50099DE5F /* TunnelKit in Frameworks */,
+				5828D1D153780436198D100B /* Pods_WireGuard_Network_Extension_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F05DBB02894128700632934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CDC1A929134A000099DE5F /* TunnelKitWireGuard in Frameworks */,
+				03CDC1A729134A000099DE5F /* TunnelKit in Frameworks */,
+				03E866D2291533D4002F3E6B /* TunnelKitWireGuardAppExtension in Frameworks */,
+				BC65004EC44ED2D10BC7C48C /* Pods_Liberty_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0301002C295D5C9F00DA03A5 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				0301002D295D5CB000DA03A5 /* CountryService.swift */,
+				036653F82955778100D9FFF6 /* CountryObserver.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		03010030295D646300DA03A5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				03010031295D646F00DA03A5 /* JSONInitializable.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		033221362956828F00C7A154 /* WireGuard */ = {
+			isa = PBXGroup;
+			children = (
+				035DC539294C968C005FD6B0 /* WireGuardConfig.swift */,
+				0332213029567FEB00C7A154 /* WireGuardInterface.swift */,
+				0332212D29567FE400C7A154 /* WireGuardPeer.swift */,
+			);
+			path = WireGuard;
+			sourceTree = "<group>";
+		};
+		03507E9B28F3B849004D0D0F /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				6F05DBBC2894128A00632934 /* Liberty.entitlements */,
+				03E866D529153A46002F3E6B /* VPN WidgetExtension.entitlements */,
+				03E866EB29168834002F3E6B /* WireGuard Network Extension iOS.entitlements */,
+				03A100D0294C1405005E3324 /* WireGuard Network Extension macOS.entitlements */,
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
+		03507E9F28F40CAF004D0D0F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				03507E9C28F3B954004D0D0F /* Defaults.swift */,
+				03507EA028F40E78004D0D0F /* Delay.swift */,
+				03BDD313295937DB00D43321 /* GlobalFunctions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		03507EAA28F4C411004D0D0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03507EA328F4BAC9004D0D0F /* WidgetUtils.swift */,
+				03507EA628F4BBDD004D0D0F /* WidgetContent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		035DC538294C9674005FD6B0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				033221362956828F00C7A154 /* WireGuard */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		03941E11294551810042C67A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				036653E929554E5800D9FFF6 /* NetworkService.swift */,
+				033221372956882500C7A154 /* NetworkBase.swift */,
+				0332213A295688FD00C7A154 /* Router.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		03A100CE294C1405005E3324 /* Network Extension macOS */ = {
+			isa = PBXGroup;
+			children = (
+				03A100D1294C1405005E3324 /* Info.plist */,
+			);
+			path = "Network Extension macOS";
+			sourceTree = "<group>";
+		};
+		03A100D2294C1439005E3324 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				6F45B97F289433E5001076C8 /* iOS Info.plist */,
+				03CC30412954617A00EBB91E /* macOS Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		03AD5173289AC2080097101D /* VPN */ = {
+			isa = PBXGroup;
+			children = (
+				03010029295975C800DA03A5 /* VPNStatusObserver.swift */,
+				03BDDE6A29152D280026B1E4 /* WireGuard */,
+			);
+			path = VPN;
+			sourceTree = "<group>";
+		};
+		03AD5174289AC2120097101D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0301002C295D5C9F00DA03A5 /* Country */,
+				03941E11294551810042C67A /* Network */,
+				03AD5173289AC2080097101D /* VPN */,
+				03507E7328F3B215004D0D0F /* DeeplinkParser.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		03AD5179289AC6E30097101D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03D333EB28A96A1F0083B0D0 /* Typealiases.swift */,
+				035DC538294C9674005FD6B0 /* Network */,
+				036653E3295547B600D9FFF6 /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03B33D1A28F1DB30006F7BB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03A10070294C0A85005E3324 /* Pods_WireGuard_Network_Extension_macOS.framework */,
+				03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */,
+				03B33D1D28F1DB30006F7BB3 /* SwiftUI.framework */,
+				03CDC189291323510099DE5F /* NetworkExtension.framework */,
+				BAA09D73B8FBFDD80CB4FF0C /* Pods_VPN_WidgetExtension.framework */,
+				A46139BA8727B480E6021303 /* Pods_WireGuard_Network_Extension_iOS.framework */,
+				B06B16AC07D440EEA040C444 /* Pods_WireGuard_Network_Extension_macOS.framework */,
+				BA4EDFE703991775E2288987 /* Pods_Liberty_iOS.framework */,
+				4BC61969CC50D7320F6B0489 /* Pods_Liberty_macOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03B33D1F28F1DB30006F7BB3 /* VPN Widget */ = {
+			isa = PBXGroup;
+			children = (
+				03B33D2528F1DB31006F7BB3 /* Info.plist */,
+				03B33D2328F1DB31006F7BB3 /* Assets.xcassets */,
+				03B33D2028F1DB30006F7BB3 /* VPN_Widget.swift */,
+				03B33D2228F1DB30006F7BB3 /* VPN_Widget.intentdefinition */,
+				03E866DB2915E627002F3E6B /* Extensions */,
+				03507EAA28F4C411004D0D0F /* Models */,
+			);
+			path = "VPN Widget";
+			sourceTree = "<group>";
+		};
+		03BDDE6A29152D280026B1E4 /* WireGuard */ = {
+			isa = PBXGroup;
+			children = (
+				03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */,
+				03AD5177289AC51F0097101D /* WireGuardService.swift */,
+				03BDDE6829152C6C0026B1E4 /* Configuration.swift */,
+			);
+			path = WireGuard;
+			sourceTree = "<group>";
+		};
+		03CDC18B291323510099DE5F /* Network Extension iOS */ = {
+			isa = PBXGroup;
+			children = (
+				03CDC18E291323510099DE5F /* Info.plist */,
+			);
+			path = "Network Extension iOS";
+			sourceTree = "<group>";
+		};
+		03D333DC28A916010083B0D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F05DBBA2894128A00632934 /* Assets.xcassets */,
+				03941E22294606590042C67A /* Localizable.strings */,
+				03507E9B28F3B849004D0D0F /* Entitlements */,
+				6F05DBBD2894128A00632934 /* Preview Content */,
+				6F45B97728942FE0001076C8 /* Fonts */,
+				03A100D2294C1439005E3324 /* Plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03E866DB2915E627002F3E6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03E866DC2915E63D002F3E6B /* VPNStatus+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03E866E62915E7A9002F3E6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03941E12294566700042C67A /* View+Extension.swift */,
+				03E866E929167140002F3E6B /* String+Extensions.swift */,
+				03CC303E29545D1000EBB91E /* Scene+Extensions.swift */,
+				03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */,
+				03010034295D654500DA03A5 /* Collection+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25AB8273939D6F35C068E59E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82DBBA8999B97505A6687C25 /* Pods-Liberty.debug.xcconfig */,
+				8417F209ACAD3C09332ADC35 /* Pods-Liberty.release.xcconfig */,
+				CD5AC1D7C5E8C2E99CBD4B42 /* Pods-VPN WidgetExtension.debug.xcconfig */,
+				1504707A52871250305B4DC6 /* Pods-VPN WidgetExtension.release.xcconfig */,
+				9A39BF29397498B03115E318 /* Pods-WireGuard Network Extension iOS.debug.xcconfig */,
+				714E9482DC9B3897A467F0BD /* Pods-WireGuard Network Extension iOS.release.xcconfig */,
+				8C98E9AE2B25F9490BA011EC /* Pods-WireGuard Network Extension macOS.debug.xcconfig */,
+				AB87EC59FCEE91475678578A /* Pods-WireGuard Network Extension macOS.release.xcconfig */,
+				8FF64B75A60B43CF90A5E21B /* Pods-Liberty iOS.debug.xcconfig */,
+				DAA2F32BEBEAE44CB37F342C /* Pods-Liberty iOS.release.xcconfig */,
+				7539D3D417486920368436F9 /* Pods-Liberty macOS.debug.xcconfig */,
+				9A87FC979B9275D380EAFEC1 /* Pods-Liberty macOS.release.xcconfig */,
+				C893F8BF46C1328564903698 /* Pods-Liberty_iOS.debug.xcconfig */,
+				BB91BE31D87A975C0948261E /* Pods-Liberty_iOS.release.xcconfig */,
+				C0A0FC36B96CAAEF4C3C3B4E /* Pods-Liberty_macOS.debug.xcconfig */,
+				2AE54A182FFDC4578ECBD237 /* Pods-Liberty_macOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6F05DBAA2894128700632934 = {
+			isa = PBXGroup;
+			children = (
+				6F05DBB52894128700632934 /* Liberty */,
+				03B33D1F28F1DB30006F7BB3 /* VPN Widget */,
+				03CDC18B291323510099DE5F /* Network Extension iOS */,
+				03A100CE294C1405005E3324 /* Network Extension macOS */,
+				03B33D1A28F1DB30006F7BB3 /* Frameworks */,
+				6F05DBB42894128700632934 /* Products */,
+				25AB8273939D6F35C068E59E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6F05DBB42894128700632934 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F05DBB32894128700632934 /* Liberty_iOS.app */,
+				03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */,
+				03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */,
+				03A100B3294C0B77005E3324 /* Liberty_macOS.app */,
+				03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F05DBB52894128700632934 /* Liberty */ = {
+			isa = PBXGroup;
+			children = (
+				6F05DBB62894128700632934 /* LibertyApp.swift */,
+				6F45B97628942FCC001076C8 /* UI */,
+				03E866E62915E7A9002F3E6B /* Extensions */,
+				03AD5179289AC6E30097101D /* Models */,
+				03AD5174289AC2120097101D /* Modules */,
+				03D333DC28A916010083B0D0 /* Supporting Files */,
+				03010030295D646300DA03A5 /* Other */,
+				03507E9F28F40CAF004D0D0F /* Utils */,
+			);
+			path = Liberty;
+			sourceTree = "<group>";
+		};
+		6F05DBBD2894128A00632934 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6F05DBBE2894128A00632934 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6F45B97628942FCC001076C8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6F05DBB82894128700632934 /* ContentView.swift */,
+				6F05DBC52894130100632934 /* ConnectView.swift */,
+				6F05DBC72894130100632934 /* AboutScreen.swift */,
+				6F05DBC62894130100632934 /* DonateScreen.swift */,
+				036653F529556D8B00D9FFF6 /* CountriesScreen.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6F45B97728942FE0001076C8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6F45B97D289430CD001076C8 /* Exo2.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		03A10040294C073E005E3324 /* WireGuardBridgemacOS */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 03A10043294C073E005E3324 /* Build configuration list for PBXLegacyTarget "WireGuardBridgemacOS" */;
+			buildPhases = (
+			);
+			buildToolPath = "$(PROJECT_DIR)/Liberty/Supporting Files/Scripts/build_wireguard_go_bridge.sh";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = WireGuardBridgemacOS;
+			passBuildSettingsInEnvironment = 1;
+			productName = WireGuardBridgemacOS;
+		};
+		03CDC196291323F20099DE5F /* WireGuardBridgeiOS */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 03CDC197291323F20099DE5F /* Build configuration list for PBXLegacyTarget "WireGuardBridgeiOS" */;
+			buildPhases = (
+			);
+			buildToolPath = "$(PROJECT_DIR)/Liberty/Supporting Files/Scripts/build_wireguard_go_bridge.sh";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = WireGuardBridgeiOS;
+			passBuildSettingsInEnvironment = 1;
+			productName = WireGuardBridgeiOS;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		03A1007F294C0B77005E3324 /* Liberty_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A100B0294C0B77005E3324 /* Build configuration list for PBXNativeTarget "Liberty_macOS" */;
+			buildPhases = (
+				03A1008E294C0B77005E3324 /* [CP] Check Pods Manifest.lock */,
+				03A1008F294C0B77005E3324 /* Sources */,
+				03A100A0294C0B77005E3324 /* Frameworks */,
+				03A100A5294C0B77005E3324 /* Resources */,
+				03A100AA294C0B77005E3324 /* Embed Foundation Extensions */,
+				03A100AE294C0B77005E3324 /* [CP] Embed Pods Frameworks */,
+				03A100AF294C0B77005E3324 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03A10088294C0B77005E3324 /* PBXTargetDependency */,
+			);
+			name = Liberty_macOS;
+			packageProductDependencies = (
+				03A1008A294C0B77005E3324 /* TunnelKit */,
+				03A1008C294C0B77005E3324 /* TunnelKitWireGuard */,
+				03A1008D294C0B77005E3324 /* TunnelKitWireGuardAppExtension */,
+			);
+			productName = Liberty;
+			productReference = 03A100B3294C0B77005E3324 /* Liberty_macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03A100B8294C1124005E3324 /* WireGuard Network Extension macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A100C3294C1124005E3324 /* Build configuration list for PBXNativeTarget "WireGuard Network Extension macOS" */;
+			buildPhases = (
+				DB1C226EF330B1AEEAC8FF7E /* [CP] Check Pods Manifest.lock */,
+				03A100B5294C1124005E3324 /* Sources */,
+				03A100B6294C1124005E3324 /* Frameworks */,
+				03A100B7294C1124005E3324 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03A100D4294C16F0005E3324 /* PBXTargetDependency */,
+			);
+			name = "WireGuard Network Extension macOS";
+			packageProductDependencies = (
+				03A100C6294C1155005E3324 /* TunnelKit */,
+				03A100C8294C1155005E3324 /* TunnelKitWireGuard */,
+				03A100CA294C1155005E3324 /* TunnelKitWireGuardAppExtension */,
+			);
+			productName = "WireGuard Network Extension macOS";
+			productReference = 03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		03B33D1828F1DB30006F7BB3 /* VPN WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B33D2D28F1DB31006F7BB3 /* Build configuration list for PBXNativeTarget "VPN WidgetExtension" */;
+			buildPhases = (
+				DBDAE57A1B95F9B503E80BFF /* [CP] Check Pods Manifest.lock */,
+				03B33D1528F1DB30006F7BB3 /* Sources */,
+				03B33D1628F1DB30006F7BB3 /* Frameworks */,
+				03B33D1728F1DB30006F7BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03E866DF2915E6A9002F3E6B /* PBXTargetDependency */,
+			);
+			name = "VPN WidgetExtension";
+			packageProductDependencies = (
+				03E866E02915E6B1002F3E6B /* TunnelKit */,
+				03E866E22915E6B1002F3E6B /* TunnelKitWireGuard */,
+				03E866E42915E6B1002F3E6B /* TunnelKitWireGuardAppExtension */,
+			);
+			productName = "VPN WidgetExtension";
+			productReference = 03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		03CDC187291323510099DE5F /* WireGuard Network Extension iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03CDC193291323510099DE5F /* Build configuration list for PBXNativeTarget "WireGuard Network Extension iOS" */;
+			buildPhases = (
+				95B3922CE0117ACC8FFD44A3 /* [CP] Check Pods Manifest.lock */,
+				03CDC184291323510099DE5F /* Sources */,
+				03CDC185291323510099DE5F /* Frameworks */,
+				03CDC186291323510099DE5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03CDC1A1291349F00099DE5F /* PBXTargetDependency */,
+			);
+			name = "WireGuard Network Extension iOS";
+			packageProductDependencies = (
+				03CDC1A2291349F50099DE5F /* TunnelKit */,
+				03CDC1A4291349F50099DE5F /* TunnelKitWireGuard */,
+				03E866D3291533DB002F3E6B /* TunnelKitWireGuardAppExtension */,
+			);
+			productName = "Network Extension";
+			productReference = 03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6F05DBB22894128700632934 /* Liberty_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F05DBC22894128A00632934 /* Build configuration list for PBXNativeTarget "Liberty_iOS" */;
+			buildPhases = (
+				3013BB7357272A1C04C38707 /* [CP] Check Pods Manifest.lock */,
+				6F05DBAF2894128700632934 /* Sources */,
+				6F05DBB02894128700632934 /* Frameworks */,
+				6F05DBB12894128700632934 /* Resources */,
+				03A15DB228B10F9D00D73910 /* Embed Foundation Extensions */,
+				A91808BDA5D5D2EEBBED43B4 /* [CP] Embed Pods Frameworks */,
+				03A1005F294C09E5005E3324 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03B33D2928F1DB31006F7BB3 /* PBXTargetDependency */,
+				03CDC191291323510099DE5F /* PBXTargetDependency */,
+			);
+			name = Liberty_iOS;
+			packageProductDependencies = (
+				03CDC1A629134A000099DE5F /* TunnelKit */,
+				03CDC1A829134A000099DE5F /* TunnelKitWireGuard */,
+				03E866D1291533D4002F3E6B /* TunnelKitWireGuardAppExtension */,
+			);
+			productName = Liberty;
+			productReference = 6F05DBB32894128700632934 /* Liberty_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F05DBAB2894128700632934 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					03A10040294C073E005E3324 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					03A100B8294C1124005E3324 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					03B33D1828F1DB30006F7BB3 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					03CDC187291323510099DE5F = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					03CDC196291323F20099DE5F = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					6F05DBB22894128700632934 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 6F05DBAE2894128700632934 /* Build configuration list for PBXProject "Liberty" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+				uk,
+			);
+			mainGroup = 6F05DBAA2894128700632934;
+			packageReferences = (
+				03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */,
+			);
+			productRefGroup = 6F05DBB42894128700632934 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F05DBB22894128700632934 /* Liberty_iOS */,
+				03A1007F294C0B77005E3324 /* Liberty_macOS */,
+				03B33D1828F1DB30006F7BB3 /* VPN WidgetExtension */,
+				03CDC187291323510099DE5F /* WireGuard Network Extension iOS */,
+				03A100B8294C1124005E3324 /* WireGuard Network Extension macOS */,
+				03CDC196291323F20099DE5F /* WireGuardBridgeiOS */,
+				03A10040294C073E005E3324 /* WireGuardBridgemacOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03A100A5294C0B77005E3324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A100A6294C0B77005E3324 /* Preview Assets.xcassets in Resources */,
+				03A100A7294C0B77005E3324 /* Localizable.strings in Resources */,
+				03CC30432954617A00EBB91E /* macOS Info.plist in Resources */,
+				03A100A9294C0B77005E3324 /* Exo2.ttf in Resources */,
+				03CC304429546AC500EBB91E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A100B7294C1124005E3324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B33D1728F1DB30006F7BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03507E6F28F3A923004D0D0F /* Exo2.ttf in Resources */,
+				03941E2B29460F750042C67A /* Localizable.strings in Resources */,
+				03507E6E28F3A8A6004D0D0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CDC186291323510099DE5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F05DBB12894128700632934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CC30482954721000EBB91E /* iOS Info.plist in Resources */,
+				6F05DBBF2894128A00632934 /* Preview Assets.xcassets in Resources */,
+				03941E1F294606590042C67A /* Localizable.strings in Resources */,
+				6F45B97E289430CD001076C8 /* Exo2.ttf in Resources */,
+				03CC304529546AC800EBB91E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03A1008E294C0B77005E3324 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Liberty_macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		03A100AE294C0B77005E3324 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3013BB7357272A1C04C38707 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Liberty_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B3922CE0117ACC8FFD44A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireGuard Network Extension iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91808BDA5D5D2EEBBED43B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Liberty_iOS/Pods-Liberty_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB1C226EF330B1AEEAC8FF7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WireGuard Network Extension macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBDAE57A1B95F9B503E80BFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VPN WidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03A1008F294C0B77005E3324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036653F729556D8B00D9FFF6 /* CountriesScreen.swift in Sources */,
+				036653FA2955778100D9FFF6 /* CountryObserver.swift in Sources */,
+				035DC53B294C968C005FD6B0 /* WireGuardConfig.swift in Sources */,
+				0332212F29567FE400C7A154 /* WireGuardPeer.swift in Sources */,
+				03A10091294C0B77005E3324 /* Defaults.swift in Sources */,
+				03010033295D646F00DA03A5 /* JSONInitializable.swift in Sources */,
+				03A10092294C0B77005E3324 /* DonateScreen.swift in Sources */,
+				03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */,
+				033221392956882500C7A154 /* NetworkBase.swift in Sources */,
+				036653E5295547B600D9FFF6 /* Country.swift in Sources */,
+				0332213229567FEB00C7A154 /* WireGuardInterface.swift in Sources */,
+				03A10093294C0B77005E3324 /* View+Extension.swift in Sources */,
+				0332213C295688FD00C7A154 /* Router.swift in Sources */,
+				03A10094294C0B77005E3324 /* DeeplinkParser.swift in Sources */,
+				03A10095294C0B77005E3324 /* String+Extensions.swift in Sources */,
+				03A10096294C0B77005E3324 /* ConnectView.swift in Sources */,
+				0301002B295975C800DA03A5 /* VPNStatusObserver.swift in Sources */,
+				0301002F295D5CB300DA03A5 /* CountryService.swift in Sources */,
+				03A10097294C0B77005E3324 /* ContentView.swift in Sources */,
+				03BDD315295937DB00D43321 /* GlobalFunctions.swift in Sources */,
+				036653EB29554E5800D9FFF6 /* NetworkService.swift in Sources */,
+				03A10098294C0B77005E3324 /* VPNStatus+Extensions.swift in Sources */,
+				03A10099294C0B77005E3324 /* Configuration.swift in Sources */,
+				03A1009A294C0B77005E3324 /* Delay.swift in Sources */,
+				03A1009B294C0B77005E3324 /* Typealiases.swift in Sources */,
+				03A1009C294C0B77005E3324 /* WireGuardService.swift in Sources */,
+				03A1009D294C0B77005E3324 /* AboutScreen.swift in Sources */,
+				03A1009E294C0B77005E3324 /* LibertyApp.swift in Sources */,
+				03A1009F294C0B77005E3324 /* VPN_Widget.intentdefinition in Sources */,
+				03010036295D654500DA03A5 /* Collection+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A100B5294C1124005E3324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A100D6294C174E005E3324 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03B33D1528F1DB30006F7BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CAA6E1296C83DE00FFCC82 /* Country.swift in Sources */,
+				03BDD316295937DB00D43321 /* GlobalFunctions.swift in Sources */,
+				03507EA228F40E78004D0D0F /* Delay.swift in Sources */,
+				03507EA428F4BAC9004D0D0F /* WidgetUtils.swift in Sources */,
+				03B33D2128F1DB30006F7BB3 /* VPN_Widget.swift in Sources */,
+				03CAA6DD295F509800FFCC82 /* WireGuardInterface.swift in Sources */,
+				03CAA6DE295F509A00FFCC82 /* WireGuardPeer.swift in Sources */,
+				03B33D2628F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */,
+				03CAA6E0295F50E700FFCC82 /* Collection+Extensions.swift in Sources */,
+				03507EA728F4BBDD004D0D0F /* WidgetContent.swift in Sources */,
+				03E866DD2915E63D002F3E6B /* VPNStatus+Extensions.swift in Sources */,
+				03CAA6DF295F50DD00FFCC82 /* JSONInitializable.swift in Sources */,
+				03CAA6DC295F509500FFCC82 /* WireGuardConfig.swift in Sources */,
+				03BDD3122959340100D43321 /* Defaults.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CDC184291323510099DE5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E866D729153B20002F3E6B /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F05DBAF2894128700632934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036653F629556D8B00D9FFF6 /* CountriesScreen.swift in Sources */,
+				036653F92955778100D9FFF6 /* CountryObserver.swift in Sources */,
+				035DC53A294C968C005FD6B0 /* WireGuardConfig.swift in Sources */,
+				0332212E29567FE400C7A154 /* WireGuardPeer.swift in Sources */,
+				03507E9D28F3B954004D0D0F /* Defaults.swift in Sources */,
+				03010032295D646F00DA03A5 /* JSONInitializable.swift in Sources */,
+				6F05DBC92894130100632934 /* DonateScreen.swift in Sources */,
+				03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */,
+				033221382956882500C7A154 /* NetworkBase.swift in Sources */,
+				036653E4295547B600D9FFF6 /* Country.swift in Sources */,
+				0332213129567FEB00C7A154 /* WireGuardInterface.swift in Sources */,
+				03941E13294566700042C67A /* View+Extension.swift in Sources */,
+				0332213B295688FD00C7A154 /* Router.swift in Sources */,
+				03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */,
+				03E866EA29167140002F3E6B /* String+Extensions.swift in Sources */,
+				6F05DBC82894130100632934 /* ConnectView.swift in Sources */,
+				0301002A295975C800DA03A5 /* VPNStatusObserver.swift in Sources */,
+				0301002E295D5CB000DA03A5 /* CountryService.swift in Sources */,
+				6F05DBB92894128700632934 /* ContentView.swift in Sources */,
+				03BDD314295937DB00D43321 /* GlobalFunctions.swift in Sources */,
+				036653EA29554E5800D9FFF6 /* NetworkService.swift in Sources */,
+				03E866E82915E7C8002F3E6B /* VPNStatus+Extensions.swift in Sources */,
+				03BDDE6929152C6C0026B1E4 /* Configuration.swift in Sources */,
+				03507EA128F40E78004D0D0F /* Delay.swift in Sources */,
+				03D333EC28A96A1F0083B0D0 /* Typealiases.swift in Sources */,
+				03AD5178289AC51F0097101D /* WireGuardService.swift in Sources */,
+				6F05DBCA2894130100632934 /* AboutScreen.swift in Sources */,
+				6F05DBB72894128700632934 /* LibertyApp.swift in Sources */,
+				03B33D2728F1DB31006F7BB3 /* VPN_Widget.intentdefinition in Sources */,
+				03010035295D654500DA03A5 /* Collection+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03A10088294C0B77005E3324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03A100B8294C1124005E3324 /* WireGuard Network Extension macOS */;
+			targetProxy = 03A10089294C0B77005E3324 /* PBXContainerItemProxy */;
+		};
+		03A100D4294C16F0005E3324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03A10040294C073E005E3324 /* WireGuardBridgemacOS */;
+			targetProxy = 03A100D3294C16F0005E3324 /* PBXContainerItemProxy */;
+		};
+		03B33D2928F1DB31006F7BB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03B33D1828F1DB30006F7BB3 /* VPN WidgetExtension */;
+			targetProxy = 03B33D2828F1DB31006F7BB3 /* PBXContainerItemProxy */;
+		};
+		03CDC191291323510099DE5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03CDC187291323510099DE5F /* WireGuard Network Extension iOS */;
+			targetProxy = 03CDC190291323510099DE5F /* PBXContainerItemProxy */;
+		};
+		03CDC1A1291349F00099DE5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03CDC196291323F20099DE5F /* WireGuardBridgeiOS */;
+			targetProxy = 03CDC1A0291349F00099DE5F /* PBXContainerItemProxy */;
+		};
+		03E866DF2915E6A9002F3E6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03CDC187291323510099DE5F /* WireGuard Network Extension iOS */;
+			targetProxy = 03E866DE2915E6A9002F3E6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03941E22294606590042C67A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03941E21294606590042C67A /* en */,
+				03941E24294608C60042C67A /* ru */,
+				0313C87329543CC8007EE448 /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03A10041294C073E005E3324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		03A10042294C073E005E3324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		03A100B1294C0B77005E3324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A0FC36B96CAAEF4C3C3B4E /* Pods-Liberty_macOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon macOS";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FuckRKN1;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		03A100B2294C0B77005E3324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE54A182FFDC4578ECBD237 /* Pods-Liberty_macOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon macOS";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FuckRKN1;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		03A100C4294C1124005E3324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C98E9AE2B25F9490BA011EC /* Pods-WireGuard Network Extension macOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Network Extension macOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Network Extension macOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.macOSWireGuardNetworkExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		03A100C5294C1124005E3324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB87EC59FCEE91475678578A /* Pods-WireGuard Network Extension macOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Network Extension macOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Network Extension macOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.macOSWireGuardNetworkExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		03B33D2B28F1DB31006F7BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5AC1D7C5E8C2E99CBD4B42 /* Pods-VPN WidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/VPN WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VPN Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VPN Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03B33D2C28F1DB31006F7BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1504707A52871250305B4DC6 /* Pods-VPN WidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/VPN WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VPN Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VPN Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03CDC194291323510099DE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A39BF29397498B03115E318 /* Pods-WireGuard Network Extension iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Network Extension iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Network Extension iOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.iOSWireGuardNetworkExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03CDC195291323510099DE5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714E9482DC9B3897A467F0BD /* Pods-WireGuard Network Extension iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Network Extension iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Network Extension iOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.iOSWireGuardNetworkExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03CDC198291323F20099DE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03CDC199291323F20099DE5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6F05DBC02894128A00632934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F05DBC12894128A00632934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6F05DBC32894128A00632934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C893F8BF46C1328564903698 /* Pods-Liberty_iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Liberty/Supporting files/Plist/iOS Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FuckRKN1;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F05DBC42894128A00632934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB91BE31D87A975C0948261E /* Pods-Liberty_iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Liberty/Supporting files/Plist/iOS Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FuckRKN1;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03A10043294C073E005E3324 /* Build configuration list for PBXLegacyTarget "WireGuardBridgemacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A10041294C073E005E3324 /* Debug */,
+				03A10042294C073E005E3324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A100B0294C0B77005E3324 /* Build configuration list for PBXNativeTarget "Liberty_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A100B1294C0B77005E3324 /* Debug */,
+				03A100B2294C0B77005E3324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A100C3294C1124005E3324 /* Build configuration list for PBXNativeTarget "WireGuard Network Extension macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A100C4294C1124005E3324 /* Debug */,
+				03A100C5294C1124005E3324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03B33D2D28F1DB31006F7BB3 /* Build configuration list for PBXNativeTarget "VPN WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B33D2B28F1DB31006F7BB3 /* Debug */,
+				03B33D2C28F1DB31006F7BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03CDC193291323510099DE5F /* Build configuration list for PBXNativeTarget "WireGuard Network Extension iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03CDC194291323510099DE5F /* Debug */,
+				03CDC195291323510099DE5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03CDC197291323F20099DE5F /* Build configuration list for PBXLegacyTarget "WireGuardBridgeiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03CDC198291323F20099DE5F /* Debug */,
+				03CDC199291323F20099DE5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F05DBAE2894128700632934 /* Build configuration list for PBXProject "Liberty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F05DBC02894128A00632934 /* Debug */,
+				6F05DBC12894128A00632934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F05DBC22894128A00632934 /* Build configuration list for PBXNativeTarget "Liberty_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F05DBC32894128A00632934 /* Debug */,
+				6F05DBC42894128A00632934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03A1008B294C0B77005E3324 /* XCRemoteSwiftPackageReference "tunnelkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/passepartoutvpn/tunnelkit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/passepartoutvpn/tunnelkit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03A1008A294C0B77005E3324 /* TunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03A1008B294C0B77005E3324 /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKit;
+		};
+		03A1008C294C0B77005E3324 /* TunnelKitWireGuard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03A1008B294C0B77005E3324 /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuard;
+		};
+		03A1008D294C0B77005E3324 /* TunnelKitWireGuardAppExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03A1008B294C0B77005E3324 /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuardAppExtension;
+		};
+		03A100C6294C1155005E3324 /* TunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKit;
+		};
+		03A100C8294C1155005E3324 /* TunnelKitWireGuard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuard;
+		};
+		03A100CA294C1155005E3324 /* TunnelKitWireGuardAppExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuardAppExtension;
+		};
+		03CDC1A2291349F50099DE5F /* TunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKit;
+		};
+		03CDC1A4291349F50099DE5F /* TunnelKitWireGuard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuard;
+		};
+		03CDC1A629134A000099DE5F /* TunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKit;
+		};
+		03CDC1A829134A000099DE5F /* TunnelKitWireGuard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuard;
+		};
+		03E866D1291533D4002F3E6B /* TunnelKitWireGuardAppExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuardAppExtension;
+		};
+		03E866D3291533DB002F3E6B /* TunnelKitWireGuardAppExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuardAppExtension;
+		};
+		03E866E02915E6B1002F3E6B /* TunnelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKit;
+		};
+		03E866E22915E6B1002F3E6B /* TunnelKitWireGuard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuard;
+		};
+		03E866E42915E6B1002F3E6B /* TunnelKitWireGuardAppExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03CDC17F291322670099DE5F /* XCRemoteSwiftPackageReference "tunnelkit" */;
+			productName = TunnelKitWireGuardAppExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6F05DBAB2894128700632934 /* Project object */;
+}
