@@ -33,13 +33,9 @@
 
 "back.button"    = "Назад";
 "country.button" = "Страна";
+"retry.button"   = "Повторить";
 
-// MARK: - Countries
+// MARK: - Errors
 
-"country.russia"        = "Россия";
-"country.ukraine"       = "Украина";
-"country.netherlands"   = "Нидерланды";
-"country.latvia"        = "Латвия";
-"country.lithuania"     = "Литва";
-"country.unitedKingdom" = "Великобритания";
-"country.usa"           = "США";
+"error.get.locations.title" = "Упс!";
+"error.get.locations.descr" = "Не вышло получить список локаций от сервера";

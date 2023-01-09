@@ -33,13 +33,9 @@
 
 "back.button"    = "Back";
 "country.button" = "Country";
+"retry.button"   = "Retry";
 
-// MARK: - Countries
+// MARK: - Errors
 
-"country.russia"        = "Russia";
-"country.ukraine"       = "Ukraine";
-"country.netherlands"   = "Netherlands";
-"country.latvia"        = "Latvia";
-"country.lithuania"     = "Lithuania";
-"country.unitedKingdom" = "United Kingdom";
-"country.usa"           = "USA";
+"error.get.locations.title" = "Ooops!";
+"error.get.locations.descr" = "Couldn't get locations from server";

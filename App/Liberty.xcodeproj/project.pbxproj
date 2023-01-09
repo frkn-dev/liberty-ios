@@ -88,6 +88,7 @@
 		03CAA6DE295F509A00FFCC82 /* WireGuardPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332212D29567FE400C7A154 /* WireGuardPeer.swift */; };
 		03CAA6DF295F50DD00FFCC82 /* JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010031295D646F00DA03A5 /* JSONInitializable.swift */; };
 		03CAA6E0295F50E700FFCC82 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010034295D654500DA03A5 /* Collection+Extensions.swift */; };
+		03CAA6E1296C83DE00FFCC82 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E3295547B600D9FFF6 /* Country.swift */; };
 		03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
 		03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
 		03CC30432954617A00EBB91E /* macOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CC30412954617A00EBB91E /* macOS Info.plist */; };
@@ -1123,6 +1124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CAA6E1296C83DE00FFCC82 /* Country.swift in Sources */,
 				03BDD316295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				03507EA228F40E78004D0D0F /* Delay.swift in Sources */,
 				03507EA428F4BAC9004D0D0F /* WidgetUtils.swift in Sources */,

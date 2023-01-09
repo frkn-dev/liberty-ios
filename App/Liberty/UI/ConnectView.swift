@@ -41,10 +41,19 @@ struct ConnectView: View {
         }
     }
     
+    @State var selectedCountry: Country = Country()
+    @State var connectionState: VPNStatus = .disconnected
+    
+    // MARK: - Alert
+    
+    @State var showGetLocationsError = false
+    
+    // MARK: - Toggle
+    
+    @State var dataWasLoaded = false
+    
     // MARK: - View
     
-    @State var selectedCountry = Country()
-    @State var connectionState: VPNStatus = .disconnected
     @State var shownSupplementaryScreen: SupplementaryScreen? = nil
     
     var body: some View {
@@ -139,6 +148,7 @@ struct ConnectView: View {
                 .offset(y: 35)
                 .zIndex(2)
                 Button {
+                    guard countryService.supportedCountries.isNotEmpty else { return }
                     switch connectionState {
                     case .disconnected:
                         connectionState = .connecting
@@ -164,33 +174,37 @@ struct ConnectView: View {
                 
                 Spacer()
                 
-                Button {
-                    shownSupplementaryScreen = .countries
-                } label: {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(String(localized: "country.button").uppercased())
-                                .font(.custom("Exo 2", size: 9, relativeTo: .body))
-                                .foregroundColor(.gray)
-                            Text("\(selectedCountry.name)")
-                                .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
+                if dataWasLoaded {
+                    Button {
+                        shownSupplementaryScreen = .countries
+                    } label: {
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(String(localized: "country.button").uppercased())
+                                    .font(.custom("Exo 2", size: 9, relativeTo: .body))
+                                    .foregroundColor(.gray)
+                                Text(selectedCountry.name)
+                                    .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
+                            }
+                            Spacer()
+                            Image("downArrow")
                         }
-                        Spacer()
-                        Image("downArrow")
+                        .padding(.horizontal, 9)
+                        .padding(.vertical, 5)
+                        .background(.white)
+                        .overlay() {
+                                RoundedRectangle(cornerRadius: 8,
+                                                 style: .continuous)
+                                .stroke(.gray)
+                        }
                     }
-                    .padding(.horizontal, 9)
-                    .padding(.vertical, 5)
-                    .background(.white)
-                    .overlay() {
-                            RoundedRectangle(cornerRadius: 8,
-                                             style: .continuous)
-                            .stroke(.gray)
-                    }
+                    .frame(minWidth: 307, idealWidth: 339, maxWidth: 350, idealHeight: 38)
+                    .buttonStyle(.plain)
+                    .foregroundColor(.black)
+                    .cornerRadius(8)
+                } else {
+                    ProgressView().frame(height: 38)
                 }
-                .frame(minWidth: 307, idealWidth: 339, maxWidth: 350, idealHeight: 46)
-                .buttonStyle(.plain)
-                .foregroundColor(.black)
-                .cornerRadius(8)
                 Spacer()
             }
         }
@@ -217,6 +231,11 @@ struct ConnectView: View {
         .onAppear(perform: lastConnectionState)
         .onAppear(perform: setupValues)
         .onAppear(perform: getLocations)
+        .alert(String(localized: "error.get.locations.title"), isPresented: $showGetLocationsError) {
+            Button(String(localized: "retry.button"), role: .cancel) { getLocations() }
+        } message: {
+            Text(String(localized: "error.get.locations.descr"))
+        }
     }
 }
 
@@ -280,7 +299,6 @@ extension ConnectView {
     private func setupValues() {
         
         countryService.countryObservers.append(self)
-        selectedCountry = countryService.selectedCountry
         
         wireGuardService.observers.append(self)
         
@@ -306,6 +324,7 @@ extension ConnectView {
                 countryService.supportedCountries = countries
             case .failure:
                 countryService.supportedCountries = []
+                showGetLocationsError.toggle()
             }
         }
     }
@@ -332,6 +351,7 @@ extension ConnectView: CountryObserver {
     
     func countryUpdated() {
         selectedCountry = countryService.selectedCountry
+        dataWasLoaded = true
     }
 }
 

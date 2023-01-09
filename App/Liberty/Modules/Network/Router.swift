@@ -11,7 +11,7 @@ public enum Router: URLRequestConvertible {
     
     // MARK: - BaseURL
     
-    public static var baseURLString: String = "https://api.fuckrkn1.xyz"
+    public static var baseURLString: String = "https://api.fuckrkn1.org"
     
     // MARK: - Case
     

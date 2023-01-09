@@ -53,7 +53,7 @@ class WireGuardService {
         }
         
         let oldConfig = Defaults.ConnectionData.wireGuardConfig
-        let needsNewConfig = tryCount == 4 || oldConfig == nil
+        let needsNewConfig = tryCount == 4 || Defaults.ConnectionData.lastConnectedCountry != countryService.selectedCountry || oldConfig == nil
         
         let group = DispatchGroup()
         group.enter()
@@ -81,6 +81,8 @@ class WireGuardService {
                 self.observers.forEach { $0.disconnectedByFailure() }
                 return
             }
+            
+            Defaults.ConnectionData.lastConnectedCountry = self.countryService.selectedCountry
             
             Task {
                 try await self.vpn.reconnect(

@@ -17,13 +17,13 @@ class CountryService {
     
     public var countryObservers: [CountryObserver] = []
     
-    public var selectedCountry = Country() {
+    public var selectedCountry: Country = Country() {
         didSet {
             countryObservers.forEach { $0.countryUpdated() }
         }
     }
     
-    public var supportedCountries: [Country] = [Country()] {
+    public var supportedCountries: [Country] = [] {
         didSet {
             guard let supportedCountry = supportedCountries.first else { return }
             selectedCountry = supportedCountry

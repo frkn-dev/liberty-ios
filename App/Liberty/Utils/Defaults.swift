@@ -76,5 +76,8 @@ enum Defaults {
         
         @UserDefault("WireGuardConfig", defaultValue: nil)
         static var wireGuardConfig: WireGuardConfig?
+        
+        @UserDefault("LastConnectedCountry", defaultValue: nil)
+        static var lastConnectedCountry: Country?
     }
 }
