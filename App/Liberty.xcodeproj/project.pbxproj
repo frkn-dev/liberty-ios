@@ -41,6 +41,8 @@
 		036653F729556D8B00D9FFF6 /* CountriesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F529556D8B00D9FFF6 /* CountriesScreen.swift */; };
 		036653F92955778100D9FFF6 /* CountryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F82955778100D9FFF6 /* CountryObserver.swift */; };
 		036653FA2955778100D9FFF6 /* CountryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653F82955778100D9FFF6 /* CountryObserver.swift */; };
+		036F10BD296DD39C00BDB9F6 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036F10BC296DD39C00BDB9F6 /* KeychainService.swift */; };
+		036F10BE296DD39C00BDB9F6 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036F10BC296DD39C00BDB9F6 /* KeychainService.swift */; };
 		03941E13294566700042C67A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03941E12294566700042C67A /* View+Extension.swift */; };
 		03941E1F294606590042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
 		03941E2B29460F750042C67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03941E22294606590042C67A /* Localizable.strings */; };
@@ -238,6 +240,7 @@
 		036653E929554E5800D9FFF6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		036653F529556D8B00D9FFF6 /* CountriesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesScreen.swift; sourceTree = "<group>"; };
 		036653F82955778100D9FFF6 /* CountryObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryObserver.swift; sourceTree = "<group>"; };
+		036F10BC296DD39C00BDB9F6 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		03941E12294566700042C67A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		03941E21294606590042C67A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03941E24294608C60042C67A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -470,7 +473,7 @@
 		03AD5174289AC2120097101D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				03CAA6E2296D3CCA00FFCC82 /* Crypto */,
+				03CAA6E2296D3CCA00FFCC82 /* Security */,
 				0301002C295D5C9F00DA03A5 /* Country */,
 				03941E11294551810042C67A /* Network */,
 				03AD5173289AC2080097101D /* VPN */,
@@ -528,12 +531,13 @@
 			path = WireGuard;
 			sourceTree = "<group>";
 		};
-		03CAA6E2296D3CCA00FFCC82 /* Crypto */ = {
+		03CAA6E2296D3CCA00FFCC82 /* Security */ = {
 			isa = PBXGroup;
 			children = (
 				03CAA6E3296D3CDC00FFCC82 /* KeysService.swift */,
+				036F10BC296DD39C00BDB9F6 /* KeychainService.swift */,
 			);
-			path = Crypto;
+			path = Security;
 			sourceTree = "<group>";
 		};
 		03CDC18B291323510099DE5F /* Network Extension iOS */ = {
@@ -1104,6 +1108,7 @@
 				0332213229567FEB00C7A154 /* WireGuardInterface.swift in Sources */,
 				03CAA6E5296D3CDC00FFCC82 /* KeysService.swift in Sources */,
 				03A10093294C0B77005E3324 /* View+Extension.swift in Sources */,
+				036F10BE296DD39C00BDB9F6 /* KeychainService.swift in Sources */,
 				0332213C295688FD00C7A154 /* Router.swift in Sources */,
 				03A10094294C0B77005E3324 /* DeeplinkParser.swift in Sources */,
 				03A10095294C0B77005E3324 /* String+Extensions.swift in Sources */,
@@ -1179,6 +1184,7 @@
 				0332213129567FEB00C7A154 /* WireGuardInterface.swift in Sources */,
 				03CAA6E4296D3CDC00FFCC82 /* KeysService.swift in Sources */,
 				03941E13294566700042C67A /* View+Extension.swift in Sources */,
+				036F10BD296DD39C00BDB9F6 /* KeychainService.swift in Sources */,
 				0332213B295688FD00C7A154 /* Router.swift in Sources */,
 				03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */,
 				03E866EA29167140002F3E6B /* String+Extensions.swift in Sources */,

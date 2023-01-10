@@ -15,7 +15,9 @@ extension WireGuard {
         
         static func make(from config: WireGuardConfig) -> WireGuard.ProviderConfiguration? {
                 
-            var builder = try! WireGuard.ConfigurationBuilder(config.interface.key)
+            let privateKey = KeysService.shared.privateKey
+            
+            var builder = try! WireGuard.ConfigurationBuilder(privateKey)
             builder.addresses = config.interface.address.components(separatedBy: ", ")
             builder.dnsServers = config.interface.dns.components(separatedBy: ", ")
             try! builder.addPeer(config.peer.pubkey,
@@ -26,7 +28,6 @@ extension WireGuard {
             }
             
             builder.setKeepAlive(25, forPeer: 0)
-            try! builder.setPreSharedKey(config.peer.psk, ofPeer: 0)
             
             let wgConfig = builder.build()
             

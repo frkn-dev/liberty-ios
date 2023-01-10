@@ -80,13 +80,4 @@ enum Defaults {
         @UserDefault("LastConnectedCountry", defaultValue: nil)
         static var lastConnectedCountry: Country?
     }
-    
-    enum Crypto {
-        
-        @UserDefault("PrivateKey", defaultValue: nil)
-        static var privateKey: String?
-        
-        @UserDefault("PublicKey", defaultValue: nil)
-        static var publicKey: String?
-    }
 }

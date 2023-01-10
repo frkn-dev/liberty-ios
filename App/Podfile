@@ -8,12 +8,17 @@ def network
   pod 'SwiftyJSON'
 end
 
+def security
+  pod 'KeychainAccess'
+end
+
 # App targets
 
 target 'Liberty_iOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
+  security
   network
 
 end
@@ -22,6 +27,7 @@ target 'Liberty_macOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  security
   network
 
 end

@@ -6,6 +6,11 @@
 //
 
 import Foundation
+import CryptoKit
 import TunnelKit
+
+typealias PrivateKey = Curve25519.KeyAgreement.PrivateKey
+
+// MARK: - Handlers
 
 typealias UpdateStateHandler = (VPNStatus) -> Void
