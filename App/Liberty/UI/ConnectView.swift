@@ -328,10 +328,11 @@ extension ConnectView {
     
     private func checkUpdates() {
         
-        let needUpdate = true
-        let appVersion = Bundle.main.appVersion
+        let needUpdate     = true
+        let appVersion     = Bundle.main.appVersion
+        let lastAppVersion = Defaults.AppData.lastAppVersion
         
-        if needUpdate, appVersion != Defaults.AppData.lastAppVersion {
+        if needUpdate, appVersion != lastAppVersion {
             
             Defaults.ConnectionData.lastConnectedCountry = nil
             Defaults.ConnectionData.connectionStatus = nil
