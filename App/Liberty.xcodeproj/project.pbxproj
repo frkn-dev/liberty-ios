@@ -89,6 +89,8 @@
 		03CAA6DF295F50DD00FFCC82 /* JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010031295D646F00DA03A5 /* JSONInitializable.swift */; };
 		03CAA6E0295F50E700FFCC82 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03010034295D654500DA03A5 /* Collection+Extensions.swift */; };
 		03CAA6E1296C83DE00FFCC82 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036653E3295547B600D9FFF6 /* Country.swift */; };
+		03CAA6E4296D3CDC00FFCC82 /* KeysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAA6E3296D3CDC00FFCC82 /* KeysService.swift */; };
+		03CAA6E5296D3CDC00FFCC82 /* KeysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAA6E3296D3CDC00FFCC82 /* KeysService.swift */; };
 		03CC303F29545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
 		03CC304029545D1000EBB91E /* Scene+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CC303E29545D1000EBB91E /* Scene+Extensions.swift */; };
 		03CC30432954617A00EBB91E /* macOS Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CC30412954617A00EBB91E /* macOS Info.plist */; };
@@ -254,6 +256,7 @@
 		03B33D2528F1DB31006F7BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03BDD313295937DB00D43321 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		03BDDE6829152C6C0026B1E4 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		03CAA6E3296D3CDC00FFCC82 /* KeysService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysService.swift; sourceTree = "<group>"; };
 		03CC303E29545D1000EBB91E /* Scene+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scene+Extensions.swift"; sourceTree = "<group>"; };
 		03CC30412954617A00EBB91E /* macOS Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "macOS Info.plist"; sourceTree = "<group>"; };
 		03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WireGuard Network Extension iOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -467,6 +470,7 @@
 		03AD5174289AC2120097101D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				03CAA6E2296D3CCA00FFCC82 /* Crypto */,
 				0301002C295D5C9F00DA03A5 /* Country */,
 				03941E11294551810042C67A /* Network */,
 				03AD5173289AC2080097101D /* VPN */,
@@ -522,6 +526,14 @@
 				03BDDE6829152C6C0026B1E4 /* Configuration.swift */,
 			);
 			path = WireGuard;
+			sourceTree = "<group>";
+		};
+		03CAA6E2296D3CCA00FFCC82 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				03CAA6E3296D3CDC00FFCC82 /* KeysService.swift */,
+			);
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 		03CDC18B291323510099DE5F /* Network Extension iOS */ = {
@@ -1090,6 +1102,7 @@
 				033221392956882500C7A154 /* NetworkBase.swift in Sources */,
 				036653E5295547B600D9FFF6 /* Country.swift in Sources */,
 				0332213229567FEB00C7A154 /* WireGuardInterface.swift in Sources */,
+				03CAA6E5296D3CDC00FFCC82 /* KeysService.swift in Sources */,
 				03A10093294C0B77005E3324 /* View+Extension.swift in Sources */,
 				0332213C295688FD00C7A154 /* Router.swift in Sources */,
 				03A10094294C0B77005E3324 /* DeeplinkParser.swift in Sources */,
@@ -1164,6 +1177,7 @@
 				033221382956882500C7A154 /* NetworkBase.swift in Sources */,
 				036653E4295547B600D9FFF6 /* Country.swift in Sources */,
 				0332213129567FEB00C7A154 /* WireGuardInterface.swift in Sources */,
+				03CAA6E4296D3CDC00FFCC82 /* KeysService.swift in Sources */,
 				03941E13294566700042C67A /* View+Extension.swift in Sources */,
 				0332213B295688FD00C7A154 /* Router.swift in Sources */,
 				03507E7428F3B215004D0D0F /* DeeplinkParser.swift in Sources */,
