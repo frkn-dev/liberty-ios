@@ -80,4 +80,13 @@ enum Defaults {
         @UserDefault("LastConnectedCountry", defaultValue: nil)
         static var lastConnectedCountry: Country?
     }
+    
+    enum AppData {
+        
+        @UserDefault("LatestAppVersion", defaultValue: nil)
+        static var lastAppVersion: String?
+        
+        @UserDefault("NeedUpdateModels", defaultValue: false)
+        static var needUpdateModels: Bool
+    }
 }

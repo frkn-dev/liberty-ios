@@ -230,6 +230,7 @@ struct ConnectView: View {
         }
         .onAppear(perform: lastConnectionState)
         .onAppear(perform: setupValues)
+        .onAppear(perform: checkUpdates)
         .onAppear(perform: getLocations)
         .alert(String(localized: "error.get.locations.title"), isPresented: $showGetLocationsError) {
             Button(String(localized: "retry.button"), role: .cancel) { getLocations() }
@@ -296,6 +297,14 @@ extension ConnectView {
  
     // MARK: - Start functions
     
+    private func lastConnectionState() {
+        
+        let state = wireGuardService.vpnStatus
+        
+        connectionState = state
+        updateWidgetWith(state)
+    }
+    
     private func setupValues() {
         
         countryService.countryObservers.append(self)
@@ -317,6 +326,21 @@ extension ConnectView {
         }
     }
     
+    private func checkUpdates() {
+        
+        let needUpdate = true
+        let appVersion = Bundle.main.appVersion
+        
+        if needUpdate, appVersion != Defaults.AppData.lastAppVersion {
+            
+            Defaults.ConnectionData.lastConnectedCountry = nil
+            Defaults.ConnectionData.connectionStatus = nil
+            Defaults.ConnectionData.wireGuardConfig = nil
+        }
+        
+        Defaults.AppData.lastAppVersion = appVersion
+    }
+    
     private func getLocations() {
         networkService.getLocations() { result in
             switch result {
@@ -327,14 +351,6 @@ extension ConnectView {
                 showGetLocationsError.toggle()
             }
         }
-    }
-    
-    private func lastConnectionState() {
-        
-        let state = wireGuardService.vpnStatus
-        
-        connectionState = state
-        updateWidgetWith(state)
     }
     
     private func updateWidgetWith(_ state: VPNStatus) {

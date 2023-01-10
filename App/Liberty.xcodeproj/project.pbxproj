@@ -73,6 +73,8 @@
 		03A100C9294C1155005E3324 /* TunnelKitWireGuard in Frameworks */ = {isa = PBXBuildFile; productRef = 03A100C8294C1155005E3324 /* TunnelKitWireGuard */; };
 		03A100CB294C1155005E3324 /* TunnelKitWireGuardAppExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 03A100CA294C1155005E3324 /* TunnelKitWireGuardAppExtension */; };
 		03A100D6294C174E005E3324 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CDC18C291323510099DE5F /* PacketTunnelProvider.swift */; };
+		03A96654296DEA4900224A4A /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A96653296DEA4900224A4A /* Bundle+Extensions.swift */; };
+		03A96655296DEA4900224A4A /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A96653296DEA4900224A4A /* Bundle+Extensions.swift */; };
 		03AD5178289AC51F0097101D /* WireGuardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD5177289AC51F0097101D /* WireGuardService.swift */; };
 		03B33D1C28F1DB30006F7BB3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */; };
 		03B33D1E28F1DB30006F7BB3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B33D1D28F1DB30006F7BB3 /* SwiftUI.framework */; };
@@ -249,6 +251,7 @@
 		03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WireGuard Network Extension macOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A100D0294C1405005E3324 /* WireGuard Network Extension macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WireGuard Network Extension macOS.entitlements"; sourceTree = "<group>"; };
 		03A100D1294C1405005E3324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A96653296DEA4900224A4A /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		03AD5177289AC51F0097101D /* WireGuardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardService.swift; sourceTree = "<group>"; };
 		03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VPN WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B33D1B28F1DB30006F7BB3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -577,6 +580,7 @@
 				03CC303E29545D1000EBB91E /* Scene+Extensions.swift */,
 				03E866E72915E7C8002F3E6B /* VPNStatus+Extensions.swift */,
 				03010034295D654500DA03A5 /* Collection+Extensions.swift */,
+				03A96653296DEA4900224A4A /* Bundle+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1119,6 +1123,7 @@
 				03BDD315295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				036653EB29554E5800D9FFF6 /* NetworkService.swift in Sources */,
 				03A10098294C0B77005E3324 /* VPNStatus+Extensions.swift in Sources */,
+				03A96655296DEA4900224A4A /* Bundle+Extensions.swift in Sources */,
 				03A10099294C0B77005E3324 /* Configuration.swift in Sources */,
 				03A1009A294C0B77005E3324 /* Delay.swift in Sources */,
 				03A1009B294C0B77005E3324 /* Typealiases.swift in Sources */,
@@ -1195,6 +1200,7 @@
 				03BDD314295937DB00D43321 /* GlobalFunctions.swift in Sources */,
 				036653EA29554E5800D9FFF6 /* NetworkService.swift in Sources */,
 				03E866E82915E7C8002F3E6B /* VPNStatus+Extensions.swift in Sources */,
+				03A96654296DEA4900224A4A /* Bundle+Extensions.swift in Sources */,
 				03BDDE6929152C6C0026B1E4 /* Configuration.swift in Sources */,
 				03507EA128F40E78004D0D0F /* Delay.swift in Sources */,
 				03D333EC28A96A1F0083B0D0 /* Typealiases.swift in Sources */,
