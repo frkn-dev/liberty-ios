@@ -1734,7 +1734,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = CHF63SS3MM;
 				ENABLE_PREVIEWS = YES;
@@ -1783,7 +1783,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = CHF63SS3MM;
 				ENABLE_PREVIEWS = YES;
