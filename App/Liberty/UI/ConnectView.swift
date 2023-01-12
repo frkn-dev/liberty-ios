@@ -328,15 +328,6 @@ extension ConnectView {
                 print("VPN status is \(state)")
             }
         }
-        
-        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
-        
-        do {
-            self.engine = try CHHapticEngine()
-            try engine?.start()
-        } catch {
-            // TODO: Add logging
-        }
     }
     
     private func checkUpdates() {
@@ -398,7 +389,14 @@ extension ConnectView {
     
     func tapOnConnectHaptic() {
         guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
-
+        
+        do {
+            self.engine = try CHHapticEngine()
+            try engine?.start()
+        } catch {
+            // TODO: Add logging
+        }
+        
         let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 0.8)
         let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 0.7)
             let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: 0)
