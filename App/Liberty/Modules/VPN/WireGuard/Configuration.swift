@@ -31,7 +31,7 @@ extension WireGuard {
             
             let wgConfig = builder.build()
             
-            return WireGuard.ProviderConfiguration("fuckrkn1",
+            return WireGuard.ProviderConfiguration("fockrkn1",
                                                    appGroup: appGroup,
                                                    configuration: wgConfig)
         }
@@ -55,7 +55,7 @@ extension WireGuard {
             
             let config = builder.build()
             
-            return WireGuard.ProviderConfiguration("fuckrkn1",
+            return WireGuard.ProviderConfiguration("fockrkn1",
                                                    appGroup: appGroup,
                                                    configuration: config)
         }

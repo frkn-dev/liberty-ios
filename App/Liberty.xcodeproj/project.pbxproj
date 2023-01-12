@@ -1312,7 +1312,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = FuckRKN1;
+				INFOPLIST_KEY_CFBundleDisplayName = FockRKN1;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1364,7 +1364,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = FuckRKN1;
+				INFOPLIST_KEY_CFBundleDisplayName = FockRKN1;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1740,7 +1740,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Liberty/Supporting files/Plist/iOS Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = FuckRKN1;
+				INFOPLIST_KEY_CFBundleDisplayName = FockRKN1;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1789,7 +1789,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Liberty/Supporting files/Plist/iOS Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = FuckRKN1;
+				INFOPLIST_KEY_CFBundleDisplayName = FockRKN1;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
