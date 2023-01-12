@@ -8,6 +8,7 @@
 import Combine
 import SwiftUI
 import WidgetKit
+import CoreHaptics
 import NetworkExtension
 import TunnelKit
 
@@ -40,6 +41,8 @@ struct ConnectView: View {
             return String(localized: "status.disconnected")
         }
     }
+    
+    @State var engine: CHHapticEngine?
     
     @State var selectedCountry: Country = Country()
     @State var connectionState: VPNStatus = .disconnected
@@ -148,6 +151,7 @@ struct ConnectView: View {
                 .offset(y: 35)
                 .zIndex(2)
                 Button {
+                    tapOnConnectHaptic()
                     guard countryService.supportedCountries.isNotEmpty else { return }
                     switch connectionState {
                     case .disconnected:
@@ -324,6 +328,15 @@ extension ConnectView {
                 print("VPN status is \(state)")
             }
         }
+        
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+        
+        do {
+            self.engine = try CHHapticEngine()
+            try engine?.start()
+        } catch {
+            // TODO: Add logging
+        }
     }
     
     private func checkUpdates() {
@@ -378,5 +391,24 @@ extension ConnectView: VPNStatusObserver {
         
         connectionState = .disconnected
         updateWidgetWith(.disconnected)
+    }
+}
+
+extension ConnectView {
+    
+    func tapOnConnectHaptic() {
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+
+        let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 0.8)
+        let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 0.7)
+            let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensity, sharpness], relativeTime: 0)
+
+            do {
+                let pattern = try CHHapticPattern(events: [event], parameters: [])
+                let player = try engine?.makePlayer(with: pattern)
+                try player?.start(atTime: 0)
+            } catch {
+                // TODO: Add logging
+            }
     }
 }
