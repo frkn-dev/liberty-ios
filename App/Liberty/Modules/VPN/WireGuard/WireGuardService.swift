@@ -43,7 +43,7 @@ class WireGuardService {
     
     // MARK: - VPN
     
-    public func connectVPN() {
+    public func connectVPN(needsNewConfig: Bool) {
         
         var peerConfig: WireGuardConfig?
         
@@ -53,7 +53,7 @@ class WireGuardService {
         }
         
         let oldConfig = Defaults.ConnectionData.wireGuardConfig
-        let needsNewConfig = tryCount == 4 || Defaults.ConnectionData.lastConnectedCountry != countryService.selectedCountry || oldConfig == nil
+        let needsNewConfig = tryCount == 4 || Defaults.ConnectionData.lastConnectedCountry != countryService.selectedCountry || oldConfig == nil || needsNewConfig
         
         let group = DispatchGroup()
         group.enter()
@@ -112,6 +112,6 @@ class WireGuardService {
         }
         
         tryCount += 1
-        connectVPN()
+        connectVPN(needsNewConfig: false)
     }
 }

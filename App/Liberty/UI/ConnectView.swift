@@ -54,6 +54,7 @@ struct ConnectView: View {
     // MARK: - Toggle
     
     @State var dataWasLoaded = false
+    @State var needNewCredentials = false
     
     // MARK: - View
     
@@ -156,7 +157,7 @@ struct ConnectView: View {
                     switch connectionState {
                     case .disconnected:
                         connectionState = .connecting
-                        wireGuardService.connectVPN()
+                        wireGuardService.connectVPN(needsNewConfig: needNewCredentials)
                     case .connected:
                         wireGuardService.disconnectVPN()
                     default: break
@@ -206,9 +207,31 @@ struct ConnectView: View {
                     .buttonStyle(.plain)
                     .foregroundColor(.black)
                     .cornerRadius(8)
+                    .padding(10)
                 } else {
-                    ProgressView().frame(height: 38)
+                    ProgressView()
+                        .frame(height: 38)
+                        .padding(10)
                 }
+                HStack {
+                    Image("profileButton")
+                        .resizable()
+                        .frame(maxWidth: 16, maxHeight: 16)
+                        .aspectRatio(contentMode: .fit)
+                    Toggle(
+                        String(localized: "drop.credentials.button"),
+                        isOn: $needNewCredentials)
+                    .font(.custom("Exo 2", size: 14, relativeTo: .body).bold())
+                }
+                .padding([.horizontal], 10)
+                .padding([.vertical], 4)
+                .frame(minWidth: 307, idealWidth: 339, maxWidth: 350, idealHeight: 38)
+                .cornerRadius(8)
+                .background(.white)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(.gray, lineWidth: 0.5)
+                )
                 Spacer()
             }
         }
@@ -324,6 +347,10 @@ extension ConnectView {
                 
                 connectionState = state
                 updateWidgetWith(state)
+                
+                if state == .connected && needNewCredentials {
+                    needNewCredentials = false
+                }
                 
                 print("VPN status is \(state)")
             }

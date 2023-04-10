@@ -29,11 +29,18 @@
 "status.connecting"   = "Connecting...";
 "status.disconnected" = "Disconnected";
 
+// MARK: - TabBar
+
+"connect.tab.bar"  = "Connect";
+"settings.tab.bar" = "Settings";
+
 // MARK: - Buttons
 
 "back.button"    = "Back";
 "country.button" = "Country";
 "retry.button"   = "Retry";
+
+"drop.credentials.button" = "Запросить новый профиль";
 
 // MARK: - Errors
 
