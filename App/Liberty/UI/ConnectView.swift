@@ -225,7 +225,7 @@ struct ConnectView: View {
                 }
                 .padding([.horizontal], 10)
                 .padding([.vertical], 4)
-                .frame(minWidth: 307, idealWidth: 339, maxWidth: 350, idealHeight: 38)
+                .frame(minWidth: 307, idealWidth: 339, maxWidth: 350, idealHeight: 38, alignment: .leading)
                 .cornerRadius(8)
                 .background(.white)
                 .overlay(

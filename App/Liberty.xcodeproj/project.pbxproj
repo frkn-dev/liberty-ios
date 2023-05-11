@@ -247,7 +247,7 @@
 		03941E21294606590042C67A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03941E24294608C60042C67A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03A10070294C0A85005E3324 /* Pods_WireGuard_Network_Extension_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WireGuard_Network_Extension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		03A100B3294C0B77005E3324 /* Liberty_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A100B3294C0B77005E3324 /* FockRKN1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FockRKN1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WireGuard Network Extension macOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A100D0294C1405005E3324 /* WireGuard Network Extension macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WireGuard Network Extension macOS.entitlements"; sourceTree = "<group>"; };
 		03A100D1294C1405005E3324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -278,7 +278,7 @@
 		1504707A52871250305B4DC6 /* Pods-VPN WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPN WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-VPN WidgetExtension/Pods-VPN WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		2AE54A182FFDC4578ECBD237 /* Pods-Liberty_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liberty_macOS.release.xcconfig"; path = "Target Support Files/Pods-Liberty_macOS/Pods-Liberty_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		4BC61969CC50D7320F6B0489 /* Pods_Liberty_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liberty_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F05DBB32894128700632934 /* Liberty_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liberty_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F05DBB32894128700632934 /* FockRKN1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FockRKN1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
 		6F05DBB82894128700632934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F05DBBA2894128A00632934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -624,10 +624,10 @@
 		6F05DBB42894128700632934 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F05DBB32894128700632934 /* Liberty_iOS.app */,
+				6F05DBB32894128700632934 /* FockRKN1.app */,
 				03B33D1928F1DB30006F7BB3 /* VPN WidgetExtension.appex */,
 				03CDC188291323510099DE5F /* WireGuard Network Extension iOS.appex */,
-				03A100B3294C0B77005E3324 /* Liberty_macOS.app */,
+				03A100B3294C0B77005E3324 /* FockRKN1.app */,
 				03A100B9294C1124005E3324 /* WireGuard Network Extension macOS.appex */,
 			);
 			name = Products;
@@ -734,7 +734,7 @@
 				03A1008D294C0B77005E3324 /* TunnelKitWireGuardAppExtension */,
 			);
 			productName = Liberty;
-			productReference = 03A100B3294C0B77005E3324 /* Liberty_macOS.app */;
+			productReference = 03A100B3294C0B77005E3324 /* FockRKN1.app */;
 			productType = "com.apple.product-type.application";
 		};
 		03A100B8294C1124005E3324 /* WireGuard Network Extension macOS */ = {
@@ -834,7 +834,7 @@
 				03E866D1291533D4002F3E6B /* TunnelKitWireGuardAppExtension */,
 			);
 			productName = Liberty;
-			productReference = 6F05DBB32894128700632934 /* Liberty_iOS.app */;
+			productReference = 6F05DBB32894128700632934 /* FockRKN1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1334,7 +1334,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FockRKN1;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
@@ -1386,7 +1386,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FockRKN1;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
@@ -1762,7 +1762,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FockRKN1;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1811,7 +1811,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FockRKN1;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
