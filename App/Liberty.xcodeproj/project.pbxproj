@@ -243,6 +243,7 @@
 		036653F529556D8B00D9FFF6 /* CountriesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesScreen.swift; sourceTree = "<group>"; };
 		036653F82955778100D9FFF6 /* CountryObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryObserver.swift; sourceTree = "<group>"; };
 		036F10BC296DD39C00BDB9F6 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		037B6E962A0D4C92007C321F /* MacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS.entitlements; sourceTree = "<group>"; };
 		03941E12294566700042C67A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		03941E21294606590042C67A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03941E24294608C60042C67A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -282,7 +283,7 @@
 		6F05DBB62894128700632934 /* LibertyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibertyApp.swift; sourceTree = "<group>"; };
 		6F05DBB82894128700632934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F05DBBA2894128A00632934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6F05DBBC2894128A00632934 /* Liberty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Liberty.entitlements; sourceTree = "<group>"; };
+		6F05DBBC2894128A00632934 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
 		6F05DBBE2894128A00632934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6F05DBC52894130100632934 /* ConnectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
 		6F05DBC62894130100632934 /* DonateScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateScreen.swift; sourceTree = "<group>"; };
@@ -402,7 +403,8 @@
 		03507E9B28F3B849004D0D0F /* Entitlements */ = {
 			isa = PBXGroup;
 			children = (
-				6F05DBBC2894128A00632934 /* Liberty.entitlements */,
+				6F05DBBC2894128A00632934 /* iOS.entitlements */,
+				037B6E962A0D4C92007C321F /* MacOS.entitlements */,
 				03E866D529153A46002F3E6B /* VPN WidgetExtension.entitlements */,
 				03E866EB29168834002F3E6B /* WireGuard Network Extension iOS.entitlements */,
 				03A100D0294C1405005E3324 /* WireGuard Network Extension macOS.entitlements */,
@@ -1300,15 +1302,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon macOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/MacOS.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = CHF63SS3MM;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = CHF63SS3MM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
@@ -1335,6 +1338,7 @@
 				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
 				PRODUCT_NAME = FockRKN1;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = FockRKN1;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
@@ -1352,15 +1356,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon macOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/MacOS.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
-				DEVELOPMENT_TEAM = CHF63SS3MM;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = CHF63SS3MM;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
@@ -1387,6 +1393,8 @@
 				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
 				PRODUCT_NAME = FockRKN1;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = FockRKN1;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
@@ -1401,11 +1409,12 @@
 			baseConfigurationReference = 8C98E9AE2B25F9490BA011EC /* Pods-WireGuard Network Extension macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension macOS.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CHF63SS3MM;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = CHF63SS3MM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Network Extension macOS/Info.plist";
@@ -1421,6 +1430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.macOSWireGuardNetworkExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macOS WireGuard";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1433,11 +1443,13 @@
 			baseConfigurationReference = AB87EC59FCEE91475678578A /* Pods-WireGuard Network Extension macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension macOS.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = CHF63SS3MM;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = CHF63SS3MM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Network Extension macOS/Info.plist";
@@ -1453,6 +1465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.macOSWireGuardNetworkExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macOS WireGuard";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1732,7 +1745,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
@@ -1781,7 +1794,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/Liberty.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
