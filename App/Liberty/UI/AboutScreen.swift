@@ -46,7 +46,7 @@ struct AboutScreen: View {
                     
                     HStack(alignment: .bottom) {
                         Button {
-                            open(url: "https://t.me/FuckRKN1")
+                            open(url: "https://t.me/frkn_dev")
                         } label: {
                             VStack {
                                 Image("Telegram")
@@ -56,7 +56,7 @@ struct AboutScreen: View {
                         Spacer()
                         
                         Button {
-                            open(url: "https://twitter.com/fuckrkn1")
+                            open(url: "https://twitter.com/frkn_org")
                         } label: {
                             VStack {
                                 Image("Twitter")
