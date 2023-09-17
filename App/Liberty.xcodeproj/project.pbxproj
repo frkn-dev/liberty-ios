@@ -1303,15 +1303,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/MacOS.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = CHF63SS3MM;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = CHF63SS3MM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
@@ -1338,7 +1336,7 @@
 				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
 				PRODUCT_NAME = FRKN;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = FockRKN1;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
@@ -1357,16 +1355,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/MacOS.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Liberty/Supporting Files/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = CHF63SS3MM;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Liberty/Supporting files/Plist/macOS Info.plist";
@@ -1394,7 +1390,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko;
 				PRODUCT_NAME = FRKN;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = FockRKN1;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
@@ -1409,13 +1404,12 @@
 			baseConfigurationReference = 8C98E9AE2B25F9490BA011EC /* Pods-WireGuard Network Extension macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension macOS.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = CHF63SS3MM;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = CHF63SS3MM;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Network Extension macOS/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Network Extension macOS";
@@ -1430,7 +1424,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.macOSWireGuardNetworkExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macOS WireGuard";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1443,14 +1436,12 @@
 			baseConfigurationReference = AB87EC59FCEE91475678578A /* Pods-WireGuard Network Extension macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Liberty/Supporting Files/Entitlements/WireGuard Network Extension macOS.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = CHF63SS3MM;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = CHF63SS3MM;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Network Extension macOS/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Network Extension macOS";
@@ -1465,7 +1456,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nezavisimost.Liberty.Soloshenko.macOSWireGuardNetworkExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macOS WireGuard";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
