@@ -131,8 +131,8 @@ struct VPN_Widget: Widget {
             VPN_WidgetEntryView(entry: entry)
         }
         .supportedFamilies([.systemSmall])
-        .configurationDisplayName("Liberty iOS")
-        .description("This is a FockRKN1 VPN widget")
+        .configurationDisplayName("FRKN")
+        .description("This is a FRKN VPN widget")
     }
 }
 

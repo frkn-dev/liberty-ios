@@ -72,7 +72,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "74241F03-46C8-4DD1-8D3C-EA8DEB614C78"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Liberty/UI/ConnectView.swift"
@@ -87,54 +87,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2E6F000E-CCB5-46BD-9947-FB693A18BD5D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "connectVPN(needsNewConfig:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2E6F000E-CCB5-46BD-9947-FB693A18BD5D - 6f5a814dea4f9cb8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FockRKN1.WireGuardService.connectVPN(needsNewConfig: Swift.Bool) -&gt; ()"
-                  moduleName = "FockRKN1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/felstell/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "1620">
-               </Location>
-               <Location
-                  uuid = "2E6F000E-CCB5-46BD-9947-FB693A18BD5D - 6f4c32d5e05bf469"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 () -&gt; () in FockRKN1.WireGuardService.connectVPN(needsNewConfig: Swift.Bool) -&gt; ()"
-                  moduleName = "FockRKN1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/felstell/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "136">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F0267685-F7D5-4E12-B773-515FE2F8FA6C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -144,6 +96,151 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "348"
             endingLineNumber = "348"
+            landmarkName = "setupValues()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E30DF7B7-9CE7-4FC3-86E6-81C9A54BE768"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Liberty/Modules/Network/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getPeer(for:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53F87A64-0A29-4147-B833-E27F77DB0F40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "connectVPN(needsNewConfig:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "53F87A64-0A29-4147-B833-E27F77DB0F40 - 6f4c32d5e05b886a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in FockRKN1.WireGuardService.connectVPN(needsNewConfig: Swift.Bool) -&gt; ()"
+                  moduleName = "FockRKN1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felstell/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "53F87A64-0A29-4147-B833-E27F77DB0F40 - 6f4c32d5e05b886a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in FockRKN1.WireGuardService.connectVPN(needsNewConfig: Swift.Bool) -&gt; ()"
+                  moduleName = "FockRKN1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felstell/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "384">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F224A93-0C10-434C-99A7-23DA73B0CA76"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "connectVPN(needsNewConfig:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F224A93-0C10-434C-99A7-23DA73B0CA76 - 6f4c32d5e05b88a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in FockRKN1.WireGuardService.connectVPN(needsNewConfig: Swift.Bool) -&gt; ()"
+                  moduleName = "FockRKN1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felstell/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "904">
+               </Location>
+               <Location
+                  uuid = "8F224A93-0C10-434C-99A7-23DA73B0CA76 - 9374799ce1d3df0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (FockRKN1.VPNStatusObserver) -&gt; () in closure #2 () -&gt; () in FockRKN1.WireGuardService.connectVPN(needsNewConfig: Swift.Bool) -&gt; ()"
+                  moduleName = "FockRKN1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felstell/git/liberty-ios/App/Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8CF4755-3A47-496A-9C03-4D24D084291E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Liberty/Modules/VPN/WireGuard/WireGuardService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "connectVPN(needsNewConfig:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E7E5467-CD8A-42C6-9C0A-36A7180B9C0E"
+            shouldBeEnabled = "No"
+            condition = "if state == .disconnected"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Liberty/UI/ConnectView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "355"
+            endingLineNumber = "355"
             landmarkName = "setupValues()"
             landmarkType = "7">
          </BreakpointContent>
