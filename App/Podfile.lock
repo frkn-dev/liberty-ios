@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.6.4)
+  - Alamofire (5.8.0)
   - KeychainAccess (4.2.2)
   - SwiftyJSON (5.0.1)
 
@@ -15,10 +15,10 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
 PODFILE CHECKSUM: 08c165d1975f441e6716e1fd1ed40106e2048de4
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1
