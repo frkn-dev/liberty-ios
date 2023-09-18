@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "03A1007F294C0B77005E3324"
-               BuildableName = "FockRKN1.app"
+               BuildableName = "FRKN.app"
                BlueprintName = "Liberty_macOS"
                ReferencedContainer = "container:Liberty.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "03A1007F294C0B77005E3324"
-            BuildableName = "FockRKN1.app"
+            BuildableName = "FRKN.app"
             BlueprintName = "Liberty_macOS"
             ReferencedContainer = "container:Liberty.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "03A1007F294C0B77005E3324"
-            BuildableName = "FockRKN1.app"
+            BuildableName = "FRKN.app"
             BlueprintName = "Liberty_macOS"
             ReferencedContainer = "container:Liberty.xcodeproj">
          </BuildableReference>
